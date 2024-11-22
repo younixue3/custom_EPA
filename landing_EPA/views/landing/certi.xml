@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="certi" name="Card and Certification Section">
+        <style>
+    /* Gaya umum untuk h2 dengan class certification-title */
+    .certification-title {
+        color: #ed781b;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 0;
+        font-size: 3rem; /* Default font size untuk layar besar */
+        white-space: nowrap; /* Default, teks tidak membungkus */
+    }
+
+    /* Media query untuk layar handphone besar (di bawah 768px) */
+    @media (max-width: 767px) {
+        .certification-title {
+            font-size: 2rem; /* Ukuran font lebih kecil untuk layar handphone besar */
+            white-space: normal; /* Izinkan teks membungkus */
+        }
+
+        .row {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    /* Media query untuk layar ponsel kecil (di bawah 480px) */
+    @media (max-width: 480px) {
+        .certification-title {
+            font-size: 1.5rem; /* Ukuran lebih kecil untuk ponsel kecil */
+        }
+    }
+        </style>
+        <!-- Section Cards and Certification -->
+        <div class="container-fluid" style="margin-top: 0;">
+
+            <div class="row g-0">
+                <div class="col-lg-4 col-md-6 pb-0 pt-1 pl-0 pr-1 mt-1 ">
+                    <div class="card text-center shadow-sm flex-fill" style="position: relative; overflow: hidden; border-radius: 0;">
+                        <!-- Gambar -->
+                        <img src="/landing_EPA/static/src/img/eng.jpg" class="card-img-top" alt="Engineering" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+
+                        <!-- Overlay hitam dengan opacity 30% -->
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+
+                        <!-- Konten overlay -->
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h5 class="card-title font-weight-bold" style="font-size: 2rem; color: #FFFFFF; margin-bottom: 0;">ENGINEERING</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 pb-0 pt-1 pl-1 pr-1 mt-1">
+                    <div class="card text-center shadow-sm flex-fill" style="position: relative; overflow: hidden; border-radius: 0;">
+                        <!-- Gambar -->
+                        <img src="/landing_EPA/static/src/img/proc.jpg" class="card-img-top" alt="Procurement" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+
+                        <!-- Overlay hitam dengan opacity 20% -->
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+
+                        <!-- Konten overlay -->
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h5 class="card-title font-weight-bold" style="font-size: 2rem; color: #FFFFFF; margin-bottom: 0;">PROCUREMENT</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 pb-0 pt-1 pl-1 pr-0 mt-1">
+                    <div class="card text-center shadow-sm flex-fill" style="position: relative; overflow: hidden; border-radius: 0;">
+                        <!-- Gambar -->
+                        <img src="/landing_EPA/static/src/img/const.jpg" class="card-img-top" alt="Construction" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+
+                        <!-- Overlay hitam dengan opacity 20% -->
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+
+                        <!-- Konten overlay -->
+                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                            <h5 class="card-title font-weight-bold" style="font-size: 2rem; color: #FFFFFF; margin-bottom: 0;">CONSTRUCTION</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Certification Card -->
+                <div class="col-12 mb-5 mt-5 p-0">
+                    <div class="row justify-content-center" style="padding-left: 50px; padding-right: 50px; ">
+                        <!-- Bagian Kiri: Tulisan "Our Certification" -->
+                        <div class="col-12 col-md-6 d-flex align-items-center">
+                            <h2 class="text-start certification-title">
+                                OUR CERTIFICATION
+                            </h2>
+                        </div>
+
+                        <!-- Bagian Kanan: Logo Sertifikasi -->
+                        <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-center align-items-center mt-3 mt-md-0">
+                            <div class="text-md-end text-center" style="margin-right: 10px;">
+                                <img t-att-src="'/landing_EPA/static/src/img/sertifikasi/smk3.png'" alt="Certification 1" class="img-fluid me-md-3 mb-3 mb-md-0" style="max-height: 100px; max-width: 150px;" loading="eager"/>
+                                <img t-att-src="'/landing_EPA/static/src/img/sertifikasi/iso.png'" alt="Certification 2" class="img-fluid" style="max-height: 200px; max-width: 300px;" loading="eager"/>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </template>
+</odoo>

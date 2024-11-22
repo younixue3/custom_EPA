@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Template untuk menghilangkan Header dan Footer -->
+    <template id="no_header_footer_template" inherit_id="website.layout">
+
+        <!-- Menghapus Header -->
+        <xpath expr="//header" position="replace">
+            <!-- Kosongkan Header -->
+        </xpath>
+
+        <!-- Menghapus Footer -->
+        <xpath expr="//footer" position="replace">
+            <!-- Kosongkan Footer -->
+        </xpath>
+
+        <!-- Konten Halaman: Bagian utama halaman -->
+        <xpath expr="//main" position="inside">
+            <t t-call="landing_EPA.assets_css"/>
+            <!-- Form Page Content -->
+            <t t-call="landing_EPA.assets_js"/>
+        </xpath>
+    </template>
+
+    <!-- Template khusus untuk Form Page -->
+    <template id="form_page_template" name="Form Page" inherit_id="no_header_footer_template">
+        <!-- Memanggil jumbotron atau elemen khusus untuk Form Page -->
+        <xpath expr="//main" position="before">
+            <t t-call="landing_EPA.jumbotron_form"/>
+            <t t-call="landing_EPA.form_body"/>
+        </xpath>
+    </template>
+
+    <!-- Template khusus untuk About Page -->
+    <template id="about_page_template" name="About Page" inherit_id="no_header_footer_template">
+        <!-- Memanggil jumbotron atau elemen khusus untuk About Page -->
+        <xpath expr="//main" position="before">
+            <t t-call="landing_EPA.jumbotron_about"/>
+            <t t-call="landing_EPA.about_body"/>
+        </xpath>
+    </template>
+
+    <!-- Action untuk mengakses halaman Form Page -->
+    <record id="action_form_page" model="ir.actions.act_url">
+        <field name="name">Form Page</field>
+        <field name="url">/form_page</field>
+        <field name="target">self</field>
+    </record>
+
+    <!-- Action untuk mengakses halaman About Page -->
+    <record id="action_about_page" model="ir.actions.act_url">
+        <field name="name">About Page</field>
+        <field name="url">/about_page</field>
+        <field name="target">self</field>
+    </record>
+</odoo>

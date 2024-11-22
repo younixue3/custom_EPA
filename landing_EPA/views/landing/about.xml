@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="about" name="About Us Section">
+        <style>
+        .marquee-container {
+            overflow: hidden; /* Mencegah scrollbar */
+            white-space: nowrap; /* Mencegah pembungkusan baris */
+            position: relative; /* Untuk positioning anak */
+        }
+        .marquee {
+            display: inline-flex; /* Menggunakan inline-flex untuk elemen marquee */
+            animation: marquee 20s linear infinite; /* Durasi animasi */
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-65%); } /* Bergerak setengah dari lebar marquee */
+        }
+        .logo {
+            margin: 0 100px; /* Jarak antar logo */
+        }
+
+                                                                                                                        <!-- @media (max-width: 768px) {
+                    .mx-2 {
+                        margin-right: 15px; /* Kurangi margin di layar kecil */
+                    }
+
+                    .marquee img {
+                        max-width: 100px; /* Ukuran gambar lebih kecil di layar kecil */
+                    }
+                } -->
+        </style>
+
+        <div id="about-us" class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh; background-image: url('/landing_EPA/static/src/img/background/about.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div class="row justify-content-center align-items-center text-center w-100">
+                <!-- Bagian kiri: Gambar -->
+                <div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <img t-att-src="'/landing_EPA/static/src/img/landing/E.png'" class="img-fluid" alt="About Us Image" style="width: 80%; max-width: 300px; height: auto; object-fit: cover; border-radius: 0;" />
+                </div>
+                <!-- Bagian kanan: Penjelasan tentang perusahaan -->
+                <div class="col-12 col-md-7 pr-0 pl-5 d-flex flex-column align-items-start justify-content-start">
+                    <div style="padding: 0; margin: 0; max-width: 500px;">                        <!-- Mengatur lebar maksimal -->
+                        <h1 style="font-weight: bold; color: #ed781b; font-size: 2.5rem; margin: 0; text-align: left; font-size: 3rem;">
+                            ABOUT US
+                        </h1>
+                        <p style="font-size: 1rem; color: #333; text-align: justify; font-family: 'Open Sans', sans-serif; margin: 10px 0;">
+                            <span class="fw-bold">PT. Energi Perkasa Abadi</span>
+                                berdiri sejak tahun 2008 di Samarinda, Kalimantan Timur. Diawali bergerak di bidang rental kendaraan dan alat berat, kini kami juga bergerak di bidang lain dengan cakupan nasional.
+                        </p>
+                        <!-- Button Learn More -->
+                        <div class="row justify-content-start mt-4">
+                            <div class="col-md-12 text-start">
+                                <a href="/about_page" class="btn btn-lg" style="background-color: #ed781b; color: white; font-weight: bold; border-radius: 0; padding: 10px 40px;">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- marquee -->
+
+        <div class="col-12 mt-4 p-0">
+            <div style="border: 5px solid #ece7e1; padding: 0; margin-top: 20px; margin-bottom: 20px;">
+                <h2 style="text-align: center; margin-bottom: 20px; color: #000; font-size: 3rem; font-weight: bold;">OUR CLIENT</h2>
+                <div style="background-color: #ece7e1; padding: 10px 0; overflow: hidden;">
+                    <div class="marquee">
+                        <div class="d-flex" style="white-space: nowrap;">
+                            <!-- Loop untuk 9 logo dalam satu baris -->
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/1.png'" class="img-fluid" alt="Logo 1" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/2.png'" class="img-fluid" alt="Logo 2" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/3.png'" class="img-fluid" alt="Logo 3" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/4.png'" class="img-fluid" alt="Logo 4" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/5.png'" class="img-fluid" alt="Logo 5" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/6.png'" class="img-fluid" alt="Logo 6" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/7.png'" class="img-fluid" alt="Logo 7" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/8.png'" class="img-fluid" alt="Logo 8" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/9.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/10.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/11.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/12.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/13.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/14.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/15.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/16.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                            <div class="mx-2">
+                                <img t-att-src="'/landing_EPA/static/src/img/company/17.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </template>
+</odoo>

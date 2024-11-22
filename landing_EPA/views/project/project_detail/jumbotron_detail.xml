@@ -1,0 +1,220 @@
+<odoo>
+    <template id="jumbotron_detail" name="">
+        <t t-call="website.layout">
+            <style>
+                /* Pastikan CSS body ditulis di sini */
+                body {
+                    background-color: #ece7e1 !important;
+                }
+                
+                .jumbotron-text {
+                    color: #fff;
+                    font-weight: 700; /* Mengubah font-weight menjadi 700 */
+                    font-size: 6vw;
+                    text-align: left;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                    font-family: 'Open Sans', sans-serif;
+                }
+
+                @media (max-width: 768px) {
+                    .jumbotron-text {
+                        font-size: 8vw;
+                    }
+                }
+
+                @media (max-width: 576px) {
+                    .jumbotron-text {
+                        font-size: 10vw;
+                    }
+                }
+                h4 {
+                    color: #ed781b;
+                }
+            </style>
+            <t t-call="landing_EPA.assets_css"/>
+            <!-- Jumbotron Section -->
+            <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 800px; margin-bottom: 0px;">
+                <!-- Background Image -->
+                <div t-attf-style="background-image: url('{{ main_image_url }}'); background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;">
+                </div>
+                <!-- Layer hitam tambahan -->
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 2;">
+                </div>
+
+
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="container my-3" style="position: absolute; top: 20px; left: 20px; z-index: 2;">
+                    <ol style="list-style: none; display: flex; padding: 0; margin: 0;">
+                        <!-- Link ke halaman utama -->
+                        <li>
+                            <a href="/landing_page" style="color: #fff;">Home</a>
+                        </li>
+                        <li style="margin: 0 5px; color: #fff;">&gt;</li>
+
+                        <!-- Link ke halaman project -->
+                        <li>
+                            <a href="/project_page" style="color: #fff;">Projects</a>
+                        </li>
+                        <li style="margin: 0 5px; color: #fff;">&gt;</li>
+
+                        <!-- Nama proyek saat ini -->
+                        <li class="active" aria-current="page" style="color: #ed781b;">
+                            <t t-esc="name_proyek" />
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Text in the Center of Jumbotron -->
+                <div class="container col-11" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 2;">
+                    <h1 class="jumbotron-text">
+                        <t t-esc="name_proyek" />
+                    </h1>
+                </div>
+            </div>
+
+
+            <!-- Grid Section -->
+            <div class="container col-11 p-0" style="margin-top: 0; background-color: #ece7e1;">
+                <div class="row no-gutters">
+                    <div class="col" style="border-right: 1.5px solid #ccc; padding: 20px;">
+                        <h4 style="font-weight: 500;">Client</h4>
+                        <p>
+                            <t t-esc="client" />
+                        </p>
+                    </div>
+                    <div class="col" style="border-right: 1.5px solid #ccc; padding: 20px;">
+                        <h4 style="font-weight: 500;">Location</h4>
+                        <p>
+                            <t t-esc="location" />
+                        </p>
+                    </div>
+                    <div class="col" style="border-right: 1.5px solid #ccc; padding: 20px;">
+                        <h4 style="font-weight: 500;">Process</h4>
+                        <p>
+                            <t t-esc="process" />
+                        </p>
+                    </div>
+                    <div class="col" style="border-right: 1.5px solid #ccc; padding: 20px;">
+                        <h4 style="font-weight: 500;">Project Size</h4>
+                        <p>
+                            <t t-esc="size" />
+                        sq</p>
+                    </div>
+                    <div class="col" style="padding: 20px;">
+                        <h4 style="font-weight: 500;">Tahun</h4>
+                        <p>
+                            <t t-esc="years" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container col-11 mt-5 mb-5" style="background-color: #ece7e1; padding: 0;">
+                <div class="row no-gutters" style="min-height: 500px;">
+                    <!-- Kolom Kiri (Gambar) -->
+                    <t t-if="limited_additional_image_urls">
+                        <div class="col-md-6" t-attf-style="background-image: url('{{ limited_additional_image_urls[0] }}'); background-size: cover; background-position: center;">
+
+                            <!-- Konten lain di sini -->
+                        </div>
+
+                    </t>
+
+
+                    <!-- Kolom Kanan (Tulisan) -->
+                    <div class="col-md-6 pb-0 pt-0 pr-0" style="padding: 20px;">
+                        <!-- Bagian Atas (Teks) -->
+                        <div style="margin-bottom: 20px; text-align: justify;">
+                            <t t-esc="desc_part1" />
+                        </div>
+
+                        <!-- Bagian Bawah (Gambar sebagai Background) -->
+
+                        <t t-if="limited_additional_image_urls">
+                            <div t-attf-style="background-image: url('{{ limited_additional_image_urls[1] }}'); background-size: cover; background-position: center; height: 400px;">
+                                <!-- Gambar hanya sebagai latar belakang -->
+                            </div>
+                        </t>
+
+
+                    </div>
+                </div>
+
+                <div class="row no-gutters" style="min-height: 250px; margin-top: 30px;">
+                    <div class="col-12 p-0" style="padding: 20px;">
+                        <!-- Bagian Atas (Teks) -->
+                        <div style="text-align: justify; margin-bottom: 30px;">
+                            <t t-esc="desc_part2" />
+                        </div>
+                        <!-- Bagian Bawah (Gambar sebagai Background) -->
+                        <!-- Bagian Carousel -->
+                        <div id="projectCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="position: relative; padding: 0;">
+                            <div class="carousel-inner" style="height: 350px;">
+                                <!-- Gambar Utama -->
+                                <t t-if="main_image_url">
+                                    <div class="carousel-item active" t-attf-style="background-image: url('{{ main_image_url }}'); background-size: cover; background-position: center; height: 100%; transition: opacity 1s ease-in-out;">
+                                        <!-- Konten untuk gambar utama, jika ada -->
+                                    </div>
+                                </t>
+
+                                <!-- Gambar Tambahan -->
+                                <t t-if="img_all">
+                                    <t t-foreach="img_all" t-as="image_url">
+                                        <div class="carousel-item" t-attf-style="background-image: url('{{ image_url }}'); background-size: cover; background-position: center; height: 100%; transition: opacity 1s ease-in-out;">
+                                            <!-- Konten untuk gambar tambahan, jika ada -->
+                                        </div>
+                                    </t>
+                                </t>
+                            </div>
+
+                            <!-- Navigasi Carousel -->
+                            <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next" style="position: absolute; right: -50px; top: 50%; transform: translateY(-50%) translateX(10px);">
+                                <div style="background-image: url('/landing_EPA/static/src/img/icon/big.png'); background-size: cover; background-position: center; background-color: white; border-radius: 50%; width: 7rem; height: 7rem;">
+                                </div>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid d-flex align-items-center mt-5 mb-5" style="background-color: #dcd9d1; height: auto;">
+                <div class="container mt-5 mb-5">
+                    <h1 style="font-size: 3rem; font-weight: bold; text-align: center;">
+            WHAT THEY SAY <span style="color: #ed781b;">ABOUT THIS PROJECT</span>
+                    </h1>
+
+                    <div class="p-4 mt-4" style="background-color: #fff; border: 2px solid #ddd; border-radius: 0; position: relative;">
+                        <!-- Tanda petik besar di ujung atas -->
+                        <span style="position: absolute; top: 0; left: 40px; font-size: 5rem; color: #000;">
+        “
+                        </span>
+
+                        <p style="font-size: 1.2rem; color: #000; text-align: center; padding: 40px; padding-bottom: 20px;">
+                            <t t-esc="testi" />
+                        </p>
+                        <p style="text-align: center; font-weight: bold; color: #000; margin-top: 0; margin-bottom: 0;">
+                            <t t-esc="name_testi" />
+,                            <t t-esc="client" />
+                        </p>
+
+                        <!-- Tanda petik di pojok kanan bawah -->
+                        <span style="position: absolute; bottom: -40px; right: 40px; font-size: 5rem; color: #000;">
+        ”
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <t t-call="landing_EPA.assets_js"/>
+        </t>
+    </template>
+</odoo>

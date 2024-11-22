@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="safety_body" name="Safety Body">
+
+        <style>
+            .inner-border {
+                border: 1px solid #000; /* Border dalam */
+                padding: 10px; /* Ruang di dalam kolom */
+                margin: 0; /* Menghilangkan margin luar */
+            }
+
+            .row {
+                margin: 0; /* Menghilangkan margin luar pada row */
+                display: flex; /* Menggunakan Flexbox untuk baris */
+                flex-wrap: wrap; /* Memungkinkan kolom untuk membungkus */
+            }
+
+            h4-grid {
+                font-size: 24px;
+                position: relative;
+                padding-left: 5rem;
+            }
+
+            h4-grid::before {
+                content: ''; /* Menggunakan konten kosong untuk bullet */
+                position: absolute; /* Memposisikan bullet */
+                left: 0; /* Menempatkan bullet di sisi kiri */
+                top: 50%; /* Menempatkan bullet di tengah vertikal */
+                transform: translateY(-50%); /* Mengatur bullet agar tepat di tengah */
+                width: 3rem; /* Lebar bullet */
+                height: 3rem; /* Tinggi bullet */
+                background-color: #ed781b; /* Warna bullet */
+                border-radius: 50%; /* Membuat bullet berbentuk bulat */
+            }
+            h5-grid {
+                font-size: 24px;
+                position: relative; /* Untuk positioning pseudo-element */
+                padding-left: 5rem; /* Memberikan ruang untuk bullet */
+            }
+
+            h5-grid::before {
+                content: ''; /* Menggunakan konten kosong untuk bullet */
+                position: absolute; /* Memposisikan bullet */
+                left: 0; /* Menempatkan bullet di sisi kiri */
+                top: 50%; /* Menempatkan bullet di tengah vertikal */
+                transform: translateY(-50%); /* Mengatur bullet agar tepat di tengah */
+                width: 3rem; /* Lebar bullet */
+                height: 3rem; /* Tinggi bullet */
+                background-color: #ed781b; /* Warna bullet */
+                border-radius: 50%; /* Membuat bullet berbentuk bulat */
+            }
+
+            .col {
+                flex: 1; /* Membuat kolom memiliki lebar yang sama */
+                min-width: 300px; /* Menentukan lebar minimum kolom */
+                box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran total */
+            }
+        </style>
+        <!-- Safety First -->
+        <div class="container col-11 pl-5 pr-5 mt-4 mb-3">
+            <p style="margin-bottom: 20px; margin-top: 30px;">
+                PT. Energi Perkasa Abadi menekankan bahwa keselamatan kerja adalah hal yang utama. Penerapan keselamatan ini dilakukan melalui 3 cara, yaitu, P5M (Pembicaraan 5 Menit), 5R (Ringkas, Rapi, Resik, Rawat, Rajin), APD (Alat Pelindung Diri)
+            </p>
+        </div>
+        <div class="container-fluid col-9 pr-5 pl-5">
+
+            <div class="row" style="margin-bottom: 60px;">
+
+                <!-- Kolom kiri: Gambar -->
+                <div class="col-8">
+                    <img src="/landing_EPA/static/src/img/safety/safety_first.jpg" alt="Safety Image" class="img-fluid"/>
+                </div>
+
+                <!-- Kolom kanan: Teks -->
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <div class="text-start" style="font-size: 5rem; line-height: 1.2; z-index: 1; position: relative; top: 20%; left: -15%">
+                        <p class="m-0" style="font-weight: 600;">REMEMBER</p>
+                        <p class="m-0" style="font-weight: 600; color: #ed781b;">SAFETY</p>
+                        <p class="m-0" style="font-weight: 600; color: #ed781b;">FIRST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- P5M Sec -->
+        <div class="container col-11 pl-5 pr-5 mt-4 mb-3">
+            <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
+            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; left: -0.6em">
+                P5M
+            </span>
+
+            <div class="text-justify ">
+                <p style="width: 100%; margin: auto; font-size: 16px;">
+                    P5M adalah Pembicaraan 5 Menit yang berisi Pengarahan tentang Keselamatan dan Kesehatan Kerja (K3) di area kerja. Sebagai upaya untuk melindungi pekerja, kegiatan P5M sangatlah penting dilakukan. Pengulangan kegiatan ini ditunjukan untuk mengulang kembali aspek K3, sehingga tertanam di benak para pekerja. Perlu dipahami, bahwa aspek K3 harus selalu melekat dalam perencanaan maupun pelaksanaan pekerjaan yang sedang dilakukan oleh para pekerja. Adapun manfaat yang didapatkan dari pelaksanaan P5M berikut ini:
+                </p>
+            </div>
+        </div>
+
+        <div class="container col-11 pl-5 pr-5 mb-5">
+            <div class="row">
+                <div class="col inner-border pr-5 pt-5 pl-0 pb-5" style="border-left: none; border-top: none; margin-left: 0;">
+                    <h4-grid>Awareness</h4-grid>
+                    <p style="margin-top: 30px;">Para pekerja dapat mengetahui, memahami, dan menaggulangi situasi berbahaya yang dapat terjadi pada pekerjaannya.</p>
+                </div>
+                <div class="col inner-border pr-0 pt-5 pl-5 pb-5" style="border-right: none; border-top: none; margin-left: 0;">
+                    <h5-grid>Membuat Prosedur kerja yang baik</h5-grid>
+                    <p style="margin-top: 30px;">SOP atau Standar Operational Prosedur adalah sebuah standar prosedur kerja yang wajib dibuat sebelum melakukan pekerjaan. Hal ini bertujuan agar pekerjaan yang dikerjakan dapat berjalan dengan baik dan terhindar dari situasi yang membahayakan.</p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col inner-border pr-5 pt-5 pl-0 pb-5" style="border-left: none; border-bottom: none; margin-left: 0;">
+                    <h5-grid>Pemahaman Alat Pelindung Diri</h5-grid>
+                    <p style="margin-top: 30px;">APD atau peralatan safety yang sangat penting bagi pekerja dalam melaksanakan pekerjaannya. Kegiatan P5M ini dapat membantu pekerja mengetahui dan membantu mengingat kembali tentang manfaat penggunaan APD dan cara penggunaannya.</p>
+                </div>
+                <div class="col inner-border pr-0 pt-5 pl-5 pb-5" style="border-right: none; border-bottom: none;">
+                    <h4-grid>Meningkatkan Komunikasi</h4-grid>
+                    <p style="margin-top: 30px;">Kegiatan P5M secara tidak langsung membantu para pekerja Meningkatkan komunikasi dengan pekerja lainnya. tidak menutup kemungkinan, kegiatan ini membutuhkan kita dalam mengutarakan pendapat</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5R SEC -->
+        <div class="container col-11 text-end pl-5 pr-5 mt-4 mb-3">
+            <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
+            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -0.6em">
+                5R
+            </span>
+        </div>
+        <div class="container col-11 pl-5 pr-5 my-4 mb-3">
+            <div class="row">
+                <!-- Kolom kiri: Gambar -->
+                <div class="col-4">
+                    <a href="#sec1">
+                        <img src="/landing_EPA/static/src/img/safety/5R/1.png" alt="5R Cover Image" class="img-fluid" style="width: 47%; height: auto; position: absolute;"/>
+                    </a>
+
+                    <a href="#sec2">
+                        <img src="/landing_EPA/static/src/img/safety/5R/2.png" alt="5R Cover Image" class="img-fluid" style="width: 17%;height: auto;position: absolute;top: 78px;"/>
+                    </a>
+
+                    <a href="#sec3">
+                        <img src="/landing_EPA/static/src/img/safety/5R/3.png" alt="5R Cover Image" class="img-fluid" style="width: 32%;height: auto;position: absolute;top: 138px;left: 86px;z-index: 3;"/>
+                    </a>
+
+                    <img src="/landing_EPA/static/src/img/safety/5R/5R.png" alt="5R Cover Image" class="img-fluid" style="width: 17%;height: auto;position: absolute;top: 216px;left: 85px;z-index: 0;"/>
+
+                    <a href="#sec4">
+                        <img src="/landing_EPA/static/src/img/safety/5R/4.png" alt="5R Cover Image" class="img-fluid" style="width: 23%;height: auto;position: absolute;top: 199px;left: 136px;z-index: 0;"/>
+                    </a>
+
+                    <a href="#sec5">
+                        <img src="/landing_EPA/static/src/img/safety/5R/5.png" alt="5R Cover Image" class="img-fluid" style="width: 33%;height: auto;position: absolute;top: 262px;left: 18px;"/>
+                    </a>
+                </div>
+
+                <!-- Kolom kanan: Dibuat scrollable dan diulang sebanyak 5 kali -->
+                <div class="col-8" style="height: 40vh; overflow-y: auto;">
+                    <style>
+                        .col-8::-webkit-scrollbar {
+                            width: 6px;
+                        }
+                        .col-8::-webkit-scrollbar-track {
+                            background: #f1f1f1;
+                        }
+                        .col-8::-webkit-scrollbar-thumb {
+                            background-color: #ED781B;
+                            border-radius: 10px;
+                        }
+                        .col-8 {
+                            scroll-behavior: smooth;
+                            scroll-snap-type: y mandatory; /* Mengaktifkan scroll snapping secara vertikal */
+                        }
+                        .content {
+                            scroll-snap-align: start; /* Mengatur setiap konten berhenti di awal saat snapping */
+                        }
+                    </style>
+                    <!-- Konten ke-1 -->
+                    <div id="sec1" class="content">
+                        <div class="row" style="min-height: 30vh;">
+                            <div class="col-9 pr-0">
+                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Ringkas Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                    <span style="text-decoration: underline;">01</span>
+                                </h2>
+                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                    <strong>RINGKAS</strong>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-11">
+                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin, ipsum eu convallis vehicula.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Konten ke-2 -->
+                    <div id="sec2" class="content mt-4 mt-4">
+                        <div class="row" style="min-height: 30vh;">
+                            <div class="col-9 pr-0">
+                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Rapih Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                    <span style="text-decoration: underline;">02</span>
+                                </h2>
+                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                    <strong>RAPIH</strong>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-11">
+                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                        Duis ac lacus at enim dignissim facilisis ut at justo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Konten ke-3 -->
+                    <div id="sec3" class="content mt-4">
+                        <div class="row" style="min-height: 30vh;">
+                            <div class="col-9 pr-0">
+                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Resik Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                    <span style="text-decoration: underline;">03</span>
+                                </h2>
+                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                    <strong>RESIK</strong>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-11">
+                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                        Vivamus luctus dui et neque tincidunt, vitae gravida velit tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Konten ke-4 -->
+                    <div id="sec4" class="content mt-4">
+                        <div class="row" style="min-height: 30vh;">
+                            <div class="col-9 pr-0">
+                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                    <span style="text-decoration: underline;">04</span>
+                                </h2>
+                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                    <strong>RAJIN</strong>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-11">
+                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                        Integer sit amet metus a nisi feugiat bibendum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Konten ke-5 -->
+                    <div id="sec5" class="content mt-4">
+                        <div class="row" style="min-height: 30vh;">
+                            <div class="col-9 pr-0">
+                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                    <span style="text-decoration: underline;">05</span>
+                                </h2>
+                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                    <strong>RAWAT</strong>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-11">
+                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                        Integer sit amet metus a nisi feugiat bibendum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end -->
+
+        <!-- APD SECT -->
+        <div class="container col-11 pl-5 pr-5 mt-4 mb-3" style="; margin: auto;margin-top: 8rem !important;">
+            <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
+            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; left: -0.6em">
+                APD
+            </span>
+
+            <div class="text-justify ">
+                <p style="width: 100%; margin: auto; font-size: 16px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet efficitur tortor. Curabitur vitae quam ante. Maecenas aliquet lacinia quam ut molestie. Donec vitae risus euismod, faucibus erat in, pharetra est. Fusce venenatis velit metus, sit amet pharetra augue imperdiet quis. Nulla facilisi. Suspendisse quis lorem consequat, vehicula orci sit amet, placerat risus. Mauris pulvinar tempor magna. Proin interdum commodo arcu, ut convallis leo semper sed. Nulla velit nibh, commodo a lacus id, dapibus vestibulum nibh. Cras pretium metus porta magna fermentum, dictum tincidunt quam ultricies. Duis dictum lacus et quam vehicula condimentum. Sed ullamcorper lacinia felis, vitae tincidunt magna euismod id.
+                </p>
+            </div>
+            <!-- Section Baru untuk Gambar di Tengah -->
+            <section style="min-height: 40vh; display: flex; justify-content: center; align-items: center; background-color: #ece7e1; margin-top: 60px; margin-bottom: 60px;">
+                <img src="landing_EPA/static/src/img/safety/apd-1.png" alt="APD Image" class="img-fluid" style="max-width: 100%; height: 70vh;"/>
+            </section>
+
+
+
+        </div>
+
+        <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;">
+            <div class="container col-11 ">
+                <div class="row">
+                    <!-- Kolom Kanan: Gambar -->
+                    <div class="col-md-8">
+                        <img src="/landing_EPA/static/src/img/safety/end.png" alt="Safety Card" class="img-fluid" style="height: 90%; object-fit: cover;"/>
+                    </div>
+
+                    <!-- Kolom Kiri: Teks -->
+                    <div class="col-md-4">
+                        <!-- Bagian Atas -->
+                        <div class="mb-4">
+                            <p style="text-align: left; margin-top: 30px; font-family: 'Open Sans', sans-serif; position: absolute; width: 115%; right: 0px; top: 45px;">
+                                <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR </span>
+                                <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">EXPERTISE</span>
+                                <a href="/servis_page">
+                                    <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; position: absolute; right: 50px; z-index: 1; top: 240px;" alt="Custom Arrow Icon" />
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Bagian Bawah -->
+                        <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 250px; border-radius: 0; padding: 20px;">
+                            <h2 class="card-title">WORK IN PROCESS</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script> document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+        </script>
+    </template>
+
+</odoo>

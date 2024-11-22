@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="wb_proyek_view_form" model="ir.ui.view">
+        <field name="name">wb.proyek.view.form</field>
+        <field name="model">wb.proyek</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name_proyek"/>
+                        <field name="client"/>
+                        <field name="location"/>
+                        <field name="process"/>
+                        <field name="size"/>
+                        <field name="years"/>
+                        <field name="desc"/>
+                        <field name="testi"/>
+                        <field name="name_testi"/>
+                        <field name="main_image" widget="image" class="img-thumbnail" style="width: 128px; height: 128px;"/>
+
+                    </group>
+
+
+
+
+                    <group>
+                        <field name="images" widget="many2many_binary" options="{'widget': 'image'}"/>
+                    </group>
+
+
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="wb_proyek_view_tree" model="ir.ui.view">
+        <field name="name">wb.proyek.view.tree</field>
+        <field name="model">wb.proyek</field>
+        <field name="arch" type="xml">
+            <tree>
+
+                <field name="name_proyek"/>
+                <field name="client"/>
+                <field name="location"/>
+                <field name="process"/>
+                <field name="size"/>
+                <field name="years"/>
+                <field name="desc"/>
+                <field name="testi"/>
+                <field name="name_testi"/>
+                <field name="main_image" widget="image" options="{'width': 50, 'height': 50}"/>
+
+
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="wb_proyek_action" model="ir.actions.act_window">
+        <field name="name">Proyek</field>
+        <field name="res_model">wb.proyek</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menu Items -->
+    <menuitem id="wb_proyek_root_menu" name="Proyek" />
+    <menuitem id="wb_proyek_sub_root_menu" name="Input Proyek" parent="wb_proyek_root_menu"/>
+    <menuitem id="wb_proyek_menu" action="wb_proyek_action" name="Daftar Proyek" parent="wb_proyek_sub_root_menu"/>
+</odoo>

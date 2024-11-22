@@ -1,0 +1,142 @@
+<odoo>
+    <template id="form_body" name="form body section">
+
+        <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/form_page/bg_form.png'); background-size: cover; background-position: center;">
+
+            <form method="post" action="/form/submit" enctype="multipart/form-data">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                <!-- Button Section -->
+                <div class="container-fluid co-12" style="width: 90%">
+                    <div class="container-fluid col-12 text-center mt-4 mb-1">
+                        <hr style="border-color: #000000; border-width: 1px; width: 100%; margin: 0 auto;" />
+                        <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; ">
+                        WHAT YOU NEED US TO?
+                        </span>
+                    </div>
+                    <div class="text-justify mb-3">
+                        <p style=" margin: auto; font-size: 16px;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5 mb-5 flex-wrap">
+                    <button type="button" id="serviceRequestBtn" class="btn" style="background-color: #ed781b; color: white; margin: 10px; padding: 10px 0; width: 250px; white-space: normal; text-align: center; font-weight: bold; font-size: 18px; border-radius: 0;" onclick="toggleButton(this, 'Request Service For A Project')">
+                            REQUEST OUR SERVICE <br/>
+                                FOR A PROJECT
+                    </button>
+                    <button type="button" id="supplyRequestBtn" class="btn" style="background-color: #ed781b; color: white; margin: 10px; padding: 10px 0; width: 250px; white-space: normal; text-align: center; font-weight: bold; font-size: 18px; border-radius: 0;" onclick="toggleButton(this, 'Request Supply Material')">
+                    REQUEST TO SUPPLY <br/>
+                    FOR A MATERIAL
+                    </button>
+                </div>
+                <input type="hidden" name="lead_title" id="lead_title" value=""/>
+
+                <!-- Name Section -->
+                <div class="container-fluid col-12" style="width: 90%">
+                    <div class="container-fluid col-12 mt-4 mb-1">
+                        <hr style="border-color: #000000; border-width: 1px; width: 100%; margin: 0 auto;"/>
+                        <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1;  left: -0.6em">
+                        NAME
+                        </span>
+                    </div>
+
+                    <div class="text-justify mb-3">
+                        <p style=" margin: auto; font-size: 16px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                    <div class="row mt-5 justify-content-center mb-5">
+                        <div class="col-md-4 col-12 mb-3">
+                            <label for="name" style="font-weight: bold;">NAME</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
+                        </div>
+
+                        <div class="col-md-4 col-12 mb-3">
+                            <label for="company_name" style="font-weight: bold;">NAME OF YOUR COMPANY</label>
+                            <input type="text" id="company_name" name="company_name" class="form-control" placeholder="Enter your company name" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Information Details Section -->
+                <div class="container-fluid col-12" style="width: 90%;">
+                    <div class="container-fluid col-12 mt-4 mb-1 text-end">
+                        <hr style="border-color: #000000; border-width: 1px; width: 100%; margin: 0 auto;"/>
+                        <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1;  right: -0.6em">
+                        INFORMATION DETAILS
+                        </span>
+                    </div>
+
+                    <div class="text-justify mb-3">
+                        <p style=" margin: auto; font-size: 16px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                    <div class="row mt-5 justify-content-center mb-5">
+                        <div class="col-md-4 col-12 mb-3">
+                            <label for="email" style="font-weight: bold;">EMAIL</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
+                        </div>
+
+                        <div class="col-md-4 col-12 mb-3">
+                            <label for="phone" style="font-weight: bold;">PHONE</label>
+                            <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Details Section -->
+                <div class="container-fluid col-12" style="width: 90%;">
+                    <div class="container-fluid col-12 mt-4 mb-1">
+                        <hr style="border-color: #000000; border-width: 1px; width: 100%; margin: 0 auto;"/>
+                        <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1;  left: -0.6em">
+                        DETAILS
+                        </span>
+                    </div>
+
+                    <div class="text-justify mb-3">
+                        <p style=" margin: auto; font-size: 16px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                    <div class="row mt-5 justify-content-center mb-3">
+                        <div class="col-12 mb-3">
+                            <textarea id="description" name="description" class="form-control" placeholder="Enter your description" style="height: 250px; border-color: #ed781b; border-width: 2px; border-radius: 0; background-color: #ece7e1;  margin: auto;" required="required"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-3 mb-5 flex-wrap">
+                    <label for="attachment" class="btn" style="background-color: #ed781b; color: white; margin: 5px 10px; padding: 10px 0; width: 200px; white-space: normal; text-align: center; font-weight: bold; font-size: 18px; border-radius: 0; cursor: pointer;">
+                        ATTACHMENT
+                    </label>
+                    <input id="attachment" type="file" name="attachment" accept=".pdf, image/*" style="display: none;" />
+
+                    <button type="submit" name="action" value="send_message" class="btn" style="background-color: #ed781b; color: white; margin: 5px 10px; padding: 10px 0; width: 200px; white-space: normal; text-align: center; font-weight: bold; font-size: 18px; border-radius: 0;">
+                        SEND MESSAGE
+                    </button>
+                </div>
+
+            </form>
+        </div>
+        <script>
+    function toggleButton(button, value) {
+        button.classList.toggle('active');
+        let leadTitleInput = document.getElementById('lead_title');
+
+        // Check if the button is active
+        if (button.classList.contains('active')) {
+            leadTitleInput.value = leadTitleInput.value ? leadTitleInput.value + ',' + value : value; // Add value to input
+            button.style.backgroundColor = '#d1a56b'; // Change color when active
+        } else {
+            leadTitleInput.value = leadTitleInput.value.replace(new RegExp('(,)?' + value + '(,)?', 'g'), ',').replace(/(^,)|(,$)/g, ''); // Remove value from input
+            button.style.backgroundColor = '#ed781b'; // Reset color when inactive
+        }
+    }
+        </script>
+    </template>
+</odoo>

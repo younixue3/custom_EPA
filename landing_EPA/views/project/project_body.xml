@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="project_body" name="project body section">
+        <style>
+            
+            /* Style untuk halaman aktif */
+            .pagination .page-item.active .page-link,
+            .custom-page-link.active {
+                background-color: #ed781b;
+                border-color: #ed781b;
+                color: #ffffff;
+                border-radius: 50%; 
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Style umum untuk halaman tidak aktif */
+            .pagination .page-item .page-link,
+            .custom-page-link {
+                background-color: #ece7e1;
+                border-color: #ece7e1;
+                color: #333;
+                border-radius: 50%; 
+                width: 36px; 
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 5px;
+                text-decoration: none;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+            /* Hover effect untuk halaman yang tidak aktif */
+            .pagination .page-item .page-link:hover,
+            .custom-page-link:hover {
+                background-color: #dcd9d1;
+                color: #ed781b;
+            }
+
+            /* Style untuk ikon dalam tombol pagination dengan object-fit cover */
+            .pagination .page-link img,
+            .custom-page-link img {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+                object-fit: cover; /* Membuat gambar memenuhi lingkaran tanpa distorsi */
+            }
+
+            /* Custom button hover */
+            .custom-btn:hover {
+                background-color: #ed781b;
+                color: #ece7e1;
+            }
+
+            /* Disable custom page link */
+            .custom-page-link[disabled] {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+
+            /* Style untuk membalik gambar secara horizontal */
+            .reverse-icon {
+                transform: scaleX(-1); /* Membalik gambar secara horizontal */
+            }
+
+            
+        </style>
+        <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/project/bg_project.png'); background-size: 100%; ">
+            <div class="container col-11">
+                <div class="row">
+                    <!-- Kolom Kiri: Judul dengan margin kecil -->
+                    <div class="col-md-4 d-flex align-items-center">
+                        <div class="title-container">
+                            <h1 class="text-left font-bold" style="color: #000; font-size: 3rem;font-weight: 700;">
+                        OUR <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">PROJECT</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <!-- Kolom Kanan: Deskripsi dengan lebar lebih besar -->
+                    <div class="col-md-8">
+                        <p class="text-justify" style="font-size: 1.2rem; color: #333;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel 
+                            metus interdum, convallis sapien et, viverra lorem. Sed efficitur massa 
+                            non metus placerat, sed facilisis ligula luctus. Cras vehicula ligula non 
+                            mi eleifend, a varius massa tincidunt. Etiam sit amet nunc at nisi vehicula 
+                            convallis. Donec pharetra auctor libero, ac posuere arcu sodales eget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- grid kolase -->
+            <t t-name="landing_EPA.project_page_template">
+                <section class="p-3">
+                    <div class="container-fluid col-12" style="background-color: #ece7e1;">
+                        <div class="container col-11">
+                            <div class="row g-1">
+                                <!-- Bagian pertama untuk gambar 1 -->
+                                <div class="col-md-4 p-1">
+                                    <div class="img-container" style="height: 418px; position: relative; overflow: hidden;">
+                                        <t t-if="len(projects) > 0">
+                                            <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[0].id" alt="Project 1 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); display: flex; align-items: flex-end; padding: 10px;">
+                                                <h4 class="text-white" style="margin: 0;">
+                                                    <a t-att-href="'/project_page/%s' % projects[0].id" style="color: white; text-decoration: none;">
+                                                        <t t-esc="projects[0].name_proyek" />
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+
+                                <!-- Bagian kedua untuk gambar 2 hingga 7 -->
+                                <div class="col-md-8">
+                                    <div class="row g-1">
+                                        <t t-if="len(projects) > 1">
+                                            <div class="col-md-6 p-1">
+                                                <div class="img-container" style="height: 205px; position: relative; overflow: hidden;">
+                                                    <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[1].id" alt="Project 2 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); display: flex; align-items: flex-end; padding: 10px;">
+                                                        <h4 class="text-white" style="margin: 0;">
+                                                            <a t-att-href="'/project_page/%s' % projects[1].id" style="color: white; text-decoration: none;">
+                                                                <t t-esc="projects[1].name_proyek" />
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+
+                                        <t t-if="len(projects) > 2">
+                                            <div class="col-md-6 p-1">
+                                                <div class="img-container" style="height: 205px; position: relative; overflow: hidden;">
+                                                    <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[2].id" alt="Project 3 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); display: flex; align-items: flex-end; padding: 10px;">
+                                                        <h4 class="text-white" style="margin: 0;">
+                                                            <a t-att-href="'/project_page/%s' % projects[2].id" style="color: white; text-decoration: none;">
+                                                                <t t-esc="projects[2].name_proyek" />
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+
+                                        <t t-if="len(projects) > 3">
+                                            <div class="col-md-12 pr-1 pb-1 pl-1 pt-0">
+                                                <div class="img-container" style="height: 205px; position: relative; overflow: hidden;">
+                                                    <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[3].id" alt="Project 4 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); display: flex; align-items: flex-end; padding: 10px;">
+                                                        <h4 class="text-white" style="margin: 0;">
+                                                            <a t-att-href="'/project_page/%s' % projects[3].id" style="color: white; text-decoration: none;">
+                                                                <t t-esc="projects[3].name_proyek" />
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+
+
+                                <!-- Bagian ketiga untuk gambar 5 hingga 7 -->
+                                <div class="col-md-8">
+                                    <div class="row g-1">
+                                        <t t-if="len(projects) > 4">
+                                            <div class="col-md-6 p-1">
+                                                <div class="img-container" style="height: 205px;position: relative;">
+                                                    <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[4].id" alt="Project 5 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); display: flex; align-items: flex-end; padding: 10px;">
+                                                        <h4 class="text-white" style="margin: 0;">
+                                                            <a t-att-href="'/project_page/%s' % projects[4].id" style="color: white; text-decoration: none;">
+                                                                <t t-esc="projects[4].name_proyek" />
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+
+                                        <t t-if="len(projects) > 5">
+                                            <div class="col-md-6 p-1">
+                                                <div class="img-container" style="height: 205px;position: relative;">
+                                                    <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[5].id" alt="Project 6 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); display: flex; align-items: flex-end; padding: 10px;">
+                                                        <h4 class="text-white" style="margin: 0;">
+                                                            <a t-att-href="'/project_page/%s' % projects[5].id" style="color: white; text-decoration: none;">
+                                                                <t t-esc="projects[5].name_proyek" />
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+
+                                        <t t-if="len(projects) > 6">
+                                            <div class="col-md-12 pr-1 pb-1 pl-1 pt-0">
+                                                <div class="img-container" style="height: 205px;position: relative;">
+                                                    <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[6].id" alt="Project 7 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
+                                                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); display: flex; align-items: flex-end; padding: 10px;">
+                                                        <h4 class="text-white" style="margin: 0;">
+                                                            <a t-att-href="'/project_page/%s' % projects[6].id" style="color: white; text-decoration: none;">
+                                                                <t t-esc="projects[6].name_proyek" />
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+
+                                <!-- Bagian terakhir untuk gambar 8 -->
+                                <div class="col-md-4 p-1">
+                                    <div class="img-container" style="height: 418px; position: relative;">
+                                        <t t-if="len(projects) > 7">
+                                            <img t-att-src="'/web/image/wb.proyek/%s/main_image' % projects[7].id" alt="Project 8 Main Image" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;"/>
+                                            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); display: flex; align-items: flex-end; padding: 10px;">
+                                                <h4 class="text-white" style="margin: 0;">
+                                                    <a t-att-href="'/project_page/%s' % projects[7].id" style="color: white; text-decoration: none;">
+                                                        <t t-esc="projects[7].name_proyek" />
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- paginations -->
+                <div class="row mt-4">
+                    <div class="col text-center">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <!-- Tombol Sebelumnya -->
+                                <li class="page-item" t-if="current_page > 1">
+                                    <a t-att-href="'/project_page?page=%s' % (current_page - 1)" class="page-link" aria-label="Previous">
+                                        <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Sebelumnya" class="pagination-icon reverse-icon"/>
+                                    </a>
+                                </li>
+
+
+                                <!-- Nomor Halaman -->
+                                <t t-foreach="range(1, total_pages + 1)" t-as="p">
+                                    <li t-att-class="'page-item %s' % ('active' if p == current_page else '')">
+                                        <a t-att-href="'/project_page?page=%s' % p" class="page-link">
+                                            <t t-esc="p"/>
+                                        </a>
+                                    </li>
+                                </t>
+
+                                <!-- Tombol Berikutnya -->
+                                <li class="page-item" t-if="current_page &lt; total_pages">
+                                    <a t-att-href="'/project_page?page=%s' % (current_page + 1)" class="page-link" aria-label="Next">
+                                        <img t-att-src="'/landing_EPA/static/src/img/icon/big.png'" alt="Berikutnya" class="pagination-icon"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+            </t>
+
+        </div>
+
+        <!-- news -->
+        <div class="container-fluid col-12" style="background-color: #dcd9d1;height: auto;padding: 75px;padding-top: 20px;">
+            <div class="container col-11" style="padding: 75px; padding-top: 5px;">
+                <div class="row">
+                    <!-- Kolom Kiri: Teks -->
+                    <div class="col-md-4">
+                        <!-- Bagian Atas -->
+                        <div class="mb-4">
+                            <p style="text-align: center;margin-top: 74px;font-family: 'Open Sans', sans-serif;width: 130%;left: -90px;position: absolute;">
+                                <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR </span>
+                                <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">TRENDING NEWS</span>
+                            </p>
+                        </div>
+
+                        <!-- Bagian Bawah -->
+                        <div class="card" style="background-color: #fff;border: none;width: 500px;z-index: 1;top: 200px;right: 60px;border-radius: 0;">
+                            <div class="card-body">
+                                <h2 class="card-title">TRENDING NEWS</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Kolom Kanan: Gambar -->
+                    <div class="col-md-8">
+                        <a href="/news_page">
+                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 600px;top: 130px;" />
+                        </a>
+                        <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="img-fluid" style="width: 100%; height: auto;"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </template>
+</odoo>

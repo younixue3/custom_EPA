@@ -1,0 +1,188 @@
+<data inherit_id="website.layout" name="Default" active="True">
+  <xpath expr="//div[@id='footer']" position="replace">
+    <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+      <section class="s_text_block pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" id="HEAD-OFFICE" data-anchor="true">
+        <div class="container">
+          <div class="row">
+            <div class="pt24 pb24 o_colored_level col-lg-3">
+              <h5 class="mb-3">
+                <strong>
+                  <font class="text-black">HEAD OFFICE</font>
+                </strong>
+              </h5>
+              <ul class="list-unstyled">
+                <li>Lorem</li>
+              </ul>
+              <p>Lorem ipsum dolor sit amet</p>
+              <p>08123456789</p>
+              <ul class="list-unstyled">
+                <li>
+                  <br/>
+                </li>
+                <li>
+                  <br/>
+                </li>
+
+                <li>
+                  <br/>
+                </li>
+              </ul>
+            </div>
+            <div class="pt24 pb24 col-lg-3 o_colored_level">
+              <h5 class="mb-3">
+                <strong>
+                  <font class="text-black"/>
+                  <a href="/about_page" data-bs-original-title="" title="">
+                    <font class="text-o-color-5">ABOUT</font>
+                  </a>
+                  <font class="text-900"/>
+                  <font class="text-black"/>
+                </strong>
+              </h5>
+              <ul class="list-unstyled">
+                <li>Vision &amp;amp; Mision<br/>
+                </li>
+              </ul>
+              <p>Core Values</p>
+              <p>Safety Protocol</p>
+              <p>Legalitas /&amp;nbsp; Sertifikasi&amp;nbsp;</p>
+              <p>/&amp;nbsp; Kualifikasi</p>
+              <ul class="list-unstyled">
+
+                <li>
+                  <br/>
+                </li>
+              </ul>
+            </div>
+            <div id="connect" class="pt24 pb24 o_colored_level col-lg-3">
+              <h5 class="mb-3">
+                <strong>
+                  <font class="text-black"/>
+                  <a href="/servis_page" data-bs-original-title="" title="">
+                    <font class="text-o-color-5">SERVICES</font>
+                  </a>
+                  <font class="text-black"/>
+                </strong>
+              </h5>
+              <ul class="list-unstyled">
+                <li>Engineering</li>
+              </ul>
+              <p>Procurement</p>
+              <ul class="list-unstyled">
+                <li>Constructions</li>
+              </ul>
+            </div>
+            <div id="connect" class="pt24 pb24 o_colored_level col-lg-3">
+              <h5 class="mb-3">
+                <strong>
+                  <font class="text-black">STAY CONNECTED</font>
+                </strong>
+              </h5>
+              <div class="s_social_media o_not_editable text-start" data-snippet="s_social_media" data-name="Social Media">
+                <h5 class="s_social_media_title d-none">Follow us</h5>
+                <a href="https://www.example.com" target="_blank">
+                  <i class="fa fa-whatsapp shadow-sm o_editable_media text-black fa-3x"/>
+                </a>
+                <a href="https://www.example.com" target="_blank">
+                  <i class="fa fa-envelope-o shadow-sm o_editable_media fa-3x text-black"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="container">
+          <div class="row">
+            <div class="pt24 pb24 o_colored_level col-lg-3">
+              <h5 class="mb-3">
+                <br/>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <br/>
+                </li>
+                <li>
+                  <br/>
+                </li>
+
+                <li>
+                  <br/>
+                </li>
+              </ul>
+            </div>
+            <div class="pt24 pb24 col-lg-3 o_colored_level">
+              <h5 class="mb-3">
+                <strong>
+                  <font class="text-black"/>
+                  <font class="text-900"/>
+                  <font class="text-o-color-5"/>
+                  <a href="/project_page" data-bs-original-title="" title="">
+                    <font class="text-o-color-5">PROJECT</font>
+                  </a>
+                  <font class="text-o-color-5"/>
+                  <font class="text-900"/>
+                  <font class="text-black"/>
+                </strong>
+                <br/>
+              </h5>
+              <ul class="list-unstyled">
+                <li>Latest Project</li>
+              </ul>
+              <p>Testimonies</p>
+              <ul class="list-unstyled">
+
+                <li class="mb-3">
+                  <h5>
+                    <strong>
+                      <font class="text-black"/>
+                      <font class="text-o-color-3"/>
+                      <a href="/news_page" data-bs-original-title="" title="">
+                        <font class="text-o-color-5">NE​WS</font>
+                      </a>
+                      <font class="text-o-color-3"/>
+                      <font class="text-black"/>
+                    </strong>
+                    <br/>
+                  </h5>
+                </li>
+                <li class="oe-nested">
+                  <ul class="list-unstyled">
+                    <li>Trending News</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div id="connect" class="pt24 pb24 o_colored_level col-lg-3">
+              <h5 class="mb-3">
+                <strong>
+                  <font class="text-black"/>
+                </strong>
+                <strong>
+                  <font class="text-black">CONSTRUCTIONS</font>
+                </strong>
+                <br/>
+                <br/>
+              </h5>
+              <ul class="list-unstyled">
+                <li>Lorem</li>
+              </ul>
+              <p>Lorem</p>
+              <ul class="list-unstyled">
+                <li>Lorem</li>
+              </ul>
+            </div>
+            <div id="connect" class="pt24 pb24 o_colored_level col-lg-3">
+              <h5 class="mb-3">
+                <strong>
+                  <font class="text-black">​</font>
+                </strong>
+                <br/>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </xpath>
+</data>
