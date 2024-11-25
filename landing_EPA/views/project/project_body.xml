@@ -303,7 +303,7 @@
                     <!-- Kolom Kanan: Gambar -->
                     <div class="col-md-8">
                         <a href="/news_page">
-                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 600px;top: 130px;" />
+                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 700px;top: 130px;" />
                         </a>
                         <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="img-fluid" style="width: 100%; height: auto;"/>
                     </div>

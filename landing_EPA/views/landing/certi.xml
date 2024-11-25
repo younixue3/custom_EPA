@@ -39,7 +39,7 @@
                 <div class="col-lg-4 col-md-6 pb-0 pt-1 pl-0 pr-1 mt-1 ">
                     <div class="card text-center shadow-sm flex-fill" style="position: relative; overflow: hidden; border-radius: 0;">
                         <!-- Gambar -->
-                        <img src="/landing_EPA/static/src/img/eng.jpg" class="card-img-top" alt="Engineering" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+                        <img src="/landing_EPA/static/src/img/landing/eng.webp" class="card-img-top" alt="Engineering" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
 
                         <!-- Overlay hitam dengan opacity 30% -->
                         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
@@ -54,7 +54,7 @@
                 <div class="col-lg-4 col-md-6 pb-0 pt-1 pl-1 pr-1 mt-1">
                     <div class="card text-center shadow-sm flex-fill" style="position: relative; overflow: hidden; border-radius: 0;">
                         <!-- Gambar -->
-                        <img src="/landing_EPA/static/src/img/proc.jpg" class="card-img-top" alt="Procurement" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+                        <img src="/landing_EPA/static/src/img/landing/proc.webp" class="card-img-top" alt="Procurement" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
 
                         <!-- Overlay hitam dengan opacity 20% -->
                         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
@@ -69,7 +69,7 @@
                 <div class="col-lg-4 col-md-6 pb-0 pt-1 pl-1 pr-0 mt-1">
                     <div class="card text-center shadow-sm flex-fill" style="position: relative; overflow: hidden; border-radius: 0;">
                         <!-- Gambar -->
-                        <img src="/landing_EPA/static/src/img/const.jpg" class="card-img-top" alt="Construction" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+                        <img src="/landing_EPA/static/src/img/landing/cons.webp" class="card-img-top" alt="Construction" style="height: 300px; width: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
 
                         <!-- Overlay hitam dengan opacity 20% -->
                         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>

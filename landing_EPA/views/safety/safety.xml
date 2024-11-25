@@ -2,25 +2,27 @@
 <odoo>
     <template id="safety_page_template" name="Safety Page">
         <t t-call="website.layout">
-
             <style>
-    /* Menghilangkan semua pemisah secara default */
-    .breadcrumb-item + .breadcrumb-item:before {
-        content: '';
-    }
-    body {
-    font-family: 'Open Sans', sans-serif;
-}
+                /* Menghilangkan semua pemisah secara default */
+                .breadcrumb-item + .breadcrumb-item:before {
+                    content: '';
+                }
 
+                body {
+                    font-family: 'Open Sans', sans-serif;
+                }
             </style>
+            <!-- Konten Halaman -->
             <div style="background-color: #ece7e1; display: flex; flex-direction: column; min-height: 100vh; font-family: 'Open Sans', sans-serif;">
                 <!-- Memanggil stylesheet terlebih dahulu -->
                 <t t-call="landing_EPA.assets_css"/>
 
+                <!-- Memanggil jumbotron khusus untuk halaman safety -->
                 <t t-call="landing_EPA.jumbotron_safety"/>
 
+                <!-- Memanggil konten body untuk safety -->
                 <t t-call="landing_EPA.safety_body"/>
-                
+
                 <!-- Memanggil javascript -->
                 <t t-call="landing_EPA.assets_js"/>
             </div>

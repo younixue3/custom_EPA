@@ -6,26 +6,32 @@
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,600,700,800&amp;display=swap" rel="stylesheet"/>
 
             <style>
-                /* Menghilangkan semua pemisah secara default */
-                .breadcrumb-item + .breadcrumb-item:before {
-                    content: '';
-                }
                 body {
-    font-family: 'Open Sans', sans-serif !important;
-}
-
+                    font-family: 'Open Sans', sans-serif;
+                    margin: 0;
+                }
+.breadcrumb-item + .breadcrumb-item:before {
+        content: '';
+    }
+            
             </style>
-            <div style="background-color: #ece7e1; display: flex; flex-direction: column; min-height: 100vh; font-family: 'Open Sans', sans-serif;">
+
+            <!-- Konten Utama -->
+            <div style="background-color: #ece7e1; display: flex; flex-direction: column; min-height: 100vh;">
                 <!-- Memanggil stylesheet terlebih dahulu -->
                 <t t-call="landing_EPA.assets_css"/>
 
                 <!-- Memanggil jumbotron -->
                 <t t-call="landing_EPA.jumbotron_about"/>
 
+                <!-- Memanggil konten tentang -->
                 <t t-call="landing_EPA.about_body"/>
+
                 <!-- Memanggil javascript -->
                 <t t-call="landing_EPA.assets_js"/>
             </div>
+
+
         </t>
     </template>
 

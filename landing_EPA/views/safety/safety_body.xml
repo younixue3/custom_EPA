@@ -121,6 +121,7 @@
         </div>
 
         <!-- 5R SEC -->
+
         <div class="container col-11 text-end pl-5 pr-5 mt-4 mb-3">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -0.6em">
@@ -210,7 +211,7 @@
                                     <span style="text-decoration: underline;">02</span>
                                 </h2>
                                 <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
-                                    <strong>RAPIH</strong>
+                                    <strong>RAPI</strong>
                                 </h3>
                             </div>
                         </div>
@@ -258,7 +259,7 @@
                                     <span style="text-decoration: underline;">04</span>
                                 </h2>
                                 <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
-                                    <strong>RAJIN</strong>
+                                    <strong>RAWAT</strong>
                                 </h3>
                             </div>
                         </div>
@@ -282,7 +283,7 @@
                                     <span style="text-decoration: underline;">05</span>
                                 </h2>
                                 <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
-                                    <strong>RAWAT</strong>
+                                    <strong>RAJIN</strong>
                                 </h3>
                             </div>
                         </div>
@@ -301,7 +302,7 @@
         <!-- end -->
 
         <!-- APD SECT -->
-        <div class="container col-11 pl-5 pr-5 mt-4 mb-3" style="; margin: auto;margin-top: 8rem !important;">
+        <div class="container col-11 pl-5 pr-5 mt-4 mb-3" style="; margin: auto;margin-top: 8rem !important;background-image: url('/landing_EPA/static/src/img/safety/bg-5r.png'); background-size: cover; background-position: center;">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; left: -0.6em">
                 APD

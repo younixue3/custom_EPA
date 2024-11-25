@@ -21,7 +21,7 @@
     }
         </style>
         <!-- whoweare -->
-        <div class="container col-12 mb-2 p-0" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 50px;">
+        <div class="container col-12 mb-2" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 30px;">
             <div class="container col-11">
                 <div class="my-4 mb-3 text-left">
                     <span style="font-size: 3rem; font-weight: bold;">
@@ -47,7 +47,7 @@
         </div>
 
         <!-- list -->
-        <div class="container-fluid" style="background-color: #dcd9d1; position: relative; text-align: center; height: 200px; display: flex; justify-content: center; align-items: center;">
+        <div class="container-fluid" style="background-color: #dcd9d1; position: relative; text-align: center; height: 200px; display: flex; justify-content: center; align-items: center; padding: 30px;">
 
             <img src="/landing_EPA/static/src/img/about/hr_about.png" alt="About Image" class="col-12" style="max-width: 95%; height: auto;" />
 
@@ -56,150 +56,140 @@
 
 
         <!-- vision mision -->
-        <div class="container col-11 p-0 mt-4 mb-3">
+        <div class="container col-11 mt-4 mb-3" style="padding: 30px;">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; left: -1em">
                 VISION &amp; MISSION
             </span>
-        </div>
 
-        <div class="container-fluid col-12 p-0 mt-3 mb-4" style="background-color: #ece7e1;">
-            <div class="container col-11 mt-2 mb-4">
-                <div class="row text-center" style="align-items: center;">
+            <div class="row text-center" style="align-items: center;">
 
-                    <!-- Kolom Visi (Kiri) -->
-                    <div class="col-md-4 d-flex flex-column justify-content-between" style="text-align: justify;">
-                        <!-- Bagian Deskripsi di Bawah -->
-                        <div style="margin-top: 240px;">
-                            <span style="font-weight: bold; font-size: 3rem;">VISION</span>
-                            <p>
+                <!-- Kolom Visi (Kiri) -->
+                <div class="col-md-4 d-flex flex-column justify-content-between" style="text-align: justify;">
+                    <!-- Bagian Deskripsi di Bawah -->
+                    <div style="margin-top: 240px;">
+                        <span style="font-weight: bold; font-size: 3rem;">VISION</span>
+                        <p>
                         Sebagai rekan kerja setia bagi pelanggan kami, dalam mewujudkan apapun rencana konstruksinya dan di mana pun wilayah operasionalnya.
-                            </p>
-                        </div>
+                        </p>
                     </div>
+                </div>
 
-                    <!-- Kolom Gambar (Tengah) -->
-                    <div class="col-md-4 d-flex justify-content-center align-items-center">
-                        <img src="/landing_EPA/static/src/img/E.png" alt="Vision Image" style="width: 70%; height: auto;"/>
+                <!-- Kolom Gambar (Tengah) -->
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <img src="/landing_EPA/static/src/img/E.png" alt="Vision Image" style="width: 70%; height: auto;"/>
+                </div>
+
+                <!-- Kolom Misi (Kanan) -->
+                <div class="col-md-4 d-flex flex-column justify-content-between" style="text-align: justify;">
+                    <div>
+                        <span style="font-weight: bold; font-size: 3rem;">MISSION</span>
                     </div>
+                    <div>
+                        <p>Menjadi tim yang bekerja dengan mengutamakan kesehatan, keselamatan kerja, dan lingkungan hidup.</p>
+                        <p>Menjadi tim yang handal dan unggul dalam aspek kualitas, kecepatan, dan biaya.</p>
+                        <p>Senantiasa terbuka terhadap gagasan baru agar segenap insan dalam tim semakin berkembang dan unggul.</p>
+                        <p>Menjadi rekan kerja bagi pelanggan kami yang berorientasi hubungan jangka panjang.</p>
 
-                    <!-- Kolom Misi (Kanan) -->
-                    <div class="col-md-4 d-flex flex-column justify-content-between" style="text-align: justify;">
-                        <div>
-                            <span style="font-weight: bold; font-size: 3rem;">MISSION</span>
-                        </div>
-                        <div>
-                            <p>Menjadi tim yang bekerja dengan mengutamakan kesehatan, keselamatan kerja, dan lingkungan hidup.</p>
-                            <p>Menjadi tim yang handal dan unggul dalam aspek kualitas, kecepatan, dan biaya.</p>
-                            <p>Senantiasa terbuka terhadap gagasan baru agar segenap insan dalam tim semakin berkembang dan unggul.</p>
-                            <p>Menjadi rekan kerja bagi pelanggan kami yang berorientasi hubungan jangka panjang.</p>
-
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
 
 
         <!-- corevalues -->
-        <div class="container-fluid col-12 pt-0" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; padding: 5px;">
-            <div class="container col-11 text-end">
+        <div class="container col-11 pt-0" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; padding: 30px;">
+            <div class="text-end">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; right: -0.6em">
-            CORE VALUES
+                    CORE VALUES
                 </span>
             </div>
-        </div>
 
+            <div class="row mt-4">
+                <!-- Card 1: Integrity -->
+                <div class="col-md-4">
+                    <div class="card" style="border: none; background-color: #ece7e1  !important; border-radius: 0; position: relative; overflow: hidden;">
+                        <!-- Overlay hitam -->
 
-        <div class="container-fluid col-12 mt-2 mb-4" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png');">
-            <div class="container col-11 mb-4">
-                <div class="row">
-                    <!-- Card 1: Integrity -->
-                    <div class="col-md-4">
-                        <div class="card" style="border: none; background-color: #ece7e1  !important; border-radius: 0; position: relative; overflow: hidden;">
-                            <!-- Overlay hitam -->
-
-                            <img t-att-src="'/landing_EPA/static/src/img/about/integrity.jpg'" class="card-img-top" alt="Integrity Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
-                            <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
-                                <h5 class="card-title">Integrity</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
+                        <img t-att-src="'/landing_EPA/static/src/img/about/integrity.jpg'" class="card-img-top" alt="Integrity Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
+                        <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
+                            <h5 class="card-title">Integrity</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 2: Excellence -->
-                    <div class="col-md-4">
-                        <div class="card" style="border: none; background-color: #ece7e1  !important; border-radius: 0; position: relative; overflow: hidden;">
+                <!-- Card 2: Excellence -->
+                <div class="col-md-4">
+                    <div class="card" style="border: none; background-color: #ece7e1  !important; border-radius: 0; position: relative; overflow: hidden;">
 
-                            <img t-att-src="'/landing_EPA/static/src/img/about/excellence.jpg'" class="card-img-top" alt="Excellence Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
-                            <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
-                                <h5 class="card-title">Excellence</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
+                        <img t-att-src="'/landing_EPA/static/src/img/about/excellence.jpg'" class="card-img-top" alt="Excellence Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
+                        <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
+                            <h5 class="card-title">Excellence</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Card 3: Partnership -->
-                    <div class="col-md-4">
-                        <div class="card" style="border: none; background-color: #ece7e1  !important; border-radius: 0; position: relative; overflow: hidden;">
+                <!-- Card 3: Partnership -->
+                <div class="col-md-4">
+                    <div class="card" style="border: none; background-color: #ece7e1  !important; border-radius: 0; position: relative; overflow: hidden;">
 
-                            <img t-att-src="'/landing_EPA/static/src/img/about/partnership.jpg'" class="card-img-top" alt="Partnership Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
-                            <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
-                                <h5 class="card-title">Partnership</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
+                        <img t-att-src="'/landing_EPA/static/src/img/about/partnership.jpg'" class="card-img-top" alt="Partnership Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
+                        <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
+                            <h5 class="card-title">Partnership</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
 
 
         <!-- safety first -->
-        <div class="container col-11 mt-4 mb-3">
+        <div class="container col-11 mt-4 mb-3" style="padding: 30px;">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; left: -1em">
                 SAFETY PROTOCOL
             </span>
-        </div>
 
-        <div class="container-fluid col-12 mt-2 mb-4">
-            <div class="container col-11">                <!-- Menambahkan container di sini -->
-                <div class="row justify-content-center">
-                    <!-- Kartu Safety First -->
-                    <div class="col-md-12">
-                        <div style="position: relative; width: 100%; height: 300px;">
+            <div class="row mt-4 justify-content-center">
+                <!-- Kartu Safety First -->
+                <div class="col-md-12">
+                    <div style="position: relative; width: 100%; height: 300px;">
 
-                            <img t-att-src="'/landing_EPA/static/src/img/about/sp.jpg'" class="card-img-top" alt="Partnership Image" style="width: 100%; height: 300px; object-fit: cover; border-radius: 0; z-index: 2; object-position: 0px -50px;"/>
-                        </div>
-
-
-
-                        <div class="card" style="background-color: #ece7e1  !important; border-radius: 0; border: none;">
-                            <div class="card-body p-0 mt-2" style="background: #ece7e1  !important;">
-                                <span style="font-size: 2.5rem; font-weight: bold;" class="card-title">SAFETY FIRST</span>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a href="/legal_page" style="text-decoration: none; display: inline-flex; align-items: center;">
-                                    <span style="color: #ed781b; font-weight: bold; font-size: 1.5rem;">
-                                        LEARN MORE
-                                    </span>
-                                    <img src="/landing_EPA/static/src/img/icon/big.png" alt="Learn More Icon" style="width: 3%; margin-left: 5px;"/>
-                                </a>
-                            </div>
-                        </div>
-
+                        <img t-att-src="'/landing_EPA/static/src/img/about/sp.jpg'" class="card-img-top" alt="Partnership Image" style="width: 100%; height: 300px; object-fit: cover; border-radius: 0; z-index: 2; object-position: 0px -50px;"/>
                     </div>
+
+
+
+                    <div class="card" style="background-color: #ece7e1  !important; border-radius: 0; border: none;">
+                        <div class="card-body p-0 mt-2" style="background: #ece7e1  !important;">
+                            <span style="font-size: 2.5rem; font-weight: bold;" class="card-title">SAFETY FIRST</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="/safety_page" style="text-decoration: none; display: inline-flex; align-items: center;">
+                                <span style="color: #ed781b; font-weight: bold; font-size: 1.5rem;">
+                                        LEARN MORE
+                                </span>
+                                <img src="/landing_EPA/static/src/img/icon/big.png" alt="Learn More Icon" style="width: 3%; margin-left: 5px;"/>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
+
         <!-- LSK Sec -->
-        <div class="container-fluid col-12 mt-4 mb-3 p-0">
+        <div class="container-fluid col-12 mt-4 mb-3 p-0" style="padding: 0px;">
             <div class="container col-11 text-end ">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; right: -0.6em">
@@ -208,14 +198,15 @@
             </div>
         </div>
 
-        <div class="container-fluid d-flex align-items-center justify-content-center" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; border: none;">
+        <div class="container-fluid mb-2 d-flex align-items-center justify-content-center" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; border: none; padding: 0px;">
             <div class="container col-11 mt-2 mb-4">
                 <div class="row">
                     <!-- Card 1: Legalitas/Sertifikasi/Kualifikasi (Kiri) -->
                     <div class="col-md-6">
                         <div class="card" style="border: none;">
                             <div class="card-body p-0" style="background-color: #ece7e1  !important; border-radius: 0; border: none;">
-                                <span style="font-size: 2.75rem; font-weight: bold;" class="card-title">LEGALITAS/SERTIFIKASI/KUALIFIKASI</span>
+                                <span style="font-size: 2.75rem; font-weight: bold;" class="card-title">LEGALITAS/SERTIFIKASI/<br/>
+                                KUALIFIKASI</span>
                                 <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                                 </p>
@@ -246,7 +237,7 @@
         </div>
 
         <!-- end kolase -->
-        <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;">
+        <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 30px;">
             <div class="container col-11 ">
                 <div class="row">
                     <!-- Kolom Kanan: Gambar -->

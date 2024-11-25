@@ -21,13 +21,13 @@
                 MAKE YOUR <span style="color: #ed781b;">VISION</span> COME TRUE, NOW!
             </h1>
 
-            <a href="#" class="btn" style="background-color: #ed781b; color: white; font-size: 1.5rem; padding: 10px 40px; margin-top: 35px; margin-bottom: 50px; border-radius: 0;" data-toggle="modal" data-target="#contactModal">
+            <a href="#" class="btn" style="background-color: #ed781b; color: white; font-size: 1.5rem; padding: 10px 40px; margin-top: 35px; margin-bottom: 50px; border-radius: 0;" data-toggle="modal" data-target="#contactModalSection">
                 INVITE US
             </a>
 
-            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 90%; max-width: 800px; border-radius: 0;">
-                    <div class="modal-content" style="border-radius: 0; background-color: #ece7e1;">
+            <div class="modal fade" id="contactModalSection" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 90%; max-width: 800px; border-radius: 0; ">
+                    <div class="modal-content" style="border-radius: 0; background-color: #ece7e1; margin-top: 375vh;">
                         <div class="modal-body p-3 d-flex justify-content-center align-items-center" style="min-height: 250px;">                            <!-- Mengurangi padding dan height -->
                             <div class="d-flex flex-column align-items-center" style="gap: 15px;">                                <!-- Mengurangi jarak antar elemen -->
                                 <h1 style="font-size: 2rem; font-weight: bold; margin-top: 0px; margin-bottom: 0;">                                    <!-- Mengurangi ukuran font -->
@@ -68,21 +68,5 @@
 
 
         </div>
-
-        <!-- <script>
-            $(document).ready(function() {
-                $('#contactModal').on('show.bs.modal', function (e) {
-                    $(this).addClass('fade show');
-                });
-                
-                $('#contactModal').on('hide.bs.modal', function (e) {
-                    $(this).removeClass('show').addClass('fade hide');
-                });
-                
-                $('#contactModal').on('hidden.bs.modal', function (e) {
-                    $(this).removeClass('fade hide');
-                });
-            });
-        </script> -->
     </template>
 </odoo>

@@ -39,6 +39,39 @@
             font-size: 2.5rem; /* Ukuran font untuk ponsel kecil */
         }
     }
+
+    /* Modal Basic Styling */
+.modal {
+    position: fixed; /* Menempatkan modal di posisi tetap, tidak terpengaruh scroll */
+    top: 50%; /* Posisi vertikal di tengah */
+    left: 50%; /* Posisi horizontal di tengah */
+    transform: translate(-50%, -50%); /* Menggeser modal agar benar-benar berada di tengah */
+    z-index: 1050; /* Pastikan modal berada di atas konten lainnya */
+    opacity: 0; /* Mulai dengan modal tersembunyi */
+    transition: opacity 0.8s ease-out; /* Transisi untuk memunculkan modal */
+    display: none; /* Modal dimulai dengan tidak terlihat */
+}
+
+.modal.show {
+    opacity: 1; /* Menampilkan modal */
+    display: block; /* Menampilkan modal dengan 'block' saat show */
+}
+
+.modal-dialog {
+    max-width: 800px; /* Maksimal lebar modal */
+    width: 100%; /* Modal akan responsif */
+}
+
+.modal-content {
+    border-radius: 0; /* Tidak ada sudut melengkung */
+    background-color: #ece7e1; /* Warna latar belakang konten modal */
+}
+
+.modal-body {
+    padding: 20px; /* Jarak dalam konten modal */
+    text-align: center; /* Menyusun teks dan elemen lainnya ke tengah */
+}
+
             </style>
             <div class="container-fluid">
                 <a class="navbar-brand" href="/landing_page">
@@ -77,7 +110,7 @@
         <!-- Modal Contact Us -->
         <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 90%; max-width: 800px; border-radius: 0;">
-                <div class="modal-content" style="border-radius: 0; background-color: #ece7e1;">
+                <div class="modal-content" style="border-radius: 0; background-color: #ece7e1;  margin-top: -375vh">
                     <div class="modal-body text-center" style="padding: 20px;">
                         <h1 style="font-size: 2rem; font-weight: bold; margin: 0;">
                     YOUR VISION IS OUR MISSION, <span style="color: #ed781b;">INVITE US!</span>
@@ -111,10 +144,11 @@
             </div>
         </div>
 
+
         <!-- Jumbotron Section -->
         <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 700px; margin-bottom: 0px;">
             <!-- Background Image -->
-            <div style="background-image: url('/landing_EPA/static/src/img/jumbotron.jpeg'); background-size: 105%; background-position: 50% 45%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;">
+            <div style="background-image: url('/landing_EPA/static/src/img/landing/jb-landing.webp'); background-size: 105%; background-position: 50% 45%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;">
             </div>
 
             <!-- Black Layer -->

@@ -168,7 +168,7 @@
 
         </div>
 
-        <nav aria-label="breadcrumb" class="container col-11 pt-4 mb-3" style="padding-left: 20px;">
+        <nav aria-label="breadcrumb" class="container col-11 pt-4 mb-3" style="padding-left: 30px;">
             <ol style="list-style: none; display: flex; padding: 0; margin: 0; justify-content: left;">
                 <li>
                     <a href="/landing_page" style="color: #000;">Home</a>

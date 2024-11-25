@@ -2,39 +2,67 @@
 <odoo>
     <template id="about" name="About Us Section">
         <style>
-        .marquee-container {
-            overflow: hidden; /* Mencegah scrollbar */
-            white-space: nowrap; /* Mencegah pembungkusan baris */
-            position: relative; /* Untuk positioning anak */
+        :root {
+            --marquee-width: 100%; /* Lebar sesuai col-12 */
+            --marquee-height: 150px; /* Tinggi seragam */
+            --marquee-elements-displayed: 5;
+            --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+            --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
         }
+
         .marquee {
-            display: inline-flex; /* Menggunakan inline-flex untuk elemen marquee */
-            animation: marquee 20s linear infinite; /* Durasi animasi */
-        }
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-65%); } /* Bergerak setengah dari lebar marquee */
-        }
-        .logo {
-            margin: 0 100px; /* Jarak antar logo */
+            width: var(--marquee-width);
+            height: var(--marquee-height);
+            overflow: hidden;
+            position: relative;
         }
 
-                                                                                                                        <!-- @media (max-width: 768px) {
-                    .mx-2 {
-                        margin-right: 15px; /* Kurangi margin di layar kecil */
-                    }
+        .marquee-content {
+            list-style: none;
+            display: flex;
+            height: 100%;
+            animation: scrolling var(--marquee-animation-duration) linear infinite;
+            padding: 0;
+            margin: 0;
+        }
 
-                    .marquee img {
-                        max-width: 100px; /* Ukuran gambar lebih kecil di layar kecil */
-                    }
-                } -->
+        @keyframes scrolling {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+            }
+        }
+
+        .marquee-content li {
+            flex-shrink: 0;
+            width: var(--marquee-element-width);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: var(--marquee-height);
+        }
+
+                                                                                                                                                                                <!-- .marquee-content li img {
+            width: 80%; height: auto; max-height: 100px; object-fit: contain; 
+        } -->
+
+
+        .bg-about{
+            height: auto; 
+            background-image: url('/landing_EPA/static/src/img/landing/bg-about.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
         </style>
 
-        <div id="about-us" class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh; background-image: url('/landing_EPA/static/src/img/background/about.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div id="about-us" class="container-fluid pt-5 pb-5 d-flex justify-content-center align-items-center bg-about">
             <div class="row justify-content-center align-items-center text-center w-100">
                 <!-- Bagian kiri: Gambar -->
                 <div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
-                    <img t-att-src="'/landing_EPA/static/src/img/landing/E.png'" class="img-fluid" alt="About Us Image" style="width: 80%; max-width: 300px; height: auto; object-fit: cover; border-radius: 0;" />
+                    <img t-att-src="'/landing_EPA/static/src/img/landing/E.webp'" class="img-fluid" alt="About Us Image" style="width: 80%; max-width: 300px; height: auto; object-fit: cover; border-radius: 0;" />
                 </div>
                 <!-- Bagian kanan: Penjelasan tentang perusahaan -->
                 <div class="col-12 col-md-7 pr-0 pl-5 d-flex flex-column align-items-start justify-content-start">
@@ -62,66 +90,85 @@
         <div class="col-12 mt-4 p-0">
             <div style="border: 5px solid #ece7e1; padding: 0; margin-top: 20px; margin-bottom: 20px;">
                 <h2 style="text-align: center; margin-bottom: 20px; color: #000; font-size: 3rem; font-weight: bold;">OUR CLIENT</h2>
-                <div style="background-color: #ece7e1; padding: 10px 0; overflow: hidden;">
+                <div style="background-color: #dcd9d1; padding: 10px 0; overflow: hidden;">
                     <div class="marquee">
-                        <div class="d-flex" style="white-space: nowrap;">
-                            <!-- Loop untuk 9 logo dalam satu baris -->
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/1.png'" class="img-fluid" alt="Logo 1" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/2.png'" class="img-fluid" alt="Logo 2" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/3.png'" class="img-fluid" alt="Logo 3" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/4.png'" class="img-fluid" alt="Logo 4" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/5.png'" class="img-fluid" alt="Logo 5" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/6.png'" class="img-fluid" alt="Logo 6" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/7.png'" class="img-fluid" alt="Logo 7" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/8.png'" class="img-fluid" alt="Logo 8" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/9.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/10.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/11.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/12.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/13.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/14.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/15.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/16.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                            <div class="mx-2">
-                                <img t-att-src="'/landing_EPA/static/src/img/company/17.png'" class="img-fluid" alt="Logo 9" style="width: 150px; height: 150px; object-fit: contain; margin-right: 200px;" />
-                            </div>
-                        </div>
+                        <ul class="marquee-content">
+                            <!-- Menggunakan elemen li untuk logo -->
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-01.svg'" alt="Logo 1" style="width: 100%; height: auto; max-height: 120px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-02.svg'" alt="Logo 2" style="width: 50%; height: auto; max-height: 100px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-03.svg'" alt="Logo 3" style="width: 100%; height: auto; max-height: 100px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-04.svg'" alt="Logo 4" style="width: 85%; height: auto; max-height: 100px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-05.svg'" alt="Logo 5" style="width: 70%; height: auto; max-height: 100px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-06.svg'" alt="Logo 6" style="width: 85%; height: auto; max-height: 100px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-07.svg'" alt="Logo 7" style="width: 100%; height: auto; max-height: 120px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-08.svg'" alt="Logo 8" style="width: 100%; height: auto; max-height: 130px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-09.svg'" alt="Logo 9" style="width: 85%; height: auto; max-height: 100px; object-fit: contain; "/>
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-10.svg'" alt="Logo 10" style="width: 85%; height: auto; max-height: 100px; object-fit: contain; " />
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-11.svg'" alt="Logo 11" style="width: 70%; height: auto; max-height: 100px; object-fit: contain; " />
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-12.svg'" alt="Logo 12" style="width: 85%; height: auto; max-height: 100px; object-fit: contain; " />
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-13.svg'" alt="Logo 13" style="width: 30%; height: auto; max-height: 100px; object-fit: contain; " />
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-14.svg'" alt="Logo 14" style="width: 75%; height: auto; max-height: 100px; object-fit: contain; " />
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-15.svg'" alt="Logo 15" style="width: 70%; height: auto; max-height: 100px; object-fit: contain; " />
+                            </li>
+                            <li>
+                                <img t-att-src="'/landing_EPA/static/src/img/company/Client-16.svg'" alt="Logo 16" style="width: 85%; height: auto; max-height: 100px; object-fit: contain; " />
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <script>
+            const root = document.documentElement;
+            
+            // Ambil jumlah elemen yang perlu ditampilkan dari variabel CSS
+            const marqueeElementsDisplayed = parseInt(
+                getComputedStyle(root).getPropertyValue("--marquee-elements-displayed")
+            );
+            const marqueeContent = document.querySelector("ul.marquee-content");
+
+            // Tetapkan jumlah total elemen dalam marquee
+            const marqueeElements = marqueeContent.children.length;
+            root.style.setProperty("--marquee-elements", marqueeElements);
+
+            // Duplikasi elemen yang diperlukan untuk membuat marquee seamless
+            for (let i = 0; i &lt; marqueeElementsDisplayed; i++) {
+                if (i &lt; marqueeElements) {
+                    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+                }
+            }
+        </script>
 
 
 

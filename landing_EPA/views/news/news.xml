@@ -3,26 +3,40 @@
     <template id="news_page_template" name="News Page">
         <t t-call="website.layout">
             <style>
-    /* Menghilangkan semua pemisah secara default */
-    .breadcrumb-item + .breadcrumb-item:before {
-        content: '';
-    }
-    body {
-    font-family: 'Open Sans', sans-serif;
-}
+                body {
+                    font-family: 'Open Sans', sans-serif;
+                    margin: 0;
+                }
+                .breadcrumb-item + .breadcrumb-item:before {
+                        content: '';
+                }
+                
             </style>
-            <div style="background-color: #ece7e1; display: flex; flex-direction: column; min-height: 100vh; font-family: 'Open Sans', sans-serif;">
+
+            <!-- Loading Page -->
+            <div id="loader" class="loading-page">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+            <!-- Konten Halaman -->
+            <div id="main-content" style="background-color: #ece7e1; display: flex; flex-direction: column; min-height: 100vh; font-family: 'Open Sans', sans-serif;">
                 <!-- Memanggil stylesheet terlebih dahulu -->
                 <t t-call="landing_EPA.assets_css"/>
 
                 <!-- Memanggil jumbotron -->
                 <t t-call="landing_EPA.jumbotron_news"/>
 
+                <!-- Memanggil konten utama -->
                 <t t-call="landing_EPA.news_body"/>
 
                 <!-- Memanggil javascript -->
                 <t t-call="landing_EPA.assets_js"/>
             </div>
+
+
+
         </t>
     </template>
 

@@ -185,10 +185,17 @@
                                     display: none !important;
                                 }
                             }
+                .bg-testi{
+                    background-image: url('/landing_EPA/static/src/img/landing/bg-testi.png'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    background-repeat: no-repeat; 
+                    padding-bottom: 6rem !important;
+                }
 
         </style>
 
-        <div id="testimonials" class="container-fluid mt-1 mb-1 p-0" style="border: 1px solid #ece7e1; padding: 20px; border-radius: 10px; background-image: url('/landing_EPA/static/src/img/background/testi.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding-bottom: 6rem !important;">
+        <div id="testimonials" class="container-fluid mt-1 mb-1 p-0 bg-testi">
             <div class="row">
                 <!-- Bagian atas: Judul dan Deskripsi dalam satu baris -->
                 <div class="col-12">
