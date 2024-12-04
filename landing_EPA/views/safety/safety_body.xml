@@ -98,7 +98,7 @@
             </div>
         </div>
 
-        <div class="container col-11 pl-5 pr-5 mb-5">
+        <div class="container col-11 pl-5 pr-5">
             <div class="row">
                 <div class="col inner-border pr-5 pt-5 pl-0 pb-5" style="border-left: none; border-top: none; margin-left: 0;">
                     <h4-grid>Awareness</h4-grid>
@@ -121,43 +121,43 @@
         </div>
 
         <!-- 5R SEC -->
-
-        <div class="container col-11 text-end pl-5 pr-5 mt-4 mb-3">
-            <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
-            <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -0.6em">
+        <div class="container-fluid col-12 pt-5 pb-5" style="background-color: #ece7e1">
+            <div class="container col-11 text-end pl-5 pr-5 mt-4 mb-3">
+                <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
+                <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -0.6em">
                 5R
-            </span>
-        </div>
-        <div class="container col-11 pl-5 pr-5 my-4 mb-3">
-            <div class="row">
-                <!-- Kolom kiri: Gambar -->
-                <div class="col-4">
-                    <a href="#sec1">
-                        <img src="/landing_EPA/static/src/img/safety/5R/1.png" alt="5R Cover Image" class="img-fluid" style="width: 47%; height: auto; position: absolute;"/>
-                    </a>
+                </span>
+            </div>
+            <div class="container col-11 pl-5 pr-5 my-4 mb-3">
+                <div class="row">
+                    <!-- Kolom kiri: Gambar -->
+                    <div class="col-4">
+                        <a href="#sec1">
+                            <img src="/landing_EPA/static/src/img/safety/5R/1-1.png" alt="5R Cover Image" class="img-fluid" style="width: 55%;height: auto;position: absolute;"/>
+                        </a>
 
-                    <a href="#sec2">
-                        <img src="/landing_EPA/static/src/img/safety/5R/2.png" alt="5R Cover Image" class="img-fluid" style="width: 17%;height: auto;position: absolute;top: 78px;"/>
-                    </a>
+                        <a href="#sec2">
+                            <img src="/landing_EPA/static/src/img/safety/5R/2-1.png" alt="5R Cover Image" class="img-fluid" style="width: 20%;height: auto;position: absolute;top: 85px;"/>
+                        </a>
 
-                    <a href="#sec3">
-                        <img src="/landing_EPA/static/src/img/safety/5R/3.png" alt="5R Cover Image" class="img-fluid" style="width: 32%;height: auto;position: absolute;top: 138px;left: 86px;z-index: 3;"/>
-                    </a>
+                        <a href="#sec3">
+                            <img src="/landing_EPA/static/src/img/safety/5R/3-1.png" alt="5R Cover Image" class="img-fluid" style="width: 35%;height: auto;position: absolute;top: 152px;left: 96px;z-index: 1;"/>
+                        </a>
 
-                    <img src="/landing_EPA/static/src/img/safety/5R/5R.png" alt="5R Cover Image" class="img-fluid" style="width: 17%;height: auto;position: absolute;top: 216px;left: 85px;z-index: 0;"/>
+                        <img src="/landing_EPA/static/src/img/safety/5R/5r-nb.png" alt="5R Cover Image" class="img-fluid" style="width: 13%;height: auto;position: absolute;top: 250px;left: 110px;z-index: 5;"/>
 
-                    <a href="#sec4">
-                        <img src="/landing_EPA/static/src/img/safety/5R/4.png" alt="5R Cover Image" class="img-fluid" style="width: 23%;height: auto;position: absolute;top: 199px;left: 136px;z-index: 0;"/>
-                    </a>
+                        <a href="#sec4">
+                            <img src="/landing_EPA/static/src/img/safety/5R/4-1.png" alt="5R Cover Image" class="img-fluid" style="width: 26%;height: auto;position: absolute;top: 216px;left: 146px;z-index: 0;"/>
+                        </a>
 
-                    <a href="#sec5">
-                        <img src="/landing_EPA/static/src/img/safety/5R/5.png" alt="5R Cover Image" class="img-fluid" style="width: 33%;height: auto;position: absolute;top: 262px;left: 18px;"/>
-                    </a>
-                </div>
+                        <a href="#sec5">
+                            <img src="/landing_EPA/static/src/img/safety/5R/5-1.png" alt="5R Cover Image" class="img-fluid" style="width: 37%;height: auto;position: absolute;top: 284px;left: 23px;"/>
+                        </a>
+                    </div>
 
-                <!-- Kolom kanan: Dibuat scrollable dan diulang sebanyak 5 kali -->
-                <div class="col-8" style="height: 40vh; overflow-y: auto;">
-                    <style>
+                    <!-- Kolom kanan: Dibuat scrollable dan diulang sebanyak 5 kali -->
+                    <div class="col-8" style="height: 40vh; overflow-y: auto;">
+                        <style>
                         .col-8::-webkit-scrollbar {
                             width: 6px;
                         }
@@ -174,135 +174,137 @@
                         }
                         .content {
                             scroll-snap-align: start; /* Mengatur setiap konten berhenti di awal saat snapping */
+                            margin-bottom: 2rem;
                         }
-                    </style>
-                    <!-- Konten ke-1 -->
-                    <div id="sec1" class="content">
-                        <div class="row" style="min-height: 30vh;">
-                            <div class="col-9 pr-0">
-                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Ringkas Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                        </style>
+                        <!-- Konten ke-1 -->
+                        <div id="sec1" class="content">
+                            <div class="row" style="min-height: 30vh;">
+                                <div class="col-9 pr-0">
+                                    <img src="/landing_EPA/static/src/img/safety/ringkas-1.webp" alt="Ringkas Image" class="img-fluid" style="width: 100%; height: 30vh; "/>
+                                </div>
+                                <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                    <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                        <span style="text-decoration: underline;">01</span>
+                                    </h2>
+                                    <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                        <strong>RINGKAS</strong>
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
-                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
-                                    <span style="text-decoration: underline;">01</span>
-                                </h2>
-                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
-                                    <strong>RINGKAS</strong>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div class="col-11">
-                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                            <div class="row pt-3">
+                                <div class="col-11">
+                                    <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin, ipsum eu convallis vehicula.
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Konten ke-2 -->
-                    <div id="sec2" class="content mt-4 mt-4">
-                        <div class="row" style="min-height: 30vh;">
-                            <div class="col-9 pr-0">
-                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Rapih Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                        <!-- Konten ke-2 -->
+                        <div id="sec2" class="content">
+                            <div class="row" style="min-height: 30vh;">
+                                <div class="col-9 pr-0">
+                                    <img src="/landing_EPA/static/src/img/safety/rapi-1.webp" alt="Rapih Image" class="img-fluid" style="width: 100%; height: 30vh; "/>
+                                </div>
+                                <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                    <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                        <span style="text-decoration: underline;">02</span>
+                                    </h2>
+                                    <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                        <strong>RAPI</strong>
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
-                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
-                                    <span style="text-decoration: underline;">02</span>
-                                </h2>
-                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
-                                    <strong>RAPI</strong>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div class="col-11">
-                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                            <div class="row pt-3">
+                                <div class="col-11">
+                                    <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
                         Duis ac lacus at enim dignissim facilisis ut at justo.
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Konten ke-3 -->
-                    <div id="sec3" class="content mt-4">
-                        <div class="row" style="min-height: 30vh;">
-                            <div class="col-9 pr-0">
-                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Resik Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                        <!-- Konten ke-3 -->
+                        <div id="sec3" class="content">
+                            <div class="row" style="min-height: 30vh;">
+                                <div class="col-9 pr-0">
+                                    <img src="/landing_EPA/static/src/img/safety/resik-1.webp" alt="Resik Image" class="img-fluid" style="width: 100%; height: 30vh;  object-fit: cover; "/>
+                                </div>
+                                <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                    <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                        <span style="text-decoration: underline;">03</span>
+                                    </h2>
+                                    <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                        <strong>RESIK</strong>
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
-                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
-                                    <span style="text-decoration: underline;">03</span>
-                                </h2>
-                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
-                                    <strong>RESIK</strong>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div class="col-11">
-                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                            <div class="row pt-3">
+                                <div class="col-11">
+                                    <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
                         Vivamus luctus dui et neque tincidunt, vitae gravida velit tempor.
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Konten ke-4 -->
-                    <div id="sec4" class="content mt-4">
-                        <div class="row" style="min-height: 30vh;">
-                            <div class="col-9 pr-0">
-                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                        <!-- Konten ke-4 -->
+                        <div id="sec4" class="content">
+                            <div class="row" style="min-height: 30vh;">
+                                <div class="col-9 pr-0">
+                                    <img src="/landing_EPA/static/src/img/safety/rawat-1.webp" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 30vh;  object-fit: cover;"/>
+                                </div>
+                                <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh; ">
+                                    <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                        <span style="text-decoration: underline;">04</span>
+                                    </h2>
+                                    <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                        <strong>RAWAT</strong>
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
-                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
-                                    <span style="text-decoration: underline;">04</span>
-                                </h2>
-                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
-                                    <strong>RAWAT</strong>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div class="col-11">
-                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                            <div class="row pt-3">
+                                <div class="col-11">
+                                    <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
                         Integer sit amet metus a nisi feugiat bibendum.
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Konten ke-5 -->
-                    <div id="sec5" class="content mt-4">
-                        <div class="row" style="min-height: 30vh;">
-                            <div class="col-9 pr-0">
-                                <img src="/landing_EPA/static/src/img/safety/ringkas.jpg" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 30vh;"/>
+                        <!-- Konten ke-5 -->
+                        <div id="sec5" class="content">
+                            <div class="row" style="min-height: 30vh;">
+                                <div class="col-9 pr-0">
+                                    <img src="/landing_EPA/static/src/img/safety/rajin-1.webp" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 30vh; object-fit: cover; object-position: 50% 15%; "/>
+                                </div>
+                                <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh; ">
+                                    <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
+                                        <span style="text-decoration: underline;">05</span>
+                                    </h2>
+                                    <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
+                                        <strong>RAJIN</strong>
+                                    </h3>
+                                </div>
                             </div>
-                            <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
-                                <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
-                                    <span style="text-decoration: underline;">05</span>
-                                </h2>
-                                <h3 style="font-size: 30px; color: #ED781B; margin-top: 0; margin-bottom: 0;">
-                                    <strong>RAJIN</strong>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div class="col-11">
-                                <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
+                            <div class="row pt-3">
+                                <div class="col-11">
+                                    <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
                         Integer sit amet metus a nisi feugiat bibendum.
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
         <!-- end -->
 
         <!-- APD SECT -->
-        <div class="container col-11 pl-5 pr-5 mt-4 mb-3" style="; margin: auto;margin-top: 8rem !important;background-image: url('/landing_EPA/static/src/img/safety/bg-5r.png'); background-size: cover; background-position: center;">
+        <div class="container col-11 pl-5 pr-5 mt-4" style="; margin: auto;margin-top: 5.5rem !important;background-image: url('/landing_EPA/static/src/img/safety/bg-5r.png'); background-size: cover; background-position: center;">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; left: -0.6em">
                 APD
@@ -322,6 +324,7 @@
 
         </div>
 
+        <!-- end kolase -->
         <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;">
             <div class="container col-11 ">
                 <div class="row">
@@ -354,15 +357,16 @@
         </div>
 
 
-        <script> document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+        <script>
+        // Smooth scrolling for anchor links document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-    });
         </script>
     </template>
 

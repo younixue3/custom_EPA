@@ -22,6 +22,7 @@
 
                 <!-- Memanggil konten body untuk safety -->
                 <t t-call="landing_EPA.safety_body"/>
+                <t t-call="landing_EPA.invite_us"/>
 
                 <!-- Memanggil javascript -->
                 <t t-call="landing_EPA.assets_js"/>

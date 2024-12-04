@@ -44,7 +44,7 @@
             height: var(--marquee-height);
         }
 
-                                                                                                                                                                                <!-- .marquee-content li img {
+                                                                                                                                                                                            <!-- .marquee-content li img {
             width: 80%; height: auto; max-height: 100px; object-fit: contain; 
         } -->
 

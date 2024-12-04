@@ -276,21 +276,21 @@
         </div>
 
         <!-- news -->
-        <div class="container-fluid col-12" style="background-color: #dcd9d1;height: auto;padding: 75px;padding-top: 20px;">
-            <div class="container col-11" style="padding: 75px; padding-top: 5px;">
+        <div class="container-fluid col-12" style="background-color: #dcd9d1;height: auto;padding: 75px; padding-top: 20px; padding-bottom: 85px;">
+            <div class="container col-11">
                 <div class="row">
                     <!-- Kolom Kiri: Teks -->
                     <div class="col-md-4">
                         <!-- Bagian Atas -->
                         <div class="mb-4">
-                            <p style="text-align: center;margin-top: 74px;font-family: 'Open Sans', sans-serif;width: 130%;left: -90px;position: absolute;">
+                            <p style="text-align: center;margin-top: 115px;font-family: 'Open Sans', sans-serif;width: 145%;left: -90px;position: absolute;">
                                 <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR </span>
                                 <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">TRENDING NEWS</span>
                             </p>
                         </div>
 
                         <!-- Bagian Bawah -->
-                        <div class="card" style="background-color: #fff;border: none;width: 500px;z-index: 1;top: 200px;right: 60px;border-radius: 0;">
+                        <div class="card" style="background-color: #fff;border: none;width: 500px;z-index: 1;top: 250px;right: 15px;border-radius: 0;">
                             <div class="card-body">
                                 <h2 class="card-title">TRENDING NEWS</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -303,7 +303,7 @@
                     <!-- Kolom Kanan: Gambar -->
                     <div class="col-md-8">
                         <a href="/news_page">
-                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 700px;top: 130px;" />
+                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 750px;top: 200px;" />
                         </a>
                         <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="img-fluid" style="width: 100%; height: auto;"/>
                     </div>

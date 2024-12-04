@@ -87,7 +87,7 @@
                 <t t-call="landing_EPA.testimoni"/>
 
                 <!-- Contact Section -->
-                <t t-call="landing_EPA.contact"/>
+                <t t-call="landing_EPA.invite_us"/>
 
                 <!-- JS -->
                 <t t-call="landing_EPA.assets_js"/>

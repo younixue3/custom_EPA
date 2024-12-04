@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="servis_page_template" name="Services Page">
+    <template id="servis_page_template" name="Service Page">
         <t t-call="website.layout">
 
             <style>

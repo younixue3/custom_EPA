@@ -36,18 +36,9 @@
                 .navbar-nav .nav-item .nav-link:hover {
                     text-decoration: underline; /* Efek hover jika diperlukan */
                 }
-            .fade {
-                transition: opacity 0.5s ease;
-            }
-            .fade.show {
-                opacity: 1;
-            }
-            .fade.hide {
-                opacity: 0;
-            }
         </style>
 
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent; position: absolute; width: 100%; z-index: 10;">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;  width: 100%; z-index: 10;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/landing_page">
                     <img src="/landing_EPA/static/src/img/logo.png" alt="Logo Brand" style="height: 100px; border-radius: 15px;" />
@@ -83,7 +74,7 @@
         </nav>
 
         <!-- Modal Contact Us -->
-        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 90%; max-width: 800px; border-radius: 0;">
                 <div class="modal-content" style="border-radius: 0; background-color: #ece7e1;">
                     <div class="modal-body text-center" style="padding: 20px;">
@@ -121,7 +112,7 @@
 
         <!-- Jumbotron Section -->
         <div class="jumbotron jumbotron-fluid" style="position: relative; padding: 100px 20px; text-align: center; min-height: 800px; margin-bottom: 0px;">
-            <div style="background-image: url('/landing_EPA/static/src/img/services/jb_service.png'); background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 1; z-index: 1; ">
+            <div style="background-image: url('/landing_EPA/static/src/img/services/jumbotron_service.jpg'); background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 1; z-index: 1; ">
                 <!-- background-size: 125%;     background-position: 100% 40%; -->
             </div>
             <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.3); z-index: 2;">
@@ -139,7 +130,7 @@
                     <a href="/landing_page" style="color: #000;">Home</a>
                 </li>
                 <li style="margin: 0 5px;">&gt;</li>
-                <li class="active" aria-current="page" style="color: #ed781b;">Services Page</li>
+                <li class="active" aria-current="page" style="color: #ed781b;">Service Page</li>
             </ol>
         </nav>
     </template>

@@ -10,7 +10,6 @@
                 .breadcrumb-item + .breadcrumb-item:before {
                     content: '';
                 }
-              
             </style>
 
 
@@ -24,13 +23,16 @@
 
                 <!-- Memanggil konten utama -->
                 <t t-call="landing_EPA.legal_body"/>
+                <t t-call="landing_EPA.invite_us"/>
 
                 <!-- Memanggil javascript -->
                 <t t-call="landing_EPA.assets_js"/>
+
             </div>
 
 
         </t>
+
     </template>
 
     <record id="action_legal_page" model="ir.actions.act_url">

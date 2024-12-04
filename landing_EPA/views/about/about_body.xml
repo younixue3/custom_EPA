@@ -77,7 +77,7 @@
 
                 <!-- Kolom Gambar (Tengah) -->
                 <div class="col-md-4 d-flex justify-content-center align-items-center">
-                    <img src="/landing_EPA/static/src/img/E.png" alt="Vision Image" style="width: 70%; height: auto;"/>
+                    <img src="/landing_EPA/static/src/img/about/E.png" alt="Vision Image" style="width: 70%; height: auto;"/>
                 </div>
 
                 <!-- Kolom Misi (Kanan) -->
@@ -239,7 +239,7 @@
         <!-- end kolase -->
         <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 30px;">
             <div class="container col-11 ">
-                <div class="row">
+                <div class="row" style="padding-top: 25px;">
                     <!-- Kolom Kanan: Gambar -->
                     <div class="col-md-8">
                         <img src="/landing_EPA/static/src/img/about/end_about.png" alt="Safety Card" class="img-fluid" style="height: 90%; object-fit: cover;"/>

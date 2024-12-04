@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="invite_us" name="Invite Us Section">
-        <div id="make-vision" class="container-fluid mt-1 mb-1 p-1 text-center custom-bg" style="height: 356px;">
+        <div id="make-vision" class="container-fluid text-center custom-bg" style="height: 356px;">
             <style>
                 .custom-bg {
                     background-image: url('/landing_EPA/static/src/img/services/invite_us.png'); /* Ganti dengan path ke gambar kamu */
@@ -18,7 +18,7 @@
                 INVITE US
             </a>
 
-            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 90%; max-width: 800px; border-radius: 0;">
                     <div class="modal-content" style="border-radius: 10px; background-color: #ece7e1;">
                         <div class="modal-body p-3 d-flex justify-content-center align-items-center" style="min-height: 250px;">                            <!-- Mengurangi padding dan height -->

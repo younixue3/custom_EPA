@@ -32,18 +32,9 @@
             .navbar-nav .nav-item .nav-link:hover {
                 text-decoration: underline; /* Efek hover jika diperlukan */
             }
-            .fade {
-                transition: opacity 0.5s ease;
-            }
-            .fade.show {
-                opacity: 1;
-            }
-            .fade.hide {
-                opacity: 0;
-            }
         </style>
 
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent; position: absolute; width: 100%; z-index: 10;">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;  width: 100%; z-index: 10;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/landing_page">
                     <img src="/landing_EPA/static/src/img/logo.png" alt="Logo Brand" style="height: 100px; border-radius: 15px;" />
@@ -79,7 +70,7 @@
         </nav>
 
         <!-- Modal Contact Us -->
-        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal " id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 90%; max-width: 800px; border-radius: 0;">
                 <div class="modal-content" style="border-radius: 0; background-color: #ece7e1;">
                     <div class="modal-body text-center" style="padding: 20px;">

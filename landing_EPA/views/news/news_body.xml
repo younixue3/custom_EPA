@@ -65,7 +65,7 @@
 
             
         </style>
-        <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/news/bg_news.png'); background-size: 35%; background-position: center; z-index: 1; padding: 30px;">
+        <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/news/bg-news.png'); background-size: 35%; background-position: center; z-index: 1; padding: 30px;">
             <!-- Konten Mulai dari Sini -->
 
             <div class="container-fluid col-11">
@@ -243,8 +243,8 @@
 
         </div>
         <!-- Konten Berakhir di Sini -->
-        <div class="container-fluid col-12 mt-4 mb-4" style="background-color: #dcd9d1;">
-            <div class="container col-11 pt-5 pb-5">
+        <div class="container-fluid col-12 pb-4" style="background-color: #dcd9d1;">
+            <div class="container col-11">
                 <p style="text-align: center; margin-top: 30px; margin-bottom: 0; font-family: 'Open Sans', sans-serif;">
                     <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR </span>
                     <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">CREDIBILITY </span>

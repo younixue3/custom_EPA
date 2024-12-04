@@ -13,13 +13,6 @@
                 
             </style>
 
-            <!-- Loading Page -->
-            <div id="loader" class="loading-page">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
-            </div>
-
             <!-- Konten Halaman -->
             <div id="main-content" style="background-color: #ece7e1; display: flex; flex-direction: column; min-height: 100vh; font-family: 'Open Sans', sans-serif;">
                 <!-- Memanggil stylesheet terlebih dahulu -->
@@ -30,6 +23,7 @@
 
                 <!-- Memanggil konten utama -->
                 <t t-call="landing_EPA.news_body"/>
+                <t t-call="landing_EPA.invite_us"/>
 
                 <!-- Memanggil javascript -->
                 <t t-call="landing_EPA.assets_js"/>
