@@ -3,74 +3,74 @@
     <template id="jumbotron_landing" name="Jumbotron Section">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;  width: 100%; z-index: 10;">
             <style>
-            .navbar-nav .nav-item .nav-link {
-                font-size: 2rem; /* Atur ukuran font lebih kecil */
-                margin-right: 15px; /* Jarak antar elemen nav-item */
-                padding: 5px 10px; /* Padding di dalam tiap elemen */
-            }
+                .navbar-nav .nav-item .nav-link {
+                    font-size: 2rem; /* Atur ukuran font lebih kecil */
+                    margin-right: 15px; /* Jarak antar elemen nav-item */
+                    padding: 5px 10px; /* Padding di dalam tiap elemen */
+                }
 
-            .navbar-nav .nav-item .nav-link:hover {
-                text-decoration: underline; /* Efek hover jika diperlukan */
-            }
- .responsive-title {
-        color: #fff;
-        font-weight: bold;
-        font-size: 7rem; /* Ukuran default untuk layar besar */
-        text-align: center; /* Tambahkan agar lebih rapi di layar kecil */
-    }
+                .navbar-nav .nav-item .nav-link:hover {
+                    text-decoration: underline; /* Efek hover jika diperlukan */
+                }
+                .responsive-title {
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 7rem; /* Ukuran default untuk layar besar */
+                        text-align: center; /* Tambahkan agar lebih rapi di layar kecil */
+                    }
 
-    /* Responsivitas untuk tablet atau layar handphone besar */
-    @media (max-width: 1024px) {
-        .responsive-title {
-            font-size: 5rem; /* Ukuran font lebih kecil untuk tablet */
-        }
-    }
+                    /* Responsivitas untuk tablet atau layar handphone besar */
+                    @media (max-width: 1024px) {
+                        .responsive-title {
+                            font-size: 5rem; /* Ukuran font lebih kecil untuk tablet */
+                        }
+                    }
 
-    /* Responsivitas untuk layar handphone besar (di bawah 768px) */
-    @media (max-width: 768px) {
-        .responsive-title {
-            font-size: 3.5rem; /* Ukuran font lebih kecil untuk handphone besar */
-        }
-    }
+                    /* Responsivitas untuk layar handphone besar (di bawah 768px) */
+                    @media (max-width: 768px) {
+                        .responsive-title {
+                            font-size: 3.5rem; /* Ukuran font lebih kecil untuk handphone besar */
+                        }
+                    }
 
-    /* Responsivitas untuk layar handphone kecil (di bawah 480px) */
-    @media (max-width: 480px) {
-        .responsive-title {
-            font-size: 2.5rem; /* Ukuran font untuk ponsel kecil */
-        }
-    }
+                    /* Responsivitas untuk layar handphone kecil (di bawah 480px) */
+                    @media (max-width: 480px) {
+                        .responsive-title {
+                            font-size: 2.5rem; /* Ukuran font untuk ponsel kecil */
+                        }
+                    }
 
-    /* Modal Basic Styling */
-.modal {
-    position: fixed; /* Menempatkan modal di posisi tetap, tidak terpengaruh scroll */
-    top: 50%; /* Posisi vertikal di tengah */
-    left: 50%; /* Posisi horizontal di tengah */
-    transform: translate(-50%, -50%); /* Menggeser modal agar benar-benar berada di tengah */
-    z-index: 1050; /* Pastikan modal berada di atas konten lainnya */
-    opacity: 0; /* Mulai dengan modal tersembunyi */
-    transition: opacity 0.8s ease-out; /* Transisi untuk memunculkan modal */
-    display: none; /* Modal dimulai dengan tidak terlihat */
-}
+                    /* Modal Basic Styling */
+                .modal {
+                    position: fixed; /* Menempatkan modal di posisi tetap, tidak terpengaruh scroll */
+                    top: 50%; /* Posisi vertikal di tengah */
+                    left: 50%; /* Posisi horizontal di tengah */
+                    transform: translate(-50%, -50%); /* Menggeser modal agar benar-benar berada di tengah */
+                    z-index: 1050; /* Pastikan modal berada di atas konten lainnya */
+                    opacity: 0; /* Mulai dengan modal tersembunyi */
+                    transition: opacity 0.8s ease-out; /* Transisi untuk memunculkan modal */
+                    display: none; /* Modal dimulai dengan tidak terlihat */
+                }
 
-.modal.show {
-    opacity: 1; /* Menampilkan modal */
-    display: block; /* Menampilkan modal dengan 'block' saat show */
-}
+                .modal.show {
+                    opacity: 1; /* Menampilkan modal */
+                    display: block; /* Menampilkan modal dengan 'block' saat show */
+                }
 
-.modal-dialog {
-    max-width: 800px; /* Maksimal lebar modal */
-    width: 100%; /* Modal akan responsif */
-}
+                .modal-dialog {
+                    max-width: 800px; /* Maksimal lebar modal */
+                    width: 100%; /* Modal akan responsif */
+                }
 
-.modal-content {
-    border-radius: 0; /* Tidak ada sudut melengkung */
-    background-color: #ece7e1; /* Warna latar belakang konten modal */
-}
+                .modal-content {
+                    border-radius: 0; /* Tidak ada sudut melengkung */
+                    background-color: #ece7e1; /* Warna latar belakang konten modal */
+                }
 
-.modal-body {
-    padding: 20px; /* Jarak dalam konten modal */
-    text-align: center; /* Menyusun teks dan elemen lainnya ke tengah */
-}
+                .modal-body {
+                    padding: 20px; /* Jarak dalam konten modal */
+                    text-align: center; /* Menyusun teks dan elemen lainnya ke tengah */
+                }
 
             </style>
             <div class="container-fluid">
