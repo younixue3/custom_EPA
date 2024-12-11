@@ -37,6 +37,9 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center; /* Pusatkan vertikal */
             }
 
             .jumbotron-overlay {
@@ -50,38 +53,25 @@
             }
 
             .container-text {
-                display: grid;
-                grid-template-rows: auto auto; /* Baris pertama untuk jumbotron-text, baris kedua untuk news-text */
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                text-align: center;
                 z-index: 2;
-                width: 80%;
-                max-width: 740px;
-                margin: 0 auto;
-                top: 35%;
-                left: 28%;
+                text-align: center;
+                color: #fff;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
             }
 
             .jumbotron-text {
-                color: #fff;
                 font-weight: bold;
                 font-size: 8vw;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-                justify-self: center; /* Pusatkan secara horizontal */
+                margin: 0;
             }
 
             .news-text {
                 font-size: 5vw;
                 color: #ed781b;
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-                margin: 0;
                 font-weight: bold;
-                justify-self: end; /* Posisi horizontal ke kanan */
-                align-self: center; /* Posisi vertikal tetap di tengah grid */
+                margin: 0;
+                text-align: right; /* Rata kanan */
             }
-
 
             /* Breadcrumb */
             nav.breadcrumb-nav {
@@ -137,7 +127,7 @@
         <!-- Jumbotron Section -->
         <div class="jumbotron jumbotron-fluid">
             <div class="jumbotron-overlay"></div>
-            <div class="container container-text">
+            <div class="container-text">
                 <h1 class="jumbotron-text">CONSTRUCTION</h1>
                 <h2 class="news-text">NEWS</h2>
             </div>

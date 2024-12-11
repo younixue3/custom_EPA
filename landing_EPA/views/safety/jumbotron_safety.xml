@@ -26,6 +26,9 @@
 
             /* Jumbotron Styling */
             .jumbotron {
+                display: flex; /* Menggunakan Flexbox */
+                justify-content: center; /* Untuk horizontal center */
+                align-items: center; /* Untuk vertical center */
                 position: relative;
                 padding: 100px 20px;
                 text-align: center;
@@ -63,10 +66,8 @@
                 font-size: calc(5rem + 3vw);
                 text-align: center;
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                position: relative;
                 z-index: 3;
-                position: absolute;
-                top: 40%;
-                left: 15%;
             }
 
             /* Responsive Styling */
@@ -144,8 +145,9 @@
                             <!-- Fill a Form -->
                             <div style="text-align: center;">
                                 <button type="button" class="btn btn-primary" style="background-color: #ed781b; color: white; font-size: 1.2rem; font-weight: bold; padding: 10px 15px; border-radius: 0;" onclick="window.location.href='/form_page';">
-                            Fill in a Form
+                                FILL IN A FORM
                                 </button>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -156,14 +158,14 @@
         <div class="jumbotron">
             <div class="background-image"></div>
             <div class="overlay"></div>
-            <div class="container">
+            <div class="container col-12">
                 <h1 class="jumbotron-text">SAFETY PROTOCOL</h1>
             </div>
         </div>
 
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb" class="container col-11 pt-4 mb-3">
-            <ol style="list-style: none; display: flex; padding: 0; margin: 0; justify-content: left;">
+            <ol style="list-style: none; display: flex; padding-left: 30px; margin: 0; justify-content: left;">
                 <li>
                     <a href="/landing_page" style="color: #000;">Home</a>
                 </li>

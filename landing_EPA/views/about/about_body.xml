@@ -2,23 +2,24 @@
 <odoo>
     <template id="about_body" name="About Body">
         <style>
-        .card-body {
-    background-color: #ece7e1;
-}
 
-    @media (max-width: 576px) {
-        .responsive-img {
-            width: 40%; /* Ukuran untuk perangkat mobile */
-            max-width: none; /* Menghilangkan batasan max-width */
-        }
-    }
+    /* Desktop view: default */
+            .desktop-view-about {
+                display: block !important;
+            }
+            .mobile-view-about {
+                display: none !important;
+            }
 
-    @media (min-width: 577px) {
-        .responsive-img {
-            width: 65%; /* Ukuran untuk perangkat lebih besar */
-            max-width: 300px; /* Batasan max-width */
-        }
-    }
+            /* Mobile and tablet view-about */
+            @media (max-width: 992px) {
+                .desktop-view-about {
+                    display: none !important;
+                }
+                .mobile-view-about {
+                    display: block !important;
+                }
+            }
         </style>
         <!-- whoweare -->
         <div class="container col-12 mb-2" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 30px;">
@@ -237,36 +238,62 @@
         </div>
 
         <!-- end kolase -->
-        <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 30px;">
-            <div class="container col-11 ">
-                <div class="row" style="padding-top: 25px;">
-                    <!-- Kolom Kanan: Gambar -->
-                    <div class="col-md-8">
-                        <img src="/landing_EPA/static/src/img/about/end_about.png" alt="Safety Card" class="img-fluid" style="height: 90%; object-fit: cover;"/>
-                    </div>
-
-                    <!-- Kolom Kiri: Teks -->
-                    <div class="col-md-4">
-                        <!-- Bagian Atas -->
-                        <div class="mb-4">
-                            <p style="text-align: left; margin-top: 30px; font-family: 'Open Sans', sans-serif; position: absolute; width: 115%; right: 10px; top: 45px;">
-                                <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR </span>
-                                <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">LATEST PROJECT</span>
-                                <a href="/servis_page">
-                                    <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; position: absolute; right: 50px; z-index: 1; top: 240px;" alt="Custom Arrow Icon" />
-                                </a>
-                            </p>
+        <div class="desktop-view-about">
+            <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 30px;">
+                <div class="container col-11 ">
+                    <div class="row" style="padding-top: 25px;">
+                        <!-- Kolom Kanan: Gambar -->
+                        <div class="col-md-8">
+                            <img src="/landing_EPA/static/src/img/about/end_about.png" alt="Safety Card" class="img-fluid" style="height: 90%; object-fit: cover;"/>
                         </div>
 
-                        <!-- Bagian Bawah -->
-                        <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 250px; border-radius: 0; padding: 20px;">
-                            <h2 class="card-title">TRINITY AUTO</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <!-- Kolom Kiri: Teks -->
+                        <div class="col-md-4">
+                            <!-- Bagian Atas -->
+                            <div class="mb-4">
+                                <p style="text-align: left; margin-top: 30px; font-family: 'Open Sans', sans-serif; position: absolute; width: 115%; right: 10px; top: 45px;">
+                                    <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR</span>
+                                    <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">LATEST PROJECT</span>
+                                    <a href="/servis_page">
+                                        <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; position: absolute; right: 50px; z-index: 1; top: 240px;" alt="Custom Arrow Icon" />
+                                    </a>
+                                </p>
+                            </div>
+
+                            <!-- Bagian Bawah -->
+                            <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 250px; border-radius: 0; padding: 20px;">
+                                <h2 class="card-title">TRINITY AUTO</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="mobile-view-about">
+            <div class="container-fluid col-12 content d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 30px;">
+                <div class="col-11 mx-auto p-0 m-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-4">
+                                <img src="/landing_EPA/static/src/img/about/end_about.png" alt="Safety Card" class="card-img-top img-fluid" style="object-fit: cover; height: 300px;" />
+                                <div class="card-body text-center">
+                                    <h2 class="card-title">TRINITY AUTO</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;justify-content: flex-start;align-items: center;text-align: center;font-family: 'Open Sans', sans-serif;flex-direction: column;">
+                        <span style="color: black; font-size: 28px; font-weight: 700;">CHECK OUT OUR</span>
+                        <span style="color: #ed781b; font-size: 31px; font-weight: 700; margin-left: 10px;">LATEST PROJECT</span>
+                        <a href="/servis_page" style="margin-left: 10px;">
+                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 4rem; height: auto;" alt="Custom Arrow Icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </template>
 </odoo>

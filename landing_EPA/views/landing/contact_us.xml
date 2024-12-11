@@ -57,6 +57,7 @@
                                         <button type="button" class="btn btn-primary" style="background-color: #ed781b; color: white; font-size: 1.2rem; font-family: 'Open Sans', sans-serif; font-weight: bold; padding: 10px 15px; border-radius: 0;" onclick="window.location.href='/form_page';">
                                             FILL IN A FORM
                                         </button>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>

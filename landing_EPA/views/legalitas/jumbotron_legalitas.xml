@@ -143,8 +143,9 @@
                             <!-- Fill a Form -->
                             <div style="text-align: center;">
                                 <button type="button" class="btn btn-primary" style="background-color: #ed781b; color: white; font-size: 1.2rem; font-weight: bold; padding: 10px 15px; border-radius: 0;" onclick="window.location.href='/form_page';">
-                            Fill in a Form
+                                    FILL IN A FORM
                                 </button>
+                                <p></p>
                             </div>
                         </div>
                     </div>

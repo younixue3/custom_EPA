@@ -101,7 +101,7 @@
                             <a class="nav-link" href="/servis_page">Service</a>
                         </li>
                         <li class="nav-item mr-3">
-                            <a class="nav-link" href="/servis_page">servis</a>
+                            <a class="nav-link" href="/project_page">Project</a>
                         </li>
                         <li class="nav-item mr-3">
                             <a class="nav-link" href="/news_page">News</a>
@@ -144,8 +144,9 @@
                             <!-- Fill a Form -->
                             <div style="text-align: center;">
                                 <button type="button" class="btn btn-primary" style="background-color: #ed781b; color: white; font-size: 1.2rem; font-weight: bold; padding: 10px 15px; border-radius: 0;" onclick="window.location.href='/form_page';">
-                            Fill in a Form
+                                FILL IN A FORM
                                 </button>
+                                <p></p>
                             </div>
                         </div>
                     </div>

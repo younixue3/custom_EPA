@@ -26,6 +26,9 @@
 
             /* Jumbotron Styling */
             .jumbotron {
+                display: flex; /* Menggunakan Flexbox */
+                justify-content: center; /* Untuk horizontal center */
+                align-items: center; /* Untuk vertical center */
                 position: relative;
                 padding: 100px 20px;
                 text-align: center;
@@ -60,13 +63,11 @@
             .jumbotron .jumbotron-text {
                 color: white;
                 font-weight: bold;
-                font-size: calc(8rem + 3vw);
+                font-size: calc(5rem + 3vw);
                 text-align: center;
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                position: relative;
                 z-index: 3;
-                position: absolute;
-                top: 35%;
-                left: 28%;
             }
 
             /* Responsive Styling */

@@ -66,7 +66,23 @@
             .reverse-icon {
                 transform: scaleX(-1); /* Membalik gambar secara horizontal */
             }
+            /* Desktop view: default */
+            .desktop-view {
+                display: block;
+            }
+            .mobile-view {
+                display: none;
+            }
 
+            /* Mobile and tablet view */
+            @media (max-width: 992px) {
+                .desktop-view {
+                    display: none;
+                }
+                .mobile-view {
+                    display: block;
+                }
+            }
             
         </style>
         <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/project/bg_project.png'); background-size: 100%; ">
@@ -276,41 +292,66 @@
         </div>
 
         <!-- news -->
-        <div class="container-fluid col-12" style="background-color: #dcd9d1;height: auto;padding: 75px; padding-top: 20px; padding-bottom: 85px;">
-            <div class="container col-11">
-                <div class="row">
-                    <!-- Kolom Kiri: Teks -->
-                    <div class="col-md-4">
-                        <!-- Bagian Atas -->
-                        <div class="mb-4">
-                            <p style="text-align: center;margin-top: 115px;font-family: 'Open Sans', sans-serif;width: 145%;left: -90px;position: absolute;">
-                                <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR </span>
-                                <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">TRENDING NEWS</span>
-                            </p>
-                        </div>
-
-                        <!-- Bagian Bawah -->
-                        <div class="card" style="background-color: #fff;border: none;width: 500px;z-index: 1;top: 250px;right: 15px;border-radius: 0;">
-                            <div class="card-body">
-                                <h2 class="card-title">TRENDING NEWS</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <div class="desktop-view">
+            <div class="container-fluid col-12" style="background-color: #dcd9d1;height: auto;padding: 75px; padding-top: 20px; padding-bottom: 85px;">
+                <div class="container col-11">
+                    <div class="row">
+                        <!-- Kolom Kiri: Teks -->
+                        <div class="col-md-4">
+                            <!-- Bagian Atas -->
+                            <div class="mb-4">
+                                <p style="text-align: center;margin-top: 115px;font-family: 'Open Sans', sans-serif;width: 145%;left: -90px;position: absolute;">
+                                    <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR</span>
+                                    <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">TRENDING NEWS</span>
+                                </p>
                             </div>
+
+                            <!-- Bagian Bawah -->
+                            <div class="card" style="background-color: #fff;border: none;width: 500px;z-index: 1;top: 250px;right: 15px;border-radius: 0;">
+                                <div class="card-body">
+                                    <h2 class="card-title">TRENDING NEWS</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Kolom Kanan: Gambar -->
+                        <div class="col-md-8">
+                            <a href="/news_page">
+                                <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 750px;top: 200px;" />
+                            </a>
+                            <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="img-fluid" style="width: 100%; height: auto;"/>
                         </div>
 
                     </div>
-
-
-                    <!-- Kolom Kanan: Gambar -->
-                    <div class="col-md-8">
-                        <a href="/news_page">
-                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 750px;top: 200px;" />
-                        </a>
-                        <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="img-fluid" style="width: 100%; height: auto;"/>
-                    </div>
-
                 </div>
             </div>
         </div>
-
+        <div class="mobile-view">
+            <div class="container-fluid col-12 content d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;">
+                <div class="col-11 mx-auto p-0 m-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-4">
+                                <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="card-img-top img-fluid" style="object-fit: cover; height: 300px;" />
+                                <div class="card-body text-center">
+                                    <h2 class="card-title">TRENDING NEWS</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: flex-start; align-items: center; text-align: center; font-family: 'Open Sans', sans-serif; flex-direction: column;">
+                        <span style="color: black; font-size: 28px; font-weight: 700;">CHECK OUT OUR</span>
+                        <span style="color: #ed781b; font-size: 31px; font-weight: 700; margin-left: 10px;">TRENDING NEWS</span>
+                        <a href="/safety_page" style="margin-left: 10px;">
+                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 4rem; height: auto;" alt="Custom Arrow Icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </template>
 </odoo>
