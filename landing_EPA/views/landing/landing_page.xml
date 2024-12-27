@@ -4,71 +4,11 @@
     <template id="landing_page_template" name="Landing Page">
         <t t-call="website.layout">
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,600,700,800&amp;display=swap" rel="stylesheet"/>
-            <style>
-                body {
-                    font-family: 'Open Sans', sans-serif;
-                    margin: 0;
-                    overflow: hidden; /* Hide scroll during loading */
-                }
 
-               /* Loading Page Styles */
-                .loading-page {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(255, 255, 255, 0.9); /* Background semi-transparan */
-                    z-index: 9999; /* Pastikan di atas elemen lain */
-                    display: flex; /* Aktifkan flexbox */
-                    justify-content: center; /* Pusatkan secara horizontal */
-                    align-items: center; /* Pusatkan secara vertikal */
-                    flex-direction: column; /* Atur elemen dalam kolom */
-                }
+            <!-- Memanggil CSS Terpisah -->
+            <link rel="stylesheet" href="/landing_EPA/static/src/css/landing_page.css" />
 
-                .loading-page img {
-                    margin-bottom: 20px; /* Berikan jarak antara gambar dan spinner */
-                }
-                .spinner-border {
-                    width: 3rem;
-                    height: 3rem;
-                    border: 0.4rem solid #ccc;
-                    border-top: 0.4rem solid #007bff;
-                    border-radius: 50%;
-                    animation: spin 1s linear infinite;
-                }
-
-                @keyframes spin {
-                    from {
-                        transform: rotate(0deg);
-                    }
-                    to {
-                        transform: rotate(360deg);
-                    }
-                }
-
-                /* PAGE TRANSITION */
-                #main-content {
-                    opacity: 0;
-                    transform: translateY(100vh);
-                    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-                }
-
-                #main-content.show {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            </style>
-
-            <!-- Loading Page -->
-            <div id="loader" class="loading-page">
-                <img src="/landing_EPA/static/src/img/logo.png" alt="Logo Brand" style="height: 100px; border-radius: 15px;" />
-                <div class="spinner-border text-primary" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
-            </div>
-
-            <div id="main-content" style="background-color: #ece7e1; display: flex; flex-direction: column; min-height: 100vh;">
+            <div style="background-color: #ece7e1; display: flex; flex-direction: column; min-height: 100vh;">
                 <t t-call="landing_EPA.assets_css"/>
 
                 <!-- Navbar -->
@@ -93,19 +33,8 @@
                 <t t-call="landing_EPA.assets_js"/>
             </div>
 
-            <script>
-                // JavaScript to handle loader and page transition
-                document.addEventListener("DOMContentLoaded", function () {
-                    const loader = document.getElementById("loader");
-                    const mainContent = document.getElementById("main-content");
-
-                    // Simulate a delay (adjust or remove in production)
-                    setTimeout(() => {
-                        loader.style.display = "none"; // Hide the loader
-                        mainContent.classList.add("show"); // Show the main content with animation
-                    }, 1000); // Adjust delay as needed
-                });
-            </script>
+            <!-- Memanggil JavaScript Terpisah -->
+            <script src="/landing_EPA/static/src/js/landing_page.js"></script>
         </t>
     </template>
 

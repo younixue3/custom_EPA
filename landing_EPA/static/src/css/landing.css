@@ -1,0 +1,22 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  overflow: hidden; /* Hide scroll during loading */
+}
+.navbar-nav .nav-link {
+  font-weight: bold; /* Membuat teks bold */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
+}
+.jumbotron.jumbotron-image {
+  background-image: url("/landing_EPA/static/src/img/landing/jb-landing.webp");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.jumbotron-image .text-white {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}

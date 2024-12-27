@@ -45,7 +45,7 @@
 
         <!-- enginering -->
         <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/services/bg-eng.png'); background-size: cover; background-position: center;">
-            <div class="col-11 mt-5 mx-auto">
+            <div class="col-11 mt-5 mb-3 mx-auto">
                 <hr style="border: 0px solid #000; width: 100%; margin: 0 auto; opacity: 1;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px;left: -0.5em">
                     01 ENGINEERING
@@ -83,7 +83,7 @@
         <!-- end -->
 
         <div class="container-fluid col-12 mb-5 mt-4">
-            <div class="col-11 mx-auto text-end">
+            <div class="col-11 mb-3 mx-auto text-end">
                 <hr style="border: 0px solid #000; width: 100%; margin: 0 auto; opacity: 1;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -0.5em">
                 02 PROCUREMENT
@@ -144,15 +144,15 @@
         <div class="desktop-view">
             <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;height: 650px; margin-top: 30px;">
                 <div class="col-11 p-5 mt-4">
-                    <div class="row" style="left: 114px; position: relative;">
+                    <div class="row" style="left: 25px; position: relative;">
                         <!-- Kolom Kanan: Gambar -->
                         <div class="col-md-7">
-                            <img src="/landing_EPA/static/src/img/services/end.webp" alt="Safety Card" class="img-fluid" style="height: 95%; object-fit: cover;" />
+                            <img src="/landing_EPA/static/src/img/services/end.webp" alt="Safety Card" class="img-fluid" style="height: 100%; object-fit: cover;" />
                         </div>
 
                         <!-- Kolom Kiri: Teks -->
                         <div class="col-md-4">
-                            <div class="card" style="background-color: #fff; border: none; top: 120px; height: 285px; width: 500px; z-index: 1; right: 245px; border-radius: 0; padding: 20px;">
+                            <div class="card" style="background-color: #fff; border: none; top: 120px; height: 285px; width: 500px; z-index: 1; right: 115px; border-radius: 0; padding: 20px;">
                                 <h2 class="card-title">SAFETY IS NUMBER ONE</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                             </div>

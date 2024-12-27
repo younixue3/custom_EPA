@@ -2,7 +2,6 @@
 <odoo>
     <!-- CSS untuk frontend -->
     <template id="assets_css" name="Landing Page CSS">
-
         <xpath expr="." position="inside">
             <!-- Link CSS Lokal -->
             <link rel="stylesheet" href="/landing_EPA/static/src/css/style.css"/>
@@ -12,7 +11,8 @@
             <link rel="stylesheet" href="/landing_EPA/static/src/fa/css/all.min.css"/>
             <!-- Mengimpor font Open Sans -->
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,600,700,800&amp;display=swap" rel="stylesheet"/>
-
+            <!-- Link Font Awesome CDN -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pOZ8JoFAP60cLrWRhUZNlDxeed+/6mP4XKbE7M5+5z8D8HjiH9+jw5Nl/3hp5UkS2H+MQdXxJ7X7+DZe0U/jFQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         </xpath>
     </template>
 
@@ -27,6 +27,7 @@
             <script type="text/javascript" src="/landing_EPA/static/src/bootstrap/js/bootstrap.bundle.min.js"></script>
             <!-- Link JS Lokal -->
             <script type="text/javascript" src="/landing_EPA/static/src/js/script.js"></script>
+            <script type="text/javascript" src="/landing_EPA/static/src/js/landing_page.js"></script>
         </xpath>
     </template>
 </odoo>

@@ -148,7 +148,7 @@
             }
         </style>
         <!-- Safety First -->
-        <div class="container col-11 pl-5 pr-5 mt-4 mb-3">
+        <div class="container col-11 pl-5 pr-5 mb-3">
             <p style="margin-bottom: 20px; margin-top: 30px;">
                 PT. Energi Perkasa Abadi menekankan bahwa keselamatan kerja adalah hal yang utama. Penerapan keselamatan ini dilakukan melalui 3 cara, yaitu, P5M (Pembicaraan 5 Menit), 5R (Ringkas, Rapi, Resik, Rawat, Rajin), APD (Alat Pelindung Diri)
             </p>
@@ -176,7 +176,7 @@
         </div>
         <div class="mobile-sf">
             <div class="container col-11">
-                <img src="/landing_EPA/static/src/img/safety/safety-no-bg.png" alt="Safety Image" class="img-fluid"/>
+                <img src="/landing_EPA/static/src/img/safety/safety_first2.svg" alt="Safety Image" class="img-fluid"/>
             </div>
         </div>
 
@@ -280,14 +280,14 @@
         </div>
 
         <!-- 5R SEC -->
-        <div class="container col-11 text-end pl-5 pr-5 mt-4 mb-3">
+        <div class="container col-11 text-end pl-5 pr-5 mt-4">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -0.6em">
                 5R
             </span>
         </div>
         <div class="desktop-5r">
-            <div class="container-fluid col-12 pt-5 pb-5" style="background-color: #ece7e1">
+            <div class="container-fluid col-12 pb-5" style="background-color: #ece7e1">
 
                 <div class="container col-11 pl-5 pr-5 my-4 mb-3">
                     <div class="row">
@@ -672,13 +672,13 @@
                                     <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR</span>
                                     <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">EXPERTISE</span>
                                     <a href="/servis_page">
-                                        <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; position: absolute; right: 50px; z-index: 1; top: 240px;" alt="Custom Arrow Icon" />
+                                        <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; position: absolute; right: 12px; z-index: 1; top: 240px;" alt="Custom Arrow Icon" />
                                     </a>
                                 </p>
                             </div>
 
                             <!-- Bagian Bawah -->
-                            <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 250px; border-radius: 0; padding: 20px;">
+                            <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 218px; border-radius: 0; padding: 20px;">
                                 <h2 class="card-title">WORK IN PROCESS</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                             </div>

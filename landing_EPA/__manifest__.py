@@ -1,13 +1,13 @@
 {
     'name': 'Landing Page',
     'version': '1.0',
-    'summary': 'Landing page with jumbotron',
-    'description': 'A simple landing page with a jumbotron.',
+    'summary': 'Landing page EPA',
+    'description': 'custom web for EPA.',
     'category': 'Website',
-    'author': 'Nama Anda',
+    'author': 'Expertri.id',
     'depends': ['website', 'website_blog', 'project'],
     'data': [
-        'views/assets.xml',
+         'views/assets.xml',
         
         # Template untuk landing page
         'views/landing/landing_page.xml',
@@ -61,15 +61,4 @@
     'installable': True,
     'application': False,
     'license': 'LGPL-3',
-    'controllers': [
-        'controllers/about_controller.py',  
-        'controllers/form_controller.py',  
-        'controllers/landing_controller.py',  
-        'controllers/legal_controller.py',  
-        'controllers/news_controller.py',  
-        'controllers/servis_controller.py',  
-    ],
-    'models': [
-        'models/landing_page_model.py',             # Model untuk landing page
-    ],
 }

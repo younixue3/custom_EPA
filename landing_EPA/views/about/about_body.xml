@@ -22,7 +22,7 @@
             }
         </style>
         <!-- whoweare -->
-        <div class="container col-12 mb-2" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 30px;">
+        <div class="container col-12 mb-2" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 30px; padding-top: 0;">
             <div class="container col-11">
                 <div class="my-4 mb-3 text-left">
                     <span style="font-size: 3rem; font-weight: bold;">
