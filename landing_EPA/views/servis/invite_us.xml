@@ -16,7 +16,7 @@
                 .custom-bg h1 {
                     font-size: 4rem;
                     font-weight: bold;
-                    margin-top: 80px;
+                    margin-top: 30px;
                     color: #fff;
                 }
 
@@ -24,22 +24,17 @@
                 .custom-bg .btn {
                     background-color: #ed781b;
                     color: white;
-                    font-size: 1.5rem;
-                    padding: 10px 40px;
+                    font-size: 1.8rem;
+                    padding: 15px 40px;
                     margin-top: 50px;
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
                     border-radius: 0;
+                    font-weight: bold;
                 }
 
                 /* Styling untuk modal */
-                .modal-dialog {
-                    width: 90%;
-                    max-width: 800px;
-                    border-radius: 0;
-                }
-
                 .modal-content {
-                    border-radius: 10px;
+                    border-radius: 0;
                     background-color: #ece7e1;
                 }
 
@@ -49,14 +44,14 @@
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    gap: 15px;
+                    gap: 10px;
                 }
 
                 .modal-body h1 {
                     font-size: 3rem;
                     font-weight: bold;
-                    margin: 0;
                     text-align: center;
+                    margin-bottom: 20px;
                 }
 
                 .modal-body span {
@@ -66,75 +61,76 @@
                 .modal-body .btn-primary {
                     background-color: #ed781b;
                     color: white;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     padding: 10px 15px;
                     border-radius: 0;
                 }
 
-                /* Media Queries */
+                /* Responsiveness */
                 @media (max-width: 768px) {
                     .custom-bg {
                         height: auto;
-                        padding: 20px;
+                        padding: 20px 10px;
                     }
 
                     .custom-bg h1 {
                         font-size: 2.5rem;
-                        margin-top: 40px;
                     }
 
                     .custom-bg .btn {
-                        font-size: 1.2rem;
-                        padding: 8px 30px;
+                        font-size: 1.5rem;
+                        padding: 8px 16px;
                         margin-top: 20px;
-                        margin-bottom: 20px;
                     }
 
                     .modal-body h1 {
-                        font-size: 2.5rem;
-                    }
-
-                    .modal-body img {
-                        width: 50px;
-                        height: 50px;
-                        margin-top: 15px;
+                        font-size: 3rem;
                     }
                 }
 
                 @media (max-width: 576px) {
                     .custom-bg h1 {
-                        font-size: 2rem;
+                        font-size: 1.8rem;
+                        margin-top: 30px;
+                    }
+
+                    .custom-bg .btn {
+                        font-size: 0.9rem;
+                        padding: 6px 12px;
+                    }
+
+                    .modal-body {
+                        gap: 5px;
                     }
 
                     .modal-body h1 {
-                        font-size: 2rem;
-                    }
-
-                    .modal-body img {
-                        width: 40px;
-                        height: 40px;
+                        font-size: 1.2rem;
                     }
 
                     .modal-body .btn-primary {
-                        font-size: 1rem;
+                        font-size: 0.9rem;
                     }
                 }
             </style>
 
             <!-- Konten Utama -->
-            <h1>
-                MAKE YOUR <span style="color: #ed781b;">VISION</span> COME TRUE, NOW!
-            </h1>
-            <a href="#" class="btn" data-toggle="modal" data-target="#contactModal">
-                INVITE US
-            </a>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10">
+                    <h1 style="margin-top: 80px;">
+                        MAKE YOUR <span style="color: #ed781b;">VISION</span> COME TRUE, NOW!
+                    </h1>
+                    <a href="#" class="btn" data-toggle="modal" data-target="#contactModal">
+                        INVITE US
+                    </a>
+                </div>
+            </div>
 
             <!-- Modal -->
             <div class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <h1>
+                            <h1 style="color: #000;">
                                 YOUR VISION IS OUR MISSION, <span>INVITE US!</span>
                             </h1>
                             <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
@@ -143,23 +139,23 @@
                                     <a href="https://wa.me/1234567890" target="_blank">
                                         <img src="/landing_EPA/static/src/img/icon/whatsapp.png" alt="WhatsApp Icon" style="width: 60px; height: 60px;" />
                                     </a>
-                                    <p style="font-family: 'Open Sans', sans-serif; font-weight: bold; margin-top: 5px;">WHATSAPP</p>
+                                    <p style="font-family: 'Open Sans', sans-serif; font-weight: bold; margin-top: 10px;">WHATSAPP</p>
                                 </div>
-                                <span class="mx-2">or</span>
+                                <span class="mx-5 mb-5">or</span>
                                 <!-- Button Icon Email -->
                                 <div class="text-center d-flex flex-column align-items-center mb-3 mb-md-0">
                                     <a href="mailto:example@example.com">
                                         <img src="/landing_EPA/static/src/img/icon/email.png" alt="Email Icon" style="width: 60px; height: 60px;" />
                                     </a>
-                                    <p style="font-family: 'Open Sans', sans-serif; font-weight: bold; margin-top: 5px;">EMAIL</p>
+                                    <p style="font-family: 'Open Sans', sans-serif; font-weight: bold; margin-top: 10px;">EMAIL</p>
                                 </div>
-                                <span class="mx-2">or</span>
+                                <span class="mx-5 mb-5">or</span>
                                 <!-- Button Fill a Form -->
                                 <div class="text-center d-flex flex-column align-items-center">
-                                    <button type="button" class="btn btn-primary" onclick="window.location.href='/form_page';">
+                                    <button type="button" class="btn btn-primary" onclick="window.location.href='/form_page';" style="padding: 15px; font-weight: bold; margin: 0;">
                                         FILL IN A FORM
                                     </button>
-                                    <p></p>
+                                    <p style="font-family: 'Open Sans', sans-serif; font-weight: bold; margin-top: 10px;">&#160;</p>
                                 </div>
                             </div>
                         </div>
