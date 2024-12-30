@@ -142,7 +142,7 @@
 
         <!-- safety protocol -->
         <div class="desktop-view">
-            <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;height: 650px; margin-top: 30px;">
+            <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;height: 650px;">
                 <div class="col-11 p-5 mt-4">
                     <div class="row" style="left: 25px; position: relative;">
                         <!-- Kolom Kanan: Gambar -->
