@@ -293,7 +293,7 @@
 
         <!-- news -->
         <div class="desktop-view">
-            <div class="container-fluid col-12" style="background-color: #dcd9d1;height: auto;padding: 75px; padding-top: 20px; padding-bottom: 85px;">
+            <div class="container-fluid col-12" style="background-color: #dcd9d1;height: auto;padding: 75px; padding-top: 50px; padding-bottom: 110px;">
                 <div class="container col-11">
                     <div class="row">
                         <!-- Kolom Kiri: Teks -->

@@ -155,7 +155,7 @@
 
 
         <!-- safety first -->
-        <div class="container col-11 mt-4 mb-3" style="padding: 30px;">
+        <div class="container col-11 mb-3" style="padding: 30px;">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; left: -1em">
                 SAFETY PROTOCOL
@@ -190,7 +190,7 @@
 
 
         <!-- LSK Sec -->
-        <div class="container-fluid col-12 mt-4 mb-3 p-0" style="padding: 0px;">
+        <div class="container-fluid col-12 mb-3 p-0" style="padding: 0px;">
             <div class="container col-11 text-end ">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 15px; font-weight: 500; right: -0.6em">
@@ -288,7 +288,7 @@
                     <div style="display: flex;justify-content: flex-start;align-items: center;text-align: center;font-family: 'Open Sans', sans-serif;flex-direction: column;">
                         <span style="color: black; font-size: 28px; font-weight: 700;">CHECK OUT OUR</span>
                         <span style="color: #ed781b; font-size: 31px; font-weight: 700; margin-left: 10px;">LATEST PROJECT</span>
-                        <a href="/servis_page" style="margin-left: 10px;">
+                        <a href="/project_page" style="margin-left: 10px;">
                             <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 4rem; height: auto;" alt="Custom Arrow Icon" />
                         </a>
                     </div>

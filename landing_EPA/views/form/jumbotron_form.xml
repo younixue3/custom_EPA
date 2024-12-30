@@ -230,7 +230,7 @@
                     <a href="/landing_page" style="color: #000;">Home</a>
                 </li>
                 <li style="margin: 0 5px;">&gt;</li>
-                <li class="active" aria-current="page" style="color: #ed781b;">Form Page</li>
+                <li class="active" aria-current="page" style="color: #ed781b;">Form</li>
             </ol>
         </nav>
 

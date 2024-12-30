@@ -211,12 +211,12 @@
 
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb" class="container col-11 pt-4 mb-3">
-            <ol style="list-style: none; display: flex; padding-left: 30px; margin: 0; justify-content: left;">
+            <ol style="list-style: none; display: flex; padding-left: 12px; margin: 0; justify-content: left;">
                 <li>
                     <a href="/landing_page" style="color: #000;">Home</a>
                 </li>
                 <li style="margin: 0 5px;">&gt;</li>
-                <li class="active" aria-current="page" style="color: #ed781b;">Legalitas/Sertifikasi/Kualifikasi Page</li>
+                <li class="active" aria-current="page" style="color: #ed781b;">Legalitas/Sertifikasi/Kualifikasi</li>
             </ol>
         </nav>
 
