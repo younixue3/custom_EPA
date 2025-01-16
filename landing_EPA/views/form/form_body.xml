@@ -1,6 +1,27 @@
 <odoo>
     <template id="form_body" name="form body section">
-
+        <style>
+            #name::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
+            #company_name::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
+            #email::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
+            #phone::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
+            #description::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
+        </style>
         <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/form_page/bg_form.png'); background-size: cover; background-position: center;">
 
             <form method="post" action="/form/submit" enctype="multipart/form-data">
@@ -16,7 +37,7 @@
                     </div>
                     <div class="text-justify mb-3">
                         <p style=" margin: auto; font-size: 16px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Kami siap membantu mewujudkan proyek konstruksi Anda dengan layanan yang sesuai dengan kebutuhan. Jenis layanan mana yang sesuai dengan kebutuhan Anda saat ini?
                         </p>
                     </div>
                 </div>
@@ -26,8 +47,8 @@
                                 FOR A PROJECT
                     </button>
                     <button type="button" id="supplyRequestBtn" class="btn" style="background-color: #ed781b; color: white; margin: 10px; padding: 10px 0; width: 250px; white-space: normal; text-align: center; font-weight: bold; font-size: 18px; border-radius: 0;" onclick="toggleButton(this, 'Request Supply Material')">
-                    REQUEST TO SUPPLY <br/>
-                    FOR A MATERIAL
+                        REQUEST TO SUPPLY <br/>
+                        FOR A MATERIAL
                     </button>
                 </div>
                 <input type="hidden" name="lead_title" id="lead_title" value=""/>
@@ -43,19 +64,19 @@
 
                     <div class="text-justify mb-3">
                         <p style=" margin: auto; font-size: 16px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Harap memasukkan nama lengkap dan nama perusahaan Anda. Jika Anda tidak mewakili perusahaan manapun, Anda dapat mengisi kolom dibawah dengan “PRIBADI”
                         </p>
                     </div>
 
                     <div class="row mt-5 justify-content-center mb-5">
                         <div class="col-md-4 col-12 mb-3">
                             <label for="name" style="font-weight: bold;">NAME</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Nama lengkap" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
                         </div>
 
                         <div class="col-md-4 col-12 mb-3">
                             <label for="company_name" style="font-weight: bold;">NAME OF YOUR COMPANY</label>
-                            <input type="text" id="company_name" name="company_name" class="form-control" placeholder="Enter your company name" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" />
+                            <input type="text" id="company_name" name="company_name" class="form-control" placeholder="PT. Nama perusahaan" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" />
                         </div>
                     </div>
                 </div>
@@ -65,25 +86,25 @@
                     <div class="container-fluid col-12 mt-4 mb-1 text-end">
                         <hr style="border-color: #000000; border-width: 1px; width: 100%; margin: 0 auto;"/>
                         <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1;  right: -0.6em">
-                        INFORMATION DETAILS
+                        CONTACTS
                         </span>
                     </div>
 
                     <div class="text-justify mb-3">
                         <p style=" margin: auto; font-size: 16px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Harap memasukkan alamat email dan nomor telepon yang aktif untuk memudahkan perusahaan kami menghubungi Anda, terkait penawaran, dokumen proyek, konsultasi, dan lain sebagainya.
                         </p>
                     </div>
 
                     <div class="row mt-5 justify-content-center mb-5">
                         <div class="col-md-4 col-12 mb-3">
                             <label for="email" style="font-weight: bold;">EMAIL</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
+                            <input type="email" id="email" name="email" class="form-control" placeholder="emailanda@email.com" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
                         </div>
 
                         <div class="col-md-4 col-12 mb-3">
                             <label for="phone" style="font-weight: bold;">PHONE</label>
-                            <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
+                            <input type="text" id="phone" name="phone" class="form-control" placeholder="08xxxxxxxxxxxx" style="background-color: #ece7e1; border-color: #ed781b; border-width: 2px; border-radius: 0;" required="required" />
                         </div>
                     </div>
                 </div>
@@ -99,13 +120,13 @@
 
                     <div class="text-justify mb-3">
                         <p style=" margin: auto; font-size: 16px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Gunakan kolom ini untuk memberikan detail tambahan terkait proyek, seperti spesifikasi khusus, preferensi material, atau informasi penting lainnya. Anda juga dapat mengunggah dokumen pendukung lainnya, seperti gambar desain, blueprint, atau proposal proyek pada tombol “ATTACHMENT” dibawah dengan format PDF/PNG/JPG (maks. ukuran file 5MB).
                         </p>
                     </div>
 
                     <div class="row mt-5 justify-content-center mb-3">
                         <div class="col-12 mb-3">
-                            <textarea id="description" name="description" class="form-control" placeholder="Enter your description" style="height: 250px; border-color: #ed781b; border-width: 2px; border-radius: 0; background-color: #ece7e1;  margin: auto;" required="required"></textarea>
+                            <textarea id="description" name="description" class="form-control" placeholder="Tuliskan detail proyek Anda disini" style="height: 250px; border-color: #ed781b; border-width: 2px; border-radius: 0; background-color: #ece7e1;  margin: auto;" required="required"></textarea>
                         </div>
                     </div>
                 </div>

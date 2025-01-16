@@ -17,9 +17,10 @@
             }
 
             h4-grid {
-                font-size: 24px;
+                font-size: 18px;
+                font-weight: bold;
                 position: relative;
-                padding-left: 5rem;
+                padding-left: 3rem;
             }
 
             h4-grid::before {
@@ -28,15 +29,16 @@
                 left: 0; /* Menempatkan bullet di sisi kiri */
                 top: 50%; /* Menempatkan bullet di tengah vertikal */
                 transform: translateY(-50%); /* Mengatur bullet agar tepat di tengah */
-                width: 3rem; /* Lebar bullet */
-                height: 3rem; /* Tinggi bullet */
+                width: 2rem; /* Lebar bullet */
+                height: 2rem; /* Tinggi bullet */
                 background-color: #ed781b; /* Warna bullet */
                 border-radius: 50%; /* Membuat bullet berbentuk bulat */
             }
             h5-grid {
-                font-size: 24px;
+                font-size: 18px;
+                font-weight: bold;
                 position: relative; /* Untuk positioning pseudo-element */
-                padding-left: 5rem; /* Memberikan ruang untuk bullet */
+                padding-left: 3rem; /* Memberikan ruang untuk bullet */
             }
 
             h5-grid::before {
@@ -45,8 +47,8 @@
                 left: 0; /* Menempatkan bullet di sisi kiri */
                 top: 50%; /* Menempatkan bullet di tengah vertikal */
                 transform: translateY(-50%); /* Mengatur bullet agar tepat di tengah */
-                width: 3rem; /* Lebar bullet */
-                height: 3rem; /* Tinggi bullet */
+                width: 2rem; /* Lebar bullet */
+                height: 2rem; /* Tinggi bullet */
                 background-color: #ed781b; /* Warna bullet */
                 border-radius: 50%; /* Membuat bullet berbentuk bulat */
             }
@@ -149,8 +151,8 @@
         </style>
         <!-- Safety First -->
         <div class="container col-11 pl-5 pr-5 mb-3">
-            <p style="margin-bottom: 20px; margin-top: 30px;">
-                PT. Energi Perkasa Abadi menekankan bahwa keselamatan kerja adalah hal yang utama. Penerapan keselamatan ini dilakukan melalui 3 cara, yaitu, P5M (Pembicaraan 5 Menit), 5R (Ringkas, Rapi, Resik, Rawat, Rajin), APD (Alat Pelindung Diri)
+            <p style="margin-bottom: 20px; margin-top: 30px;text-align: justify;">
+                Keamanan dan keselamatan di lokasi kerja adalah tanggung jawab utama kami. Kami memastikan bahwa setiap pekerja, mitra, dan pengunjung di lokasi proyek kami dilindungi dengan standar keselamatan yang ketat dan sesuai regulasi yang berlaku. Prosedur keamanan yang ketat diterapkan di setiap tahap konstruksi untuk menghindari risiko dan menjaga lingkungan kerja yang aman, yaitu P5M (Pesan, Pembinaan, dan Pengawasan Pelaksanaan Pekerjaan), 5R (Ringkas, Rapi, Resik, Rawat, dan Rajin), dan APD (Alat Pelindung Diri).
             </p>
         </div>
         <div class="desktop-sf">
@@ -189,7 +191,7 @@
 
             <div class="text-justify ">
                 <p style="width: 100%; margin: auto; font-size: 16px;">
-                    P5M adalah Pembicaraan 5 Menit yang berisi Pengarahan tentang Keselamatan dan Kesehatan Kerja (K3) di area kerja. Sebagai upaya untuk melindungi pekerja, kegiatan P5M sangatlah penting dilakukan. Pengulangan kegiatan ini ditunjukan untuk mengulang kembali aspek K3, sehingga tertanam di benak para pekerja. Perlu dipahami, bahwa aspek K3 harus selalu melekat dalam perencanaan maupun pelaksanaan pekerjaan yang sedang dilakukan oleh para pekerja. Adapun manfaat yang didapatkan dari pelaksanaan P5M berikut ini:
+                    P5M (Pesan, Pembinaan, dan Pengawasan Pelaksanaan Pekerjaan) adalah salah satu komponen penting dalam manajemen Keselamatan dan Kesehatan Kerja (K3) pada perusahaan kami. Kegiatan ini dirancang untuk memberikan pengarahan, edukasi, dan pengawasan kepada seluruh pekerja sebelum memulai aktivitas harian di lokasi proyek. P5M menjadi wujud nyata komitmen perusahaan terhadap keselamatan pekerja dan keberlangsungan proyek, kami memastikan semua kegiatan dilakukan dengan standar keamanan tertinggi. Adapun tujuan utama dari P5M:
                 </p>
             </div>
         </div>
@@ -198,21 +200,22 @@
             <div class="container col-11 pl-5 pr-5">
                 <div class="row">
                     <div class="col inner-border pr-5 pt-5 pl-0 pb-5" style="border-left: none; border-top: none; margin-left: 0;">
-                        <h4-grid>Awareness</h4-grid>
-                        <p style="margin-top: 30px;">Para pekerja dapat mengetahui, memahami, dan menaggulangi situasi berbahaya yang dapat terjadi pada pekerjaannya.</p>
+                        <h4-grid>Meningkatkan Kesadaran Penerapan K3
+                        </h4-grid>
+                        <p style="margin-top: 30px;">Dengan membangun dan memelihara tingkat kesadaran yang tinggi terhadap keselamatan dan kesehatan kerja di kalangan pekerja, pekerja akan lebih waspada terhadap risiko dan berperilaku lebih hati-hati saat bekerja.</p>
                     </div>
                     <div class="col inner-border pr-0 pt-5 pl-5 pb-5" style="border-right: none; border-top: none; margin-left: 0;">
-                        <h5-grid>Membuat Prosedur kerja yang baik</h5-grid>
-                        <p style="margin-top: 30px;">SOP atau Standar Operational Prosedur adalah sebuah standar prosedur kerja yang wajib dibuat sebelum melakukan pekerjaan. Hal ini bertujuan agar pekerjaan yang dikerjakan dapat berjalan dengan baik dan terhindar dari situasi yang membahayakan.</p>
+                        <h5-grid>Identifikasi dan Pengendalian Risiko di Lapangan</h5-grid>
+                        <p style="margin-top: 30px;">Setiap proyek konstruksi memiliki karakteristik pekerjaan dan potensi risiko yang berbeda-beda. Melalui P5M, risiko ini diidentifikasi dan langkah-langkah mitigasi diberikan secara spesifik, sesuai dengan kondisi pekerjaan yang berlangsung.</p>
                     </div>
                     <div class="w-100"></div>
                     <div class="col inner-border pr-5 pt-5 pl-0 pb-5" style="border-left: none; border-bottom: none; margin-left: 0;">
-                        <h5-grid>Pemahaman Alat Pelindung Diri</h5-grid>
-                        <p style="margin-top: 30px;">APD atau peralatan safety yang sangat penting bagi pekerja dalam melaksanakan pekerjaannya. Kegiatan P5M ini dapat membantu pekerja mengetahui dan membantu mengingat kembali tentang manfaat penggunaan APD dan cara penggunaannya.</p>
+                        <h5-grid>Mendorong Kepatuhan terhadap Standar dan Regulasi K3</h5-grid>
+                        <p style="margin-top: 30px;">P5M adalah salah satu cara efektif untuk memastikan bahwa pekerja memahami dan mematuhi peraturan K3 yang berlaku, baik peraturan internal perusahaan maupun peraturan pemerintah. Hal ini mencakup penerapan SOP (Standar Operasional Prosedur) dalam setiap proyek yang dikerjakan.</p>
                     </div>
                     <div class="col inner-border pr-0 pt-5 pl-5 pb-5" style="border-right: none; border-bottom: none;">
-                        <h4-grid>Meningkatkan Komunikasi</h4-grid>
-                        <p style="margin-top: 30px;">Kegiatan P5M secara tidak langsung membantu para pekerja Meningkatkan komunikasi dengan pekerja lainnya. tidak menutup kemungkinan, kegiatan ini membutuhkan kita dalam mengutarakan pendapat</p>
+                        <h4-grid>Meningkatkan Komunikasi dan Kolaborasi Tim</h4-grid>
+                        <p style="margin-top: 30px;">Kegiatan P5M bukan hanya sesi pengarahan sepihak, tetapi juga menjadi forum komunikasi antara manajemen, pengawas, dan pekerja. Setiap pekerja dapat mengutarakan pendapat mereka dan semua pihak dapat memiliki pemahaman yang sama terhadap tujuan, metode, dan langkah-langkah keselamatan yang diterapkan.</p>
                     </div>
                 </div>
             </div>
@@ -340,11 +343,11 @@
                             </style>
                             <!-- Konten ke-1 -->
                             <div id="sec1" class="content">
-                                <div class="row" style="min-height: 30vh;">
+                                <div class="row" style="min-height: 25vh;">
                                     <div class="col-9 pr-0">
-                                        <img src="/landing_EPA/static/src/img/safety/ringkas-1.webp" alt="Ringkas Image" class="img-fluid" style="width: 100%; height: 30vh; "/>
+                                        <img src="/landing_EPA/static/src/img/safety/ringkas-1.webp" alt="Ringkas Image" class="img-fluid" style="width: 100%; height: 25vh; "/>
                                     </div>
-                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 25vh;">
                                         <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
                                             <span style="text-decoration: underline;">01</span>
                                         </h2>
@@ -356,7 +359,7 @@
                                 <div class="row pt-3">
                                     <div class="col-11">
                                         <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin, ipsum eu convallis vehicula.
+                                            Perusahaan kami berfokus pada tindakan preventif untuk mengurangi potensi risiko sebelum terjadi. Kami menganalisis, memitigasi, dan membedakan potensi bahaya, serta melibatkan pekerja dalam identifikasi dan pelaporan masalah. Sehingga perusahaan kami memastikan risiko kecelakaan dapat diminimalkan.
                                         </p>
                                     </div>
                                 </div>
@@ -364,11 +367,11 @@
 
                             <!-- Konten ke-2 -->
                             <div id="sec2" class="content">
-                                <div class="row" style="min-height: 30vh;">
+                                <div class="row" style="min-height: 25vh;">
                                     <div class="col-9 pr-0">
-                                        <img src="/landing_EPA/static/src/img/safety/rapi-1.webp" alt="Rapih Image" class="img-fluid" style="width: 100%; height: 30vh; "/>
+                                        <img src="/landing_EPA/static/src/img/safety/rapi-1.webp" alt="Rapih Image" class="img-fluid" style="width: 100%; height: 25vh; "/>
                                     </div>
-                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 25vh;">
                                         <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
                                             <span style="text-decoration: underline;">02</span>
                                         </h2>
@@ -380,7 +383,7 @@
                                 <div class="row pt-3">
                                     <div class="col-11">
                                         <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                                    Duis ac lacus at enim dignissim facilisis ut at justo.
+                                    Perusahaan kami menekankan bahwa setiap alat dan material yang digunakan dalam area kerja ditempatkan pada tempatnya, guna memudahkan pekerja untuk mengaksesnya dengan aman. Tempat kerja yang rapi adalah kunci untuk menghindari kecelakaan. Dengan menata peralatan dan material secara teratur, kami memastikan area kerja selalu bebas dari hal-hal yang dapat menyebabkan cedera atau gangguan. .
                                         </p>
                                     </div>
                                 </div>
@@ -388,11 +391,11 @@
 
                             <!-- Konten ke-3 -->
                             <div id="sec3" class="content">
-                                <div class="row" style="min-height: 30vh;">
+                                <div class="row" style="min-height: 25vh;">
                                     <div class="col-9 pr-0">
-                                        <img src="/landing_EPA/static/src/img/safety/resik-1.webp" alt="Resik Image" class="img-fluid" style="width: 100%; height: 30vh;  object-fit: cover; "/>
+                                        <img src="/landing_EPA/static/src/img/safety/resik-1.webp" alt="Resik Image" class="img-fluid" style="width: 100%; height: 25vh;  object-fit: cover; "/>
                                     </div>
-                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh;">
+                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 25vh;">
                                         <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
                                             <span style="text-decoration: underline;">03</span>
                                         </h2>
@@ -404,7 +407,7 @@
                                 <div class="row pt-3">
                                     <div class="col-11">
                                         <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                                            Vivamus luctus dui et neque tincidunt, vitae gravida velit tempor.
+                                            Kebersihan adalah salah satu bagian terpenting dari keselamatan kerja. Area yang bersih mengurangi risiko bahaya seperti tergelincir, terjatuh, atau terpapar bahan berbahaya. Perusahaan kami secara rutin melakukan pembersihan untuk memastikan lingkungan kerja bebas dari sampah dan kontaminasi yang bisa membahayakan kesehatan.
                                         </p>
                                     </div>
                                 </div>
@@ -412,11 +415,11 @@
 
                             <!-- Konten ke-4 -->
                             <div id="sec4" class="content">
-                                <div class="row" style="min-height: 30vh;">
+                                <div class="row" style="min-height: 25vh;">
                                     <div class="col-9 pr-0">
-                                        <img src="/landing_EPA/static/src/img/safety/rawat-1.webp" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 30vh;  object-fit: cover;"/>
+                                        <img src="/landing_EPA/static/src/img/safety/rawat-1.webp" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 25vh;  object-fit: cover;"/>
                                     </div>
-                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh; ">
+                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 25vh; ">
                                         <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
                                             <span style="text-decoration: underline;">04</span>
                                         </h2>
@@ -428,7 +431,8 @@
                                 <div class="row pt-3">
                                     <div class="col-11">
                                         <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                                            Integer sit amet metus a nisi feugiat bibendum.
+                                            Perusahaan kami memastikan setiap alat kerja diperiksa dan dipastikan dalam kondisi prima sebelum digunakan. Selain itu, kami percaya bahwa pemeliharaan rutin terhadap alat dan fasilitas kerja adalah langkah preventif yang sangat penting. Dengan merawat peralatan secara berkala, kami mengurangi kemungkinan kerusakan yang dapat menyebabkan kecelakaan. 
+
                                         </p>
                                     </div>
                                 </div>
@@ -436,11 +440,11 @@
 
                             <!-- Konten ke-5 -->
                             <div id="sec5" class="content">
-                                <div class="row" style="min-height: 30vh;">
+                                <div class="row" style="min-height: 25vh;">
                                     <div class="col-9 pr-0">
-                                        <img src="/landing_EPA/static/src/img/safety/rajin-1.webp" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 30vh; object-fit: cover; object-position: 50% 15%; "/>
+                                        <img src="/landing_EPA/static/src/img/safety/rajin-1.webp" alt="Rajin Image" class="img-fluid" style="width: 100%; height: 25vh; object-fit: cover; object-position: 50% 15%; "/>
                                     </div>
-                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 30vh; ">
+                                    <div class="col-3 d-flex flex-column justify-content-end" style="height: 25vh; ">
                                         <h2 style="font-size: 80px; color: #ED781B; margin-bottom: 0;">
                                             <span style="text-decoration: underline;">05</span>
                                         </h2>
@@ -452,7 +456,7 @@
                                 <div class="row pt-3">
                                     <div class="col-11">
                                         <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                                            Integer sit amet metus a nisi feugiat bibendum.
+                                            Keselamatan kerja memerlukan kedisiplinan. Semua pekerja pada perusahaan kami diwajibkan untuk mematuhi standar keselamatan yang telah ditetapkan, termasuk penggunaan alat pelindung diri (APD), mengikuti prosedur evakuasi, serta melakukan pemeriksaan rutin terhadap kondisi lingkungan kerja.
                                         </p>
                                     </div>
                                 </div>
@@ -504,7 +508,8 @@
                     <div class="row pt-3">
                         <div class="col-11">
                             <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin, ipsum eu convallis vehicula.
+                    Perusahaan kami berfokus pada tindakan preventif untuk mengurangi potensi risiko sebelum terjadi. Kami menganalisis, memitigasi, dan membedakan potensi bahaya, serta melibatkan pekerja dalam identifikasi dan pelaporan masalah. Sehingga perusahaan kami memastikan risiko kecelakaan dapat diminimalkan.
+
                             </p>
                         </div>
                     </div>
@@ -528,7 +533,7 @@
                     <div class="row pt-3">
                         <div class="col-11">
                             <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                    Duis ac lacus at enim dignissim facilisis ut at justo.
+                    Perusahaan kami menekankan bahwa setiap alat dan material yang digunakan dalam area kerja ditempatkan pada tempatnya, guna memudahkan pekerja untuk mengaksesnya dengan aman. Tempat kerja yang rapi adalah kunci untuk menghindari kecelakaan. Dengan menata peralatan dan material secara teratur, kami memastikan area kerja selalu bebas dari hal-hal yang dapat menyebabkan cedera atau gangguan.
                             </p>
                         </div>
                     </div>
@@ -552,7 +557,7 @@
                     <div class="row pt-3">
                         <div class="col-11">
                             <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                    Vivamus luctus dui et neque tincidunt, vitae gravida velit tempor.
+                    Kebersihan adalah salah satu bagian terpenting dari keselamatan kerja. Area yang bersih mengurangi risiko bahaya seperti tergelincir, terjatuh, atau terpapar bahan berbahaya. Perusahaan kami secara rutin melakukan pembersihan untuk memastikan lingkungan kerja bebas dari sampah dan kontaminasi yang bisa membahayakan kesehatan.
                             </p>
                         </div>
                     </div>
@@ -576,7 +581,7 @@
                     <div class="row pt-3">
                         <div class="col-11">
                             <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                    Integer sit amet metus a nisi feugiat bibendum.
+                    Perusahaan kami memastikan setiap alat kerja diperiksa dan dipastikan dalam kondisi prima sebelum digunakan. Selain itu, kami percaya bahwa pemeliharaan rutin terhadap alat dan fasilitas kerja adalah langkah preventif yang sangat penting. Dengan merawat peralatan secara berkala, kami mengurangi kemungkinan kerusakan yang dapat menyebabkan kecelakaan. 
                             </p>
                         </div>
                     </div>
@@ -600,7 +605,7 @@
                     <div class="row pt-3">
                         <div class="col-11">
                             <p style="font-size: 16px; line-height: 1.5; text-align: justify;">
-                    Integer sit amet metus a nisi feugiat bibendum.
+                    Keselamatan kerja memerlukan kedisiplinan. Semua pekerja pada perusahaan kami diwajibkan untuk mematuhi standar keselamatan yang telah ditetapkan, termasuk penggunaan alat pelindung diri (APD), mengikuti prosedur evakuasi, serta melakukan pemeriksaan rutin terhadap kondisi lingkungan kerja.
                             </p>
                         </div>
                     </div>
@@ -620,7 +625,7 @@
 
                 <div class="text-justify ">
                     <p style="width: 100%; margin: auto; font-size: 16px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet efficitur tortor. Curabitur vitae quam ante. Maecenas aliquet lacinia quam ut molestie. Donec vitae risus euismod, faucibus erat in, pharetra est. Fusce venenatis velit metus, sit amet pharetra augue imperdiet quis. Nulla facilisi. Suspendisse quis lorem consequat, vehicula orci sit amet, placerat risus. Mauris pulvinar tempor magna. Proin interdum commodo arcu, ut convallis leo semper sed. Nulla velit nibh, commodo a lacus id, dapibus vestibulum nibh. Cras pretium metus porta magna fermentum, dictum tincidunt quam ultricies. Duis dictum lacus et quam vehicula condimentum. Sed ullamcorper lacinia felis, vitae tincidunt magna euismod id.
+                    Keamanan pekerja adalah hal yang tidak bisa dinegosiasikan di dunia konstruksi. Salah satu cara terbaik untuk menjaga keselamatan di lapangan adalah dengan memastikan penggunaan Alat Pelindung Diri (APD) yang tepat dan sesuai standar. Perusahaan kami menjadikan penggunaan APD sebagai bagian integral dari budaya keselamatan kerja kami, untuk memastikan bahwa setiap individu yang terlibat dalam proyek kami dapat bekerja dengan aman dan terlindungi.
                     </p>
                 </div>
                 <!-- Section Baru untuk Gambar di Tengah -->
@@ -641,7 +646,7 @@
 
                 <div class="text-justify ">
                     <p style="width: 100%; margin: auto; font-size: 16px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet efficitur tortor. Curabitur vitae quam ante. Maecenas aliquet lacinia quam ut molestie. Donec vitae risus euismod, faucibus erat in, pharetra est. Fusce venenatis velit metus, sit amet pharetra augue imperdiet quis. Nulla facilisi. Suspendisse quis lorem consequat, vehicula orci sit amet, placerat risus. Mauris pulvinar tempor magna. Proin interdum commodo arcu, ut convallis leo semper sed. Nulla velit nibh, commodo a lacus id, dapibus vestibulum nibh. Cras pretium metus porta magna fermentum, dictum tincidunt quam ultricies. Duis dictum lacus et quam vehicula condimentum. Sed ullamcorper lacinia felis, vitae tincidunt magna euismod id.
+                    Keamanan pekerja adalah hal yang tidak bisa dinegosiasikan di dunia konstruksi. Salah satu cara terbaik untuk menjaga keselamatan di lapangan adalah dengan memastikan penggunaan Alat Pelindung Diri (APD) yang tepat dan sesuai standar. Perusahaan kami menjadikan penggunaan APD sebagai bagian integral dari budaya keselamatan kerja kami, untuk memastikan bahwa setiap individu yang terlibat dalam proyek kami dapat bekerja dengan aman dan terlindungi.
                     </p>
                 </div>
                 <!-- Section Baru untuk Gambar di Tengah -->
@@ -680,7 +685,7 @@
                             <!-- Bagian Bawah -->
                             <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 218px; border-radius: 0; padding: 20px;">
                                 <h2 class="card-title">WORK IN PROCESS</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                <p class="card-text">Sesuai dengan visi dan misi yang kami miliki, perusahaan kami menyediakan berbagai layanan konstruksi yang dapat disesuaikan dengan kebutuhan dan keinginan klien. Dengan pengalaman bertahun-tahun dan tim yang terdiri dari profesional berkompeten, kami siap memberikan hasil yang optimal dengan pendekatan yang inovatif, efisien, dan tepat waktu.</p>
                             </div>
                         </div>
                     </div>
@@ -696,7 +701,7 @@
                                 <img src="/landing_EPA/static/src/img/safety/end.png" alt="Safety Card" class="card-img-top img-fluid" style="object-fit: cover; height: 300px;" />
                                 <div class="card-body text-center">
                                     <h2 class="card-title">WORK IN PROCESS</h2>
-                                    <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                    <p class="card-text text-justify">Sesuai dengan visi dan misi yang kami miliki, perusahaan kami menyediakan berbagai layanan konstruksi yang dapat disesuaikan dengan kebutuhan dan keinginan klien. Dengan pengalaman bertahun-tahun dan tim yang terdiri dari profesional berkompeten, kami siap memberikan hasil yang optimal dengan pendekatan yang inovatif, efisien, dan tepat waktu.</p>
                                 </div>
                             </div>
                         </div>

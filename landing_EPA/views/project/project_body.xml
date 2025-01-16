@@ -99,11 +99,7 @@
                     <!-- Kolom Kanan: Deskripsi dengan lebar lebih besar -->
                     <div class="col-md-8">
                         <p class="text-justify" style="font-size: 1.2rem; color: #333;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel 
-                            metus interdum, convallis sapien et, viverra lorem. Sed efficitur massa 
-                            non metus placerat, sed facilisis ligula luctus. Cras vehicula ligula non 
-                            mi eleifend, a varius massa tincidunt. Etiam sit amet nunc at nisi vehicula 
-                            convallis. Donec pharetra auctor libero, ac posuere arcu sodales eget.
+                            Perusahaan kami memiliki pengalaman luas dalam menangani beragam proyek konstruksi yang kompleks dan penuh tantangan. Setiap proyek yang kami tangani adalah bukti dari dedikasi kami terhadap kualitas, ketepatan waktu, dan anggaran yang diberikan. Kami selalu berkomitmen untuk mewujudkan visi klien dengan solusi konstruksi yang inovatif dan efisien, sekaligus mematuhi standar keselamatan kerja dan keberlanjutan yang tinggi.
                         </p>
                     </div>
                 </div>
@@ -300,17 +296,18 @@
                         <div class="col-md-4">
                             <!-- Bagian Atas -->
                             <div class="mb-4">
-                                <p style="text-align: center;margin-top: 115px;font-family: 'Open Sans', sans-serif;width: 145%;left: -90px;position: absolute;">
+                                <p style="text-align: start;margin-top: 115px;font-family: 'Open Sans', sans-serif;width: 125%;left: 0px;position: absolute;">
                                     <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR</span>
-                                    <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">TRENDING NEWS</span>
+
+                                    <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">NEWS</span>
                                 </p>
                             </div>
 
                             <!-- Bagian Bawah -->
                             <div class="card" style="background-color: #fff;border: none;width: 500px;z-index: 1;top: 250px;right: 15px;border-radius: 0;">
                                 <div class="card-body">
-                                    <h2 class="card-title">TRENDING NEWS</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                    <h2 class="card-title">CONSTRUCTIONS NEWS</h2>
+                                    <p class="card-text">Kami percaya bahwa informasi yang transparan adalah kunci dalam membangun hubungan yang baik. Di sini Anda bisa mendapatkan update tentang proyek terkini, inovasi terbaru, dan berita seputar industri konstruksi yang relevan.</p>
                                 </div>
                             </div>
 
@@ -337,15 +334,15 @@
                             <div class="card mb-4">
                                 <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="card-img-top img-fluid" style="object-fit: cover; height: 300px;" />
                                 <div class="card-body text-center">
-                                    <h2 class="card-title">TRENDING NEWS</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                    <h2 class="card-title">CONSTRUCTIONS NEWS</h2>
+                                    <p class="card-text">Kami percaya bahwa informasi yang transparan adalah kunci dalam membangun hubungan yang baik. Di sini Anda bisa mendapatkan update tentang proyek terkini, inovasi terbaru, dan berita seputar industri konstruksi yang relevan.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div style="display: flex; justify-content: flex-start; align-items: center; text-align: center; font-family: 'Open Sans', sans-serif; flex-direction: column;">
                         <span style="color: black; font-size: 28px; font-weight: 700;">CHECK OUT OUR</span>
-                        <span style="color: #ed781b; font-size: 31px; font-weight: 700; margin-left: 10px;">TRENDING NEWS</span>
+                        <span style="color: #ed781b; font-size: 31px; font-weight: 700; margin-left: 10px;">NEWS</span>
                         <a href="/safety_page" style="margin-left: 10px;">
                             <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 4rem; height: auto;" alt="Custom Arrow Icon" />
                         </a>

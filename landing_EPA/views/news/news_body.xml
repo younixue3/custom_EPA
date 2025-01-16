@@ -73,16 +73,16 @@
                     <!-- Bagian atas: Judul dan Deskripsi dalam satu baris -->
                     <div class="col-12">
                         <div class="row align-items-center">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="title-container">
                                     <h1 class="text-left" style="color: #ed781b; font-size: 3rem; font-weight: 700;">TRENDING</h1>
                                     <h1 class="text-left" style="color: #000; font-size: 3rem; font-weight: 700;">NEWS</h1>
                                 </div>
 
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="description text-left">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae lectus vel libero laoreet ultricies.</p>
+                                    <p>Kami percaya bahwa informasi yang transparan adalah kunci dalam membangun hubungan yang baik. Di sini Anda bisa mendapatkan update tentang proyek terkini, inovasi terbaru, dan berita seputar industri konstruksi yang relevan.</p>
                                 </div>
                             </div>
                         </div>
@@ -261,7 +261,8 @@
                     <!-- Grid bawah: Judul dan deskripsi -->
                     <div style="background-color: #ffffff; padding: 20px;">
                         <h2 style="margin: 0;">LEGALITAS/SERTIFIKASI/KUALIFIKASI</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae lectus vel libero laoreet ultricies.</p>
+                        <p>Perusahaan kami telah terdaftar dan memiliki izin usaha yang sah sesuai dengan peraturan yang berlaku. Kami berkomitmen untuk selalu mematuhi standar hukum dan peraturan di setiap tahap proyek yang kami tangani.  Keberadaan kami di industri ini didukung oleh lisensi, sertifikat, dan kualifikasi yang menjamin kualitas serta keamanan dalam setiap pekerjaan.
+                        </p>
                     </div>
                 </div>
             </div>

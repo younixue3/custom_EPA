@@ -24,7 +24,7 @@
         <!-- whoweare -->
         <div class="container col-12 mb-2" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 30px; padding-top: 0;">
             <div class="container col-11">
-                <div class="my-4 mb-3 text-left">
+                <div class="mb-3 text-left">
                     <span style="font-size: 3rem; font-weight: bold;">
                         <span style="color: #000;">WHO</span>
                         <span style="color: #ed781b;"> WE ARE</span>
@@ -33,14 +33,14 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-justify">
-                        PT. ENERGI PERKASA ABADI berdiri sejak tahun 2008 di Samarinda, Kalimantan Timur. 
+                        PT. ENERGI PERKASA ABADI didirikan pada tahun 2008 di Samarinda, Kalimantan Timur dengan tujuan untuk memberikan hasil terbaik dalam aspek konstruksi. Kami menggabungkan keahlian teknis, sumber daya yang handal, dan manajemen proyek yang efisien untuk menghadirkan solusi terbaik bagi klien. Perusahaan kami berkomitmen terhadap kepuasan pelanggan dalam kualitas, ketepatan waktu, dan efisiensi. Profesionalisme kami ditopang oleh nilai yang kami pegang teguh, yaitu <span style="font-style: italic;">Integrity</span> dan <span style="font-style: italic;">Excellence.</span>
                         </p>
-                        <ul style="list-style-type: disc; padding-left: 20px;">
-                            <li>Konstruksi dan desain bangunan komersial, industri, infrastruktur, dan perumahan.</li>
-                            <li>General supply</li>
-                        </ul>
                         <p class="text-justify">
-                        Komitmen kami adalah memastikan kepuasan pelanggan dalam kualitas, ketepatan waktu, dan efisiensi. Profesionalisme kami didukung oleh nilai-nilai yang kami pegang teguh, yaitu integritas dan keunggulan.
+                        adapun 2 aspek utama yang menjadi layanan kami di Energi Perkasa Abadi:
+                            <ul style="list-style-type: disc; padding-left: 20px; font-weight: bold;">
+                                <li>Konstruksi dan desain bangunan komersial, industri, infrastruktur, dan perumahan</li>
+                                <li>General supply</li>
+                            </ul>
                         </p>
                     </div>
                 </div>
@@ -66,9 +66,9 @@
             <div class="row text-center" style="align-items: center;">
 
                 <!-- Kolom Visi (Kiri) -->
-                <div class="col-md-4 d-flex flex-column justify-content-between" style="text-align: justify;">
+                <div class="col-md-4 d-flex flex-column justify-content-between" style="text-align: justify; padding-top: 300px;">
                     <!-- Bagian Deskripsi di Bawah -->
-                    <div style="margin-top: 240px;">
+                    <div>
                         <span style="font-weight: bold; font-size: 3rem;">VISION</span>
                         <p>
                         Sebagai rekan kerja setia bagi pelanggan kami, dalam mewujudkan apapun rencana konstruksinya dan di mana pun wilayah operasionalnya.
@@ -82,7 +82,7 @@
                 </div>
 
                 <!-- Kolom Misi (Kanan) -->
-                <div class="col-md-4 d-flex flex-column justify-content-between" style="text-align: justify;">
+                <div class="col-md-4 d-flex flex-column justify-content-between" style="text-align: justify;     padding-bottom: 150px;">
                     <div>
                         <span style="font-weight: bold; font-size: 3rem;">MISSION</span>
                     </div>
@@ -118,8 +118,8 @@
 
                         <img t-att-src="'/landing_EPA/static/src/img/about/integrity.jpg'" class="card-img-top" alt="Integrity Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
                         <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
-                            <h5 class="card-title">Integrity</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h5 class="card-title" style="font-size: 2.5rem;">INTEGRITY</h5>
+                            <p class="card-text" style="text-align: justify;">Kami menjunjung tinggi integritas dalam segala hal yang kami lakukan. Setiap keputusan yang diambil, baik dalam hal manajemen proyek, sumber daya, maupun hubungan dengan klien, selalu berlandaskan pada prinsip transparansi dan kejujuran. Kami berkomitmen untuk bertanggung jawab atas setiap aspek proyek yang kami kerjakan.</p>
                         </div>
                     </div>
                 </div>
@@ -130,8 +130,8 @@
 
                         <img t-att-src="'/landing_EPA/static/src/img/about/excellence.jpg'" class="card-img-top" alt="Excellence Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
                         <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
-                            <h5 class="card-title">Excellence</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h5 class="card-title" style="font-size: 2.5rem;">EXCELLENCE</h5>
+                            <p class="card-text" style="text-align: justify;">Kami selalu berusaha untuk memberikan yang terbaik dalam setiap aspek pekerjaan kami. Dari perencanaan hingga implementasi, kami mengutamakan kualitas dan ketepatan waktu. Dengan menggabungkan teknologi terbaru, pengalaman, dan inovasi, kami memastikan setiap proyek yang kami kerjakan memiliki standar keunggulan terbaik.</p>
                         </div>
                     </div>
                 </div>
@@ -142,8 +142,8 @@
 
                         <img t-att-src="'/landing_EPA/static/src/img/about/partnership.jpg'" class="card-img-top" alt="Partnership Image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 0; position: relative; z-index: 0;"/>
                         <div class="card-body pt-3 p-0" style="background-color: #ece7e1  !important;">
-                            <h5 class="card-title">Partnership</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h5 class="card-title" style="font-size: 2.5rem;">PARTNERSHIP</h5>
+                            <p class="card-text" style="text-align: justify;">Kami percaya bahwa kerja sama yang baik dengan mitra strategis adalah kunci untuk menyelesaikan proyek-proyek besar dengan sukses. Kami berkomitmen untuk membangun hubungan jangka panjang dengan mitra bisnis yang berbagi visi dan misi yang sama. Bersama-sama, kita dapat menciptakan inovasi dan mencapai hasil yang lebih unggul</p>
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                     <div class="card" style="background-color: #ece7e1  !important; border-radius: 0; border: none;">
                         <div class="card-body p-0 mt-2" style="background: #ece7e1  !important;">
                             <span style="font-size: 2.5rem; font-weight: bold;" class="card-title">SAFETY FIRST</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="card-text">Keamanan dan keselamatan di lokasi kerja adalah tanggung jawab utama kami. Kami memastikan bahwa setiap pekerja, mitra, dan pengunjung di lokasi proyek kami dilindungi dengan standar keselamatan yang ketat dan sesuai dengan regulasi yang berlaku. Prosedur keamanan yang ketat diterapkan di setiap tahap konstruksi untuk menghindari risiko dan menjaga lingkungan kerja yang aman.</p>
                             <a href="/safety_page" style="text-decoration: none; display: inline-flex; align-items: center;">
                                 <span style="color: #ed781b; font-weight: bold; font-size: 1.5rem;">
                                         LEARN MORE
@@ -209,14 +209,14 @@
                                 <span style="font-size: 2.75rem; font-weight: bold;" class="card-title">LEGALITAS/SERTIFIKASI/<br/>
                                 KUALIFIKASI</span>
                                 <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                                    Perusahaan kami telah terdaftar dan memiliki izin usaha yang sah sesuai dengan peraturan yang berlaku. Kamiberkomitmen untuk selalu mematuhi standar hukum dan peraturan di setiap tahap proyek yang kami tangani.
                                 </p>
                                 <p class="card-text">
-                            Nulla facilisi. Praesent euismod elit a lacus malesuada aliquet. Proin mollis ligula sit amet erat tincidunt, at aliquet arcu gravida.
+                                    Keberadaan kami di industri ini didukung oleh lisensi, sertifikat, dan kualifikasi yang menjamin kualitas serta keamanan dalam setiap pekerjaan.
                                 </p>
                                 <a href="/legal_page" style="text-decoration: none; display: inline-flex; align-items: center;">
                                     <span style="color: #ed781b; font-weight: bold; font-size: 1.5rem;">
-                                LEARN MORE
+                                        LEARN MORE
                                     </span>
                                     <img src="/landing_EPA/static/src/img/icon/big.png" alt="Learn More Icon" style="width: 2.5rem; height: auto; margin-left: 5px;"/>
                                 </a>
@@ -262,8 +262,8 @@
 
                             <!-- Bagian Bawah -->
                             <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 250px; border-radius: 0; padding: 20px;">
-                                <h2 class="card-title">TRINITY AUTO</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                <h2 class="card-title">MESS TRINITY AUTO</h2>
+                                <p class="card-text">Proyek Pembangunan mess karyawan yang kami tangani dirancang dengan memperhatikan berbagai aspek penting, mulai dari kenyamanan, fungsionalitas, hingga efisiensi anggaran. Kami memahami bahwa mess karyawan bukan hanya sekedar tempat tinggal sementara, tetapi juga merupakan ruang yang mendukung kualitas hidup dan kinerja para karyawan.</p>
                             </div>
                         </div>
                     </div>
@@ -279,8 +279,8 @@
                             <div class="card mb-4">
                                 <img src="/landing_EPA/static/src/img/about/end_about.png" alt="Safety Card" class="card-img-top img-fluid" style="object-fit: cover; height: 300px;" />
                                 <div class="card-body text-center">
-                                    <h2 class="card-title">TRINITY AUTO</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                    <h2 class="card-title">MESS TRINITY AUTO</h2>
+                                    <p class="card-text">Proyek Pembangunan mess karyawan yang kami tangani dirancang dengan memperhatikan berbagai aspek penting, mulai dari kenyamanan, fungsionalitas, hingga efisiensi anggaran. Kami memahami bahwa mess karyawan bukan hanya sekedar tempat tinggal sementara, tetapi juga merupakan ruang yang mendukung kualitas hidup dan kinerja para karyawan.</p>
                                 </div>
                             </div>
                         </div>
