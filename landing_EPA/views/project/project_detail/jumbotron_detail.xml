@@ -2,34 +2,34 @@
     <template id="jumbotron_detail" name="">
         <t t-call="website.layout">
             <style>
-                /* Pastikan CSS body ditulis di sini */
-                body {
-                    background-color: #ece7e1 !important;
-                }
-                
-                .jumbotron-text {
-                    color: #fff;
-                    font-weight: 700; /* Mengubah font-weight menjadi 700 */
-                    font-size: 6vw;
-                    text-align: left;
-                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-                    font-family: 'Open Sans', sans-serif;
-                }
-
-                @media (max-width: 768px) {
-                    .jumbotron-text {
-                        font-size: 8vw;
+                    /* Pastikan CSS body ditulis di sini */
+                    body {
+                        background-color: #ece7e1 !important;
                     }
-                }
-
-                @media (max-width: 576px) {
+                    
                     .jumbotron-text {
-                        font-size: 10vw;
+                        color: #fff;
+                        font-weight: 700; /* Mengubah font-weight menjadi 700 */
+                        font-size: 6vw;
+                        text-align: left;
+                        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                        font-family: 'Open Sans', sans-serif;
                     }
-                }
-                h4 {
-                    color: #ed781b;
-                }
+
+                    @media (max-width: 768px) {
+                        .jumbotron-text {
+                            font-size: 8vw;
+                        }
+                    }
+
+                    @media (max-width: 576px) {
+                        .jumbotron-text {
+                            font-size: 10vw;
+                        }
+                    }
+                    h4 {
+                        color: #ed781b;
+                    }
             </style>
             <t t-call="landing_EPA.assets_css"/>
             <!-- Jumbotron Section -->
@@ -98,7 +98,7 @@
                         <h4 style="font-weight: 500;">Project Size</h4>
                         <p>
                             <t t-esc="size" />
-                        sq</p>
+                            sq</p>
                     </div>
                     <div class="col" style="padding: 20px;">
                         <h4 style="font-weight: 500;">Tahun</h4>
@@ -182,13 +182,12 @@
             <div class="container-fluid d-flex align-items-center mt-5 mb-5" style="background-color: #dcd9d1; height: auto;">
                 <div class="container mt-5 mb-5">
                     <h1 style="font-size: 3rem; font-weight: bold; text-align: center;">
-            WHAT THEY SAY <span style="color: #ed781b;">ABOUT THIS PROJECT</span>
+                WHAT THEY SAY <span style="color: #ed781b;">ABOUT THIS PROJECT</span>
                     </h1>
 
                     <div class="p-4 mt-4" style="background-color: #fff; border: 2px solid #ddd; border-radius: 0; position: relative;">
                         <!-- Tanda petik besar di ujung atas -->
-                        <span style="position: absolute; top: 0; left: 40px; font-size: 5rem; color: #000;">
-        “
+                        <span style="position: absolute; top: 0; left: 40px; font-size: 5rem; color: #000;">“
                         </span>
 
                         <p style="font-size: 1.2rem; color: #000; text-align: center; padding: 40px; padding-bottom: 20px;">
@@ -200,8 +199,7 @@
                         </p>
 
                         <!-- Tanda petik di pojok kanan bawah -->
-                        <span style="position: absolute; bottom: -40px; right: 40px; font-size: 5rem; color: #000;">
-        ”
+                        <span style="position: absolute; bottom: -40px; right: 40px; font-size: 5rem; color: #000;">”
                         </span>
                     </div>
 

@@ -79,22 +79,19 @@
 
                         <!-- Card 1 -->
                         <div class="custom-col col-md-6 mb-3 pl-0 pr-1">
-                            <div class="card text-left w-100" style="height: 300px; border-radius: 0; overflow: hidden;">
+                            <div class="card text-left w-100" style="height: 500px; border-radius: 0; overflow: hidden;">
                                 <div class="position-relative" style="height: 100%;">
                                     <span style="position: absolute; top: 10px; left: 10px; color: #dcd9d1; font-size: 2rem; font-weight: bold; text-decoration: underline; z-index: 10;">
                                 01
                                     </span>
-                                    <img src="/landing_EPA/static/src/img/landing/proc.webp" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+                                    <img src="/landing_EPA/static/src/img/landing/WORKSHOP.png" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
                                 </div>
                                 <div class="card-overlay">
                                     <div class="d-flex align-items-center justify-content-between" style="width: 100%;">
-                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left;">
-                                    LOREM <br />
- IPSUM 1
+                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left; font-size: 30px;">
+                                    WORKSHOP
                                         </h5>
-                                        <a href="#">
-                                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 3rem; height: auto; margin-left: 10px;" alt="arrow" />
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -102,22 +99,19 @@
 
                         <!-- Card 2 -->
                         <div class="custom-col col-md-6 mb-3 pl-1 pr-1">
-                            <div class="card text-left w-100" style="height: 300px; border-radius: 0; overflow: hidden;">
+                            <div class="card text-left w-100" style="height: 500px; border-radius: 0; overflow: hidden;">
                                 <div class="position-relative" style="height: 100%;">
                                     <span style="position: absolute; top: 10px; left: 10px; color: #dcd9d1; font-size: 2rem; font-weight: bold; text-decoration: underline; z-index: 10;">
                                 02
                                     </span>
-                                    <img src="/landing_EPA/static/src/img/landing/proc.webp" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+                                    <img src="/landing_EPA/static/src/img/landing/SITE2.png" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
                                 </div>
                                 <div class="card-overlay">
                                     <div class="d-flex align-items-center justify-content-between" style="width: 100%;">
-                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left;">
-                                    LOREM <br />
- IPSUM 2
+                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left; font-size: 30px;">
+                                    SITE AREA
                                         </h5>
-                                        <a href="#">
-                                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 3rem; height: auto; margin-left: 10px;" alt="arrow" />
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -125,22 +119,19 @@
 
                         <!-- Card 3 -->
                         <div class="custom-col col-md-6 mb-3 pl-1 pr-1">
-                            <div class="card text-left w-100" style="height: 300px; border-radius: 0; overflow: hidden;">
+                            <div class="card text-left w-100" style="height: 500px; border-radius: 0; overflow: hidden;">
                                 <div class="position-relative" style="height: 100%;">
                                     <span style="position: absolute; top: 10px; left: 10px; color: #dcd9d1; font-size: 2rem; font-weight: bold; text-decoration: underline; z-index: 10;">
                                 03
                                     </span>
-                                    <img src="/landing_EPA/static/src/img/landing/proc.webp" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+                                    <img src="/landing_EPA/static/src/img/landing/WAREHOUSE.png" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
                                 </div>
                                 <div class="card-overlay">
                                     <div class="d-flex align-items-center justify-content-between" style="width: 100%;">
-                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left;">
-                                    LOREM <br />
- IPSUM 3
+                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left; font-size: 30px;">
+                                    WAREHOUSE
                                         </h5>
-                                        <a href="#">
-                                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 3rem; height: auto; margin-left: 10px;" alt="arrow" />
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -148,22 +139,19 @@
 
                         <!-- Card 4 -->
                         <div class="custom-col col-md-6 mb-3 pl-1 pr-1">
-                            <div class="card text-left w-100" style="height: 300px; border-radius: 0; overflow: hidden;">
+                            <div class="card text-left w-100" style="height: 500px; border-radius: 0; overflow: hidden;">
                                 <div class="position-relative" style="height: 100%;">
                                     <span style="position: absolute; top: 10px; left: 10px; color: #dcd9d1; font-size: 2rem; font-weight: bold; text-decoration: underline; z-index: 10;">
-                                04
+                                        04
                                     </span>
-                                    <img src="/landing_EPA/static/src/img/landing/proc.webp" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+                                    <img src="/landing_EPA/static/src/img/landing/OFFICE.png" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
                                 </div>
                                 <div class="card-overlay">
                                     <div class="d-flex align-items-center justify-content-between" style="width: 100%;">
-                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left;">
-                                    LOREM <br />
- IPSUM 4
+                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left; font-size: 30px;">
+                                            OFFICE
                                         </h5>
-                                        <a href="#">
-                                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 3rem; height: auto; margin-left: 10px;" alt="arrow" />
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -171,22 +159,19 @@
 
                         <!-- Card 5 -->
                         <div class="custom-col col-md-6 mb-3 pl-1 pr-0">
-                            <div class="card text-left w-100" style="height: 300px; border-radius: 0; overflow: hidden;">
+                            <div class="card text-left w-100" style="height: 500px; border-radius: 0; overflow: hidden;">
                                 <div class="position-relative" style="height: 100%;">
                                     <span style="position: absolute; top: 10px; left: 10px; color: #dcd9d1; font-size: 2rem; font-weight: bold; text-decoration: underline; z-index: 10;">
-                                05
+                                        05
                                     </span>
-                                    <img src="/landing_EPA/static/src/img/landing/proc.webp" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
+                                    <img src="/landing_EPA/static/src/img/landing/MESS.png" class="card-img-top" alt="Card" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0;" loading="eager"/>
                                 </div>
                                 <div class="card-overlay">
                                     <div class="d-flex align-items-center justify-content-between" style="width: 100%;">
-                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left;">
-                                    LOREM <br />
- IPSUM 5
+                                        <h5 class="card-title" style="margin-bottom: 0; flex-grow: 1; font-weight: bold; color: #dcd9d1; text-align: left; font-size: 30px;">
+                                        MESS
                                         </h5>
-                                        <a href="#">
-                                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 3rem; height: auto; margin-left: 10px;" alt="arrow" />
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>

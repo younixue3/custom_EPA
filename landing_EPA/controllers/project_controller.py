@@ -28,8 +28,6 @@ class ProjectPageController(http.Controller):
             'total_pages': total_pages,
         })
 
-
-
     @http.route('/project_page/<int:project_id>', type='http', auth='public', website=True)
     def project_detail_page(self, project_id):
         # Mencari proyek berdasarkan ID
@@ -48,17 +46,24 @@ class ProjectPageController(http.Controller):
                 ('res_model', '=', 'wb.proyek'),
                 ('res_field', '=', 'main_image')
             ], limit=1)
+            
+            # Memastikan gambar tersedia untuk publik
+            if attachment and not attachment.public:
+                attachment.sudo().write({'public': True})
+
             if attachment:
                 main_image_url = '/web/image/{}/{}'.format(attachment.id, attachment.name)
 
-
-       # Mengambil semua gambar dari relasi
+        # Mengambil semua gambar dari relasi
         img_all = []
         additional_images = request.env['ir.attachment'].sudo().search([
             ('id', 'in', project.images.ids)
         ])
 
         for image in additional_images:
+            # Pastikan gambar dapat diakses publik
+            if image and not image.public:
+                image.sudo().write({'public': True})
             img_all.append('/web/image/{}/{}'.format(image.id, image.name))
 
         # Mengambil dua gambar tambahan dengan ID terkecil
@@ -69,14 +74,14 @@ class ProjectPageController(http.Controller):
             
             for image_id in smallest_image_ids:
                 image = request.env['ir.attachment'].sudo().browse(image_id)
+                if image and not image.public:
+                    image.sudo().write({'public': True})
                 limited_additional_image_urls.append('/web/image/{}/{}'.format(image.id, image.name))
-
-    # Sekarang Anda bisa mengirim img_all dan limited_additional_image_urls ke template Anda
-
 
         paragraphs = project.desc.split("\n\n")  # Membagi teks berdasarkan jeda paragraf
         desc_part1 = paragraphs[0] if len(paragraphs) > 0 else ""
         desc_part2 = "\n\n".join(paragraphs[1:]) if len(paragraphs) > 1 else ""
+
         # Render template dengan data yang diperlukan
         return request.render('landing_EPA.jumbotron_detail', {
             'img_all': img_all,  # URL dari semua gambar yang diambil
@@ -87,10 +92,9 @@ class ProjectPageController(http.Controller):
             'location': project.location,  # Lokasi proyek
             'process': project.process,  # Proses yang dilakukan
             'size': project.size,  # Ukuran proyek
-            'years': project.years,  # Ukuran proyek
-            'testi': project.testi,  # Ukuran proyek
-            'name_testi': project.name_testi,  # Ukuran proyek
+            'years': project.years,  # Tahun proyek
+            'testi': project.testi,  # Testimonial proyek
+            'name_testi': project.name_testi,  # Nama pemberi testimonial
             'desc_part1': desc_part1,  # Deskripsi bagian 1
             'desc_part2': desc_part2,  # Deskripsi bagian 2
         })
-

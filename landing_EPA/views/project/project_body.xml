@@ -307,7 +307,7 @@
                             <div class="card" style="background-color: #fff;border: none;width: 500px;z-index: 1;top: 250px;right: 15px;border-radius: 0;">
                                 <div class="card-body">
                                     <h2 class="card-title">CONSTRUCTIONS NEWS</h2>
-                                    <p class="card-text">Kami percaya bahwa informasi yang transparan adalah kunci dalam membangun hubungan yang baik. Di sini Anda bisa mendapatkan update tentang proyek terkini, inovasi terbaru, dan berita seputar industri konstruksi yang relevan.</p>
+                                    <p class="card-text" style="text-align: justify;">Kami percaya bahwa informasi yang transparan adalah kunci dalam membangun hubungan yang baik. Di sini Anda bisa mendapatkan update tentang proyek terkini, inovasi terbaru, dan berita seputar industri konstruksi yang relevan.</p>
                                 </div>
                             </div>
 
@@ -335,7 +335,7 @@
                                 <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="card-img-top img-fluid" style="object-fit: cover; height: 300px;" />
                                 <div class="card-body text-center">
                                     <h2 class="card-title">CONSTRUCTIONS NEWS</h2>
-                                    <p class="card-text">Kami percaya bahwa informasi yang transparan adalah kunci dalam membangun hubungan yang baik. Di sini Anda bisa mendapatkan update tentang proyek terkini, inovasi terbaru, dan berita seputar industri konstruksi yang relevan.</p>
+                                    <p class="card-text" style="text-align: justify;">Kami percaya bahwa informasi yang transparan adalah kunci dalam membangun hubungan yang baik. Di sini Anda bisa mendapatkan update tentang proyek terkini, inovasi terbaru, dan berita seputar industri konstruksi yang relevan.</p>
                                 </div>
                             </div>
                         </div>

@@ -99,16 +99,10 @@
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
                                     <li>
-                                        <a class="dropdown-item" href="#">Kategori 1</a>
+                                        <a class="dropdown-item" href="#">Info Terbaru</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#">Kategori 2</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Kategori 3</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Kategori 4</a>
+                                        <a class="dropdown-item" href="#">Teknologi Konstruksi</a>
                                     </li>
                                 </ul>
                             </div>
@@ -261,7 +255,7 @@
                     <!-- Grid bawah: Judul dan deskripsi -->
                     <div style="background-color: #ffffff; padding: 20px;">
                         <h2 style="margin: 0;">LEGALITAS/SERTIFIKASI/KUALIFIKASI</h2>
-                        <p>Perusahaan kami telah terdaftar dan memiliki izin usaha yang sah sesuai dengan peraturan yang berlaku. Kami berkomitmen untuk selalu mematuhi standar hukum dan peraturan di setiap tahap proyek yang kami tangani.  Keberadaan kami di industri ini didukung oleh lisensi, sertifikat, dan kualifikasi yang menjamin kualitas serta keamanan dalam setiap pekerjaan.
+                        <p style="text-align: justify;">Perusahaan kami telah terdaftar dan memiliki izin usaha yang sah sesuai dengan peraturan yang berlaku. Kami berkomitmen untuk selalu mematuhi standar hukum dan peraturan di setiap tahap proyek yang kami tangani.  Keberadaan kami di industri ini didukung oleh lisensi, sertifikat, dan kualifikasi yang menjamin kualitas serta keamanan dalam setiap pekerjaan.
                         </p>
                     </div>
                 </div>
