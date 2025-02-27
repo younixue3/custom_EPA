@@ -21,6 +21,7 @@
                 }
             }
         </style>
+
         <!-- whoweare -->
         <div class="container col-12 mb-2" style="background-image: url('/landing_EPA/static/src/img/about/about_bg.png'); background-size: cover; background-position: center; padding: 30px; padding-top: 0;">
             <div class="container col-11">
@@ -55,9 +56,8 @@
         </div>
 
 
-
         <!-- vision mision -->
-        <div class="container col-11 mt-4 mb-3" style="padding: 30px;">
+        <div id="visimisi" class="container col-11 mt-4 mb-3" style="padding: 30px;">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -1em; z-index: 1; font-size: 15px; font-weight: 500; left: -1em">
                 VISION &amp; MISSION
@@ -98,11 +98,8 @@
         </div>
 
 
-
-
-
         <!-- corevalues -->
-        <div class="container col-11 pt-0 pb-3" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; padding: 30px;">
+        <div id="coreval" class="container col-11 pt-0 pb-3" style="background-image: url('/landing_EPA/static/src/img/about/bg_core.png'); background-size: cover; background-position: center; padding: 30px;">
             <div class="text-end">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -1em; z-index: 1; font-size: 15px; font-weight: 500; right: -0.6em">
@@ -150,12 +147,8 @@
             </div>
         </div>
 
-
-
-
-
         <!-- safety first -->
-        <div class="container col-11 mb-3" style="padding: 30px;">
+        <div id="safety" class="container col-11 mb-3" style="padding: 30px;">
             <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
             <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -1em; z-index: 1; font-size: 15px; font-weight: 500; left: -1em">
                 SAFETY PROTOCOL
@@ -190,7 +183,7 @@
 
 
         <!-- LSK Sec -->
-        <div class="container-fluid col-12 mb-3 p-0" style="padding: 0px;">
+        <div id="lsk" class="container-fluid col-12 mb-3 p-0" style="padding: 0px;">
             <div class="container col-11 text-end ">
                 <hr style="border: 1px solid #000; width: 100%; margin: 0 auto;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -1em; z-index: 1; font-size: 15px; font-weight: 500; right: -0.6em">

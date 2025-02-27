@@ -68,7 +68,7 @@
         <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/news/bg-news.png'); background-size: 35%; background-position: center; z-index: 1; padding: 30px;">
             <!-- Konten Mulai dari Sini -->
 
-            <div class="container-fluid col-11">
+            <div id="trending-news" class="container-fluid col-11">
                 <div class="row">
                     <!-- Bagian atas: Judul dan Deskripsi dalam satu baris -->
                     <div class="col-12">

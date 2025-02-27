@@ -1,184 +1,137 @@
-<data inherit_id="website.layout" name="Default" active="True">
+<data inherit_id="website.layout" name="Links" active="False">
   <xpath expr="//div[@id='footer']" position="replace">
     <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
-      <section class="s_text_block pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" id="HEAD-OFFICE" data-anchor="true">
+      <section class="s_text_block o_snippet_invisible pb0 pt40 o_conditional_hidden" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-visibility="conditional">
         <div class="container">
           <div class="row">
-            <div class="pt24 pb24 o_colored_level col-lg-3">
-              <h5 class="mb-3">
+            <div class="o_colored_level col-lg-3">
+              <h5>
                 <strong>
-                  <font class="text-black">HEAD OFFICE</font>
+                  <font class="text-900">HEAD OFFICE</font>
                 </strong>
               </h5>
-              <ul class="list-unstyled">
-                <li>Lorem</li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet</p>
-              <p>08123456789</p>
-              <ul class="list-unstyled">
-                <li>
-                  <br/>
-                </li>
-                <li>
-                  <br/>
-                </li>
-
-                <li>
-                  <br/>
-                </li>
-              </ul>
+              <p>Jl. Sei Kapuas No.3A, Pelabuhan,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Kec. Samarinda Kota,&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Kota Samarinda, Kalimantan&amp;nbsp;Timur 75242</p>
+              <p>(0541)736168</p>
             </div>
-            <div class="pt24 pb24 col-lg-3 o_colored_level">
-              <h5 class="mb-3">
+            <div class="o_colored_level col-lg-3">
+              <h5>
                 <strong>
-                  <font class="text-black"/>
-                  <a href="/about_page" data-bs-original-title="" title="">
-                    <font class="text-o-color-5">ABOUT</font>
-                  </a>
-                  <font class="text-900"/>
-                  <font class="text-black"/>
+                  <font class="text-900">ABOUT</font>
                 </strong>
+                <br/>
               </h5>
-              <ul class="list-unstyled">
-                <li>Vision &amp;amp; Mision<br/>
-                </li>
-              </ul>
-              <p>Core Values</p>
-              <p>Safety Protocol</p>
-              <p>Legalitas /&amp;nbsp; Sertifikasi&amp;nbsp;</p>
-              <p>/&amp;nbsp; Kualifikasi</p>
-              <ul class="list-unstyled">
-
-                <li>
-                  <br/>
-                </li>
-              </ul>
-            </div>
-            <div id="connect" class="pt24 pb24 o_colored_level col-lg-3">
-              <h5 class="mb-3">
-                <strong>
-                  <font class="text-black"/>
-                  <a href="/servis_page" data-bs-original-title="" title="">
-                    <font class="text-o-color-5">SERVICES</font>
-                  </a>
-                  <font class="text-black"/>
-                </strong>
-              </h5>
-              <ul class="list-unstyled">
-                <li>Engineering</li>
-              </ul>
-              <p>Procurement</p>
-              <ul class="list-unstyled">
-                <li>Constructions</li>
-              </ul>
-            </div>
-            <div id="connect" class="pt24 pb24 o_colored_level col-lg-3">
-              <h5 class="mb-3">
-                <strong>
-                  <font class="text-black">STAY CONNECTED</font>
-                </strong>
-              </h5>
-              <div class="s_social_media o_not_editable text-start" data-snippet="s_social_media" data-name="Social Media">
-                <h5 class="s_social_media_title d-none">Follow us</h5>
-                <a href="https://www.example.com" target="_blank">
-                  <i class="fa fa-whatsapp shadow-sm o_editable_media text-black fa-3x"/>
+              <p>
+                <a href="/about_page#visimisi" data-bs-original-title="" title="">
+                  <font class="text-900">Vision &amp;amp; Mission</font>
                 </a>
-                <a href="https://www.example.com" target="_blank">
-                  <i class="fa fa-envelope-o shadow-sm o_editable_media fa-3x text-black"/>
+                <span class="oe-tabs" style="width: 20.8px;"></span>​
+              </p>
+              <p>
+                <a href="/about_page#coreval">
+                  <font class="text-900">Core Values</font>
+                </a>
+              </p>
+              <p>
+                <a href="/about_page#safety">
+                  <font class="text-900">Safety Protocol​​</font>
+                </a>
+              </p>
+              <p>
+                <a href="http://A" data-bs-original-title="" title="">
+                  <font class="text-900">Legalitas / Kualifikasi /&amp;nbsp;Sertifikasi</font>
+                </a>
+              </p>
+            </div>
+            <div class="o_colored_level col-lg-3">
+              <h5>
+                <strong>
+                  <font class="text-900">SERVICES</font>
+                </strong>
+              </h5>
+              <p>
+                <a href="/servis_page#eng">
+                  <font class="text-900">Engineering</font>
+                </a>
+              </p>
+              <p>
+                <a href="/servis_page#proc">
+                  <font class="text-900">Procurement</font>
+                </a>
+              </p>
+              <p>
+                <a href="/servis_page#const">
+                  <font class="text-900">Construction</font>
+                </a>
+              </p>
+            </div>
+            <div class="o_colored_level col-lg-3">
+              <h5>
+                <strong>
+                  <font class="text-900">STAY CONNECTED</font>
+                </strong>
+                <br/>
+              </h5>
+              <div class="s_social_media text-start o_not_editable" data-snippet="s_social_media" data-name="Social Media">
+                <h4 class="s_social_media_title d-none">
+                  <font class="text-900">Social Media</font>
+                </h4>
+                <a target="_blank" href="https://wa.me/08123456789?text=&lt;pesan_otomatis&gt;" class="s_social_media_step-backward">
+                  <i class="fa fa-whatsapp shadow-sm o_editable_media text-900 fa-3x" style="padding: 10px;"/>
+                </a>
+                <a target="_blank" href="" class="s_social_media_step-backward">
+                  <i class="fa fa-envelope-o shadow-sm o_editable_media fa-3x text-900" style="padding: 10px;"/>
                 </a>
               </div>
+              <p>​</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="s_text_block pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+      <section class="s_text_block o_snippet_invisible pt0 pb0 o_conditional_hidden" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-visibility="conditional">
         <div class="container">
-          <div class="row">
-            <div class="pt24 pb24 o_colored_level col-lg-3">
-              <h5 class="mb-3">
+          <div class="row o_grid_mode" data-row-count="6">
+            <div class="o_colored_level o_grid_item g-height-3 g-col-lg-5 col-lg-5" style="z-index: 2; grid-area: 2 / 7 / 5 / 12;">
+              <h5>
+                <strong>
+                  <font class="text-900">CONSTRUCTION</font>
+                </strong>
                 <br/>
               </h5>
-              <ul class="list-unstyled">
-                <li>
-                  <br/>
-                </li>
-                <li>
-                  <br/>
-                </li>
-
-                <li>
-                  <br/>
-                </li>
-              </ul>
+              <p>Workshop</p>
+              <p>Site area</p>
+              <p>Warehouse</p>
+              <p>Office</p>
+              <p>Mess</p>
             </div>
-            <div class="pt24 pb24 col-lg-3 o_colored_level">
-              <h5 class="mb-3">
+            <div class="o_colored_level o_grid_item g-col-lg-6 g-height-2 col-lg-6" style="z-index: 1; grid-area: 2 / 4 / 4 / 10;">
+              <h5>
                 <strong>
-                  <font class="text-black"/>
-                  <font class="text-900"/>
-                  <font class="text-o-color-5"/>
-                  <a href="/project_page" data-bs-original-title="" title="">
-                    <font class="text-o-color-5">PROJECT</font>
-                  </a>
-                  <font class="text-o-color-5"/>
-                  <font class="text-900"/>
-                  <font class="text-black"/>
+                  <font class="text-900">PROJECT</font>
                 </strong>
                 <br/>
               </h5>
-              <ul class="list-unstyled">
-                <li>Latest Project</li>
-              </ul>
-              <p>Testimonies</p>
-              <ul class="list-unstyled">
-
-                <li class="mb-3">
-                  <h5>
-                    <strong>
-                      <font class="text-black"/>
-                      <font class="text-o-color-3"/>
-                      <a href="/news_page" data-bs-original-title="" title="">
-                        <font class="text-o-color-5">NE​WS</font>
-                      </a>
-                      <font class="text-o-color-3"/>
-                      <font class="text-black"/>
-                    </strong>
-                    <br/>
-                  </h5>
-                </li>
-                <li class="oe-nested">
-                  <ul class="list-unstyled">
-                    <li>Trending News</li>
-                  </ul>
-                </li>
-              </ul>
+              <p>
+                <a href="/project_page#latestproject">
+                  <font class="text-900">Latest Project</font>
+                </a>
+              </p>
+              <p>
+                <a href="/landing_page#testimonials">
+                  <font class="text-900">Testimonies</font>
+                </a>
+              </p>
             </div>
-            <div id="connect" class="pt24 pb24 o_colored_level col-lg-3">
-              <h5 class="mb-3">
+            <div class="o_grid_item o_colored_level g-col-lg-7 g-height-2 col-lg-7" style="z-index: 3; grid-area: 5 / 4 / 7 / 11;">
+              <h5>
                 <strong>
-                  <font class="text-black"/>
+                  <font class="text-900">NEWS</font>
                 </strong>
-                <strong>
-                  <font class="text-black">CONSTRUCTIONS</font>
-                </strong>
-                <br/>
-                <br/>
               </h5>
-              <ul class="list-unstyled">
-                <li>Lorem</li>
-              </ul>
-              <p>Lorem</p>
-              <ul class="list-unstyled">
-                <li>Lorem</li>
-              </ul>
-            </div>
-            <div id="connect" class="pt24 pb24 o_colored_level col-lg-3">
-              <h5 class="mb-3">
-                <strong>
-                  <font class="text-black">​</font>
-                </strong>
-                <br/>
-              </h5>
+              <p>
+                <a href="/news_page#trending-news">
+                  <font class="text-900">Trending News</font>
+                </a>
+              </p>
             </div>
           </div>
         </div>

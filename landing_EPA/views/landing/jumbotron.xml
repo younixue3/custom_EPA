@@ -199,7 +199,7 @@
         </nav>
 
         <!-- Jumbotron -->
-        <div class="jumbotron text-center py-5 mb-0">
+        <div class="jumbotron text-center py-5 mt-0 mb-0">
             <div class="container col-12">
                 <h1 class="display-4 col-12" style="font-weight: bold; font-size: 100px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">
             BUILDING <span style="color: #ed781b;">VISION</span>

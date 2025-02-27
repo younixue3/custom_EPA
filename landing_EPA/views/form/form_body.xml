@@ -152,7 +152,7 @@
         // Check if the button is active
         if (button.classList.contains('active')) {
             leadTitleInput.value = leadTitleInput.value ? leadTitleInput.value + ',' + value : value; // Add value to input
-            button.style.backgroundColor = '#d1a56b'; // Change color when active
+            button.style.backgroundColor = '#d1a56bb'; // Change color when active
         } else {
             leadTitleInput.value = leadTitleInput.value.replace(new RegExp('(,)?' + value + '(,)?', 'g'), ',').replace(/(^,)|(,$)/g, ''); // Remove value from input
             button.style.backgroundColor = '#ed781b'; // Reset color when inactive
