@@ -1,28 +1,28 @@
 <odoo>
     <template id="form_body" name="form body section">
         <style>
-            #name::placeholder {
-                font-style: italic;
-                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
-            }
-            #company_name::placeholder {
-                font-style: italic;
-                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
-            }
-            #email::placeholder {
-                font-style: italic;
-                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
-            }
-            #phone::placeholder {
-                font-style: italic;
-                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
-            }
+            #name::placeholder,
+            #company_name::placeholder,
+            #email::placeholder,
+            #phone::placeholder,
             #description::placeholder {
                 font-style: italic;
                 color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
             }
+
+            .all-height {
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+
+            /* Menghapus background dari contain-form */
+            .contain-form {
+                background-image: none !important;
+                background-color: transparent !important;
+            }
         </style>
-        <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/form_page/bg_form.png'); background-size: cover; background-position: center;">
+
+        <div class="container-fluid col-12 contain-form">
 
             <form method="post" action="/form/submit" enctype="multipart/form-data">
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
@@ -143,21 +143,39 @@
                 </div>
 
             </form>
+            <div class="col-14 all height">
+                <hr style="border-color: #ed781b; border-width: 1px; width: 100%; margin: 0 auto;"/>
+            </div>
         </div>
         <script>
-    function toggleButton(button, value) {
-        button.classList.toggle('active');
-        let leadTitleInput = document.getElementById('lead_title');
+            let selectedServices = []; // Pastikan variabel dideklarasikan di awal
 
-        // Check if the button is active
-        if (button.classList.contains('active')) {
-            leadTitleInput.value = leadTitleInput.value ? leadTitleInput.value + ',' + value : value; // Add value to input
-            button.style.backgroundColor = '#d1a56b'; // Reset color when inactive
-        } else {
-            leadTitleInput.value = leadTitleInput.value.replace(new RegExp('(,)?' + value + '(,)?', 'g'), ',').replace(/(^,)|(,$)/g, ''); // Remove value from input
-            button.style.backgroundColor = '#ed781b'; // Reset color when inactive
-        }
-    }
+            function toggleButton(button, value) {
+                let leadTitleInput = document.getElementById('lead_title');
+
+                if (!selectedServices.includes(value)) {
+                    selectedServices.push(value);
+                    button.classList.add('active');
+                    button.style.backgroundColor = '#d1a56b';
+                    button.style.color = 'white'; // Warna teks tetap putih
+                } else {
+                    selectedServices = selectedServices.filter(service => service !== value);
+                    button.classList.remove('active');
+                    button.style.backgroundColor = '#ed781b';
+                    button.style.color = 'white'; // Pastikan warna teks tetap putih
+                }
+
+                leadTitleInput.value = selectedServices.join(', '); // Update input
+            }
+
+            // Validasi sebelum submit
+            document.querySelector("form").addEventListener("submit", function(event) {
+                if (selectedServices.length === 0) {
+                    alert("Harap pilih setidaknya satu jenis layanan.");
+                    event.preventDefault();
+                }
+            });
         </script>
+
     </template>
 </odoo>

@@ -86,8 +86,8 @@
 
         <!-- end -->
 
-        <div id="proc" class="container-fluid col-12 mb-5 mt-4">
-            <div class="col-11 mb-3 mx-auto text-end">
+        <div class="container-fluid col-12 mb-5 mt-4">
+            <div id="proc" class="col-11 mb-3 mx-auto text-end">
                 <hr style="border: 0px solid #000; width: 100%; margin: 0 auto; opacity: 1;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px; right: -0.5em">
                 02 PROCUREMENT
@@ -139,8 +139,8 @@
         <!-- end -->
 
         <!-- construction -->
-        <div id="const" class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/services/bg-const.png'); background-size: cover; background-position: center;">
-            <div class="col-11 mx-auto">
+        <div class="container-fluid col-12" style="background-image: url('/landing_EPA/static/src/img/services/bg-const.png'); background-size: cover; background-position: center;">
+            <div id="const" class="col-11 mx-auto">
                 <hr style="border: 0px solid #000; width: 100%; margin: 0 auto; opacity: 1;"/>
                 <span style="background: #ece7e1; padding: 0 10px; position: relative; top: -0.7em; z-index: 1; font-size: 20px;  left: -0.5em">
                     03 CONSTRUCTION
