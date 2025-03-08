@@ -1,28 +1,32 @@
 <odoo>
     <template id="form_body" name="form body section">
         <style>
-            #name::placeholder,
-            #company_name::placeholder,
-            #email::placeholder,
-            #phone::placeholder,
+            #name::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
+            #company_name::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
+            #email::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
+            #phone::placeholder {
+                font-style: italic;
+                color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
+            }
             #description::placeholder {
                 font-style: italic;
                 color: #888; /* Opsional, untuk menyesuaikan warna placeholder */
             }
-
-            .all-height {
+            .all-height{
                 padding-top: 100px;
                 padding-bottom: 100px;
             }
-
-            /* Menghapus background dari contain-form */
-            .contain-form {
-                background-image: none !important;
-                background-color: transparent !important;
-            }
         </style>
-
-        <div class="container-fluid col-12 contain-form">
+        <div class="container-fluid col-12 contain-form" style="background-image: url('/landing_EPA/static/src/img/form_page/bg_form.png');">
 
             <form method="post" action="/form/submit" enctype="multipart/form-data">
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
