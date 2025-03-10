@@ -26,7 +26,7 @@
                 padding-bottom: 100px;
             }
         </style>
-        <div class="container-fluid col-12 contain-form" style="background-image: url('/landing_EPA/static/src/img/form_page/bg_form.png');">
+        <div class="container-fluid col-12 " style="background-image: url('/landing_EPA/static/src/img/form_page/form.webp');">
 
             <form method="post" action="/form/submit" enctype="multipart/form-data">
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
