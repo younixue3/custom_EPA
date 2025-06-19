@@ -190,25 +190,25 @@
         <!-- safety protocol -->
         <div class="desktop-view">
             <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;height: 650px;">
-                <div class="col-11 p-5 mt-4">
+                <div class="col-12 mt-4">
                     <div class="row" style="left: 25px; position: relative;">
                         <!-- Kolom Kanan: Gambar -->
-                        <div class="col-md-7">
-                            <img src="/landing_EPA/static/src/img/services/end.webp" alt="Safety Card" class="img-fluid" style="height: 100%; object-fit: cover;" />
+                        <div class="col-md-8">
+                            <img src="/landing_EPA/static/src/img/services/end.webp" alt="Safety Card" class="img-fluid" style="height: 400px; object-fit: cover;" />
                         </div>
 
                         <!-- Kolom Kiri: Teks -->
-                        <div class="col-md-4">
-                            <div class="card" style="background-color: #fff; border: none; top: 120px; height: 285px; width: 500px; z-index: 1; right: 115px; border-radius: 0; padding: 20px;">
+                        <div class="col-md-4 d-flex position-relative">
+                            <div class="card m-auto position-absolute" style="background-color: #fff; border: none; z-index: 1; left: -200px; border-radius: 0; padding: 20px;height:250px;width:500px;top:20%;">
                                 <h2 class="card-title">SAFETY IS NUMBER ONE</h2>
                                 <p class="card-text" style="text-align: justify;">Keamanan dan keselamatan di lokasi kerja adalah tanggung jawab utama kami. Kami memastikan bahwa setiap pekerja, mitra, dan pengunjung di lokasi proyek kami dilindungi dengan standar keselamatan yang ketat dan sesuai dengan regulasi yang berlaku. Prosedur keamanan yang ketat diterapkan di setiap tahap konstruksi untuk menghindari risiko dan menjaga lingkungan kerja yang aman.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 pt-0">
+                    <div class="col-12 pt-0 mt-5">
                         <div style="display: flex; justify-content: center; align-items: center; text-align: center; font-family: 'Open Sans', sans-serif;">
-                            <span style="color: black; font-size: 3.5rem; font-weight: 700;">LOOK OUT OUR </span>
-                            <span style="color: #ed781b; font-size: 3.5rem; font-weight: 700; margin-left: 10px;">SAFETY PROTOCOL</span>
+                            <span style="color: black; font-size: 3rem; font-weight: 600;">LOOK OUT OUR </span>
+                            <span style="color: #ed781b; font-size: 3rem; font-weight: 600; margin-left: 10px;">SAFETY PROTOCOL</span>
                             <a href="/safety_page" style="margin-left: 10px;">
                                 <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 4rem; height: auto;" alt="Custom Arrow Icon" />
                             </a>

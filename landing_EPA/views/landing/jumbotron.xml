@@ -200,12 +200,50 @@
 
         <!-- Jumbotron -->
         <div class="jumbotron text-center py-5 mt-0 mb-0">
-            <div class="container col-12">
-                <h1 class="display-4 col-12" style="font-weight: bold; font-size: 100px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">
-            BUILDING <span style="color: #ed781b;">VISION</span>
+            <div class="container">
+                <h1 class="display-4 jumbotron-heading">
+                    BUILDING <span class="highlight">VISION</span>
                 </h1>
             </div>
         </div>
+
+        <style>
+            .jumbotron-heading {
+                font-weight: bold;
+                font-size: 6rem;
+                position: relative;
+                margin-bottom: 0;
+            }
+
+            .jumbotron-heading .highlight {
+                color: #ed781b;
+            }
+
+            /* Responsive text sizing */
+            @media (max-width: 1200px) {
+                .jumbotron-heading {
+                    font-size: 5rem;
+                }
+            }
+
+            @media (max-width: 992px) {
+                .jumbotron-heading {
+                    font-size: 4rem;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .jumbotron-heading {
+                    font-size: 3rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .jumbotron-heading {
+                    font-size: 2.5rem;
+                }
+            }
+        </style>
 
         <!-- JavaScript -->
         <script>

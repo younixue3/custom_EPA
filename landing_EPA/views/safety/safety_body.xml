@@ -661,8 +661,8 @@
 
         <!-- end kolase -->
         <div class="desktop-view">
-            <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;">
-                <div class="container col-11 ">
+            <div class="container-fluid d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;padding: 50px;height:700px">
+                <div class="container col-12 ">
                     <div class="row">
                         <!-- Kolom Kanan: Gambar -->
                         <div class="col-md-8">
@@ -673,19 +673,25 @@
                         <div class="col-md-4">
                             <!-- Bagian Atas -->
                             <div class="mb-4">
-                                <p style="text-align: left; margin-top: 30px; font-family: 'Open Sans', sans-serif; position: absolute; width: 115%; right: 0px; top: 45px;">
-                                    <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR</span>
-                                    <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">EXPERTISE</span>
-                                    <a href="/servis_page">
-                                        <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; position: absolute; right: 12px; z-index: 1; top: 240px;" alt="Custom Arrow Icon" />
-                                    </a>
-                                </p>
-                            </div>
-
-                            <!-- Bagian Bawah -->
-                            <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 218px; border-radius: 0; padding: 20px;">
-                                <h2 class="card-title">WORK IN PROCESS</h2>
-                                <p class="card-text">Sesuai dengan visi dan misi yang kami miliki, perusahaan kami menyediakan berbagai layanan konstruksi yang dapat disesuaikan dengan kebutuhan dan keinginan klien. Dengan pengalaman bertahun-tahun dan tim yang terdiri dari profesional berkompeten, kami siap memberikan hasil yang optimal dengan pendekatan yang inovatif, efisien, dan tepat waktu.</p>
+                                <div class="h-100">
+                                    <p style="text-align: left; font-family: 'Open Sans', sans-serif; width: 100%;">
+                                        <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR</span>
+                                        <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">EXPERTISE</span>
+                                    </p>
+                                </div>
+                                <div class="d-flex position-relative" style="height: 250px;">
+                                    <div class="w-100">
+                                        <div class="card position-absolute" style="background-color: #fff;width:500px; border: none; z-index: 1; border-radius: 0; padding: 20px;left:-350px;">
+                                            <h2 class="card-title">WORK IN PROGRESS</h2>
+                                            <p class="card-text">Sesuai dengan visi dan misi yang kami miliki, perusahaan kami menyediakan berbagai layanan konstruksi yang dapat disesuaikan dengan kebutuhan dan keinginan klien. Dengan pengalaman bertahun-tahun dan tim yang terdiri dari profesional berkompeten, kami siap memberikan hasil yang optimal dengan pendekatan yang inovatif, efisien, dan tepat waktu.</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex" style="z-index:10;">
+                                        <a class="m-auto" href="/servis_page">
+                                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; z-index: 1;" alt="Custom Arrow Icon" />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

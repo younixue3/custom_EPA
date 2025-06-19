@@ -37,6 +37,7 @@
 
         .marquee-content li {
             flex-shrink: 0;
+            gap: 10px;
             width: var(--marquee-element-width);
             display: flex;
             justify-content: center;
@@ -58,31 +59,34 @@
         }
         </style>
 
-        <div id="about-us" class="container-fluid pt-5 pb-5 d-flex justify-content-center align-items-center bg-about">
-            <div class="row justify-content-center align-items-center text-center w-100">
+        <div id="about-us" class="container-fluid py-5 bg-about">
+            <div class="row align-items-center">
                 <!-- Bagian kiri: Gambar -->
-                <div class="col-12 col-md-5 d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
-                    <img t-att-src="'/landing_EPA/static/src/img/landing/E.webp'" class="img-fluid" alt="About Us Image" style="width: 80%; max-width: 300px; height: auto; object-fit: cover; border-radius: 0;" />
+                <div class="col-12 col-lg-5 text-center text-lg-end mb-4 mb-lg-0">
+                    <img t-att-src="'/landing_EPA/static/src/img/landing/E.webp'" 
+                            class="img-fluid" 
+                            alt="About Us Image" 
+                            style="width: 80%; max-width: 300px; height: auto; object-fit: cover; border-radius: 0;" />
                 </div>
                 <!-- Bagian kanan: Penjelasan tentang perusahaan -->
-                <div class="col-12 col-md-7 pr-0 pl-5 d-flex flex-column align-items-start justify-content-start">
-                    <div style="padding: 0; margin: 0; max-width: 500px;">                        <!-- Mengatur lebar maksimal -->
-                        <h1 style="font-weight: bold; color: #ed781b; font-size: 2.5rem; margin: 0; text-align: left; font-size: 3rem;">
+                <div class="col-12 col-lg-7 px-4 px-lg-5">
+                    <div class="about-content" style="max-width: 600px;">
+                        <h1 class="mb-3" style="font-weight: bold; color: #ed781b; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2;">
                             ABOUT US
                         </h1>
-                        <p style="font-size: 1rem; color: #333; text-align: justify; font-family: 'Open Sans', sans-serif; margin: 10px 0;">
+                        <p class="mb-4" style="font-size: clamp(0.9rem, 2vw, 1rem); color: #333; text-align: justify; font-family: 'Open Sans', sans-serif;">
                             Kami adalah perusahaan konstruksi yang sudah berdiri sejak tahun 2008 di Samarinda, Kalimantan Timur. Perusahaan kami berfokus pada kualitas, keamanan, dan keberlanjutan dalam setiap proyek yang kami jalankan. Dengan pengalaman bertahun-tahun di industri ini, kami memberikan solusi konstruksi yang inovatif, tepat waktu, dan sesuai anggaran untuk memenuhi berbagai kebutuhan klien kami.
                         </p>
-                        <!-- Button Learn More -->
-                        <div class="row justify-content-start mt-4">
-                            <div class="col-md-12 text-start">
-                                <a href="/about_page" class="btn btn-lg" style="background-color: #ed781b; color: white; font-weight: bold; border-radius: 0; padding: 10px 40px;">LEARN MORE</a>
-                            </div>
+                        <div class="mt-4">
+                            <a href="/about_page" 
+                                class="btn btn-lg d-inline-block" 
+                                style="background-color: #ed781b; color: white; font-weight: bold; border-radius: 0; padding: 0.75rem 2rem; font-size: clamp(0.9rem, 2vw, 1rem);">
+                                LEARN MORE
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- marquee -->
 

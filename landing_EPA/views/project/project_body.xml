@@ -291,16 +291,16 @@
         <!-- news -->
         <div class="desktop-view">
             <div class="container-fluid col-12" style="background-color: #dcd9d1;height: auto;padding: 75px; padding-top: 50px; padding-bottom: 110px;">
-                <div class="container col-11">
+                <div class="container col-12">
                     <div class="row">
                         <!-- Kolom Kiri: Teks -->
                         <div class="col-md-4">
                             <!-- Bagian Atas -->
                             <div class="mb-4">
                                 <p style="text-align: start;margin-top: 115px;font-family: 'Open Sans', sans-serif;width: 125%;left: 0px;position: absolute;">
-                                    <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR</span>
+                                    <span style="color: black; font-size: 2.8rem; font-weight: 600;">CHECK OUT OUR</span>
 
-                                    <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">NEWS</span>
+                                    <span style="color: #ed781b; font-size: 2.8rem; font-weight: 600;">NEWS</span>
                                 </p>
                             </div>
 
@@ -318,7 +318,7 @@
                         <!-- Kolom Kanan: Gambar -->
                         <div class="col-md-8">
                             <a href="/news_page">
-                                <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 750px;top: 200px;" />
+                                <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 8rem;height: auto;background-color: rgb(255, 255, 255);padding: 0px;border-radius: 50%;position: absolute;left: 650px;top: 200px;" />
                             </a>
                             <img src="/landing_EPA/static/src/img/project/project.png" alt="Safety Card" class="img-fluid" style="width: 100%; height: auto;"/>
                         </div>
@@ -329,7 +329,7 @@
         </div>
         <div class="mobile-view">
             <div class="container-fluid col-12 content d-flex align-items-center justify-content-center" style="background-color: #dcd9d1;">
-                <div class="col-11 mx-auto p-0 m-0">
+                <div class="col-12 mx-auto p-0 m-0">
                     <div class="row">
                         <div class="col-12">
                             <div class="card mb-4">
@@ -342,9 +342,9 @@
                         </div>
                     </div>
                     <div style="display: flex; justify-content: flex-start; align-items: center; text-align: center; font-family: 'Open Sans', sans-serif; flex-direction: column;">
-                        <span style="color: black; font-size: 28px; font-weight: 700;">CHECK OUT OUR</span>
-                        <span style="color: #ed781b; font-size: 31px; font-weight: 700; margin-left: 10px;">NEWS</span>
-                        <a href="/safety_page" style="margin-left: 10px;">
+                        <span style="color: black; font-size: 20px; font-weight: 600;">CHECK OUT OUR</span>
+                        <span style="color: #ed781b; font-size: 20px; font-weight: 600; margin-left: 10px;">NEWS</span>
+                        <a href="/news_page" style="margin-left: 10px;">
                             <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 4rem; height: auto;" alt="Custom Arrow Icon" />
                         </a>
                     </div>
