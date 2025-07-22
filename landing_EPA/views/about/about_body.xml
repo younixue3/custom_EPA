@@ -323,25 +323,19 @@
                         <div class="col-md-5">
                             <!-- Bagian Atas -->
                             <div class="mb-4">
-                                <div class="h-100">
-                                    <p style="text-align: left; font-family: 'Open Sans', sans-serif; width: 100%;">
-                                        <div style="color: black; font-size: 32.8rem; font-weight: 600;">CHECK OUT OUR</div>
-                                        <div style="color: #ed781b; font-size: 32.8rem; font-weight: 600;">LATEST PROJECT</div>
-                                    </p>
-                                </div>
-                                <div class="d-flex position-relative" style="height: 250px;">
-                                    <div class="w-100">
-                                        <div class="card position-absolute" style="background-color: #fff;width:500px; border: none; z-index: 1; border-radius: 0; padding: 20px;left:-350px;">
-                                            <h2 class="card-title">MESS TRINITY AUTO</h2>
-                                            <p class="card-text">Proyek pembangunan mess karyawan yang kami tangani dirancang dengan memperhatikan berbagai aspek penting, mulai dari kenyamanan, fungsionalitas, hingga efisiensi anggaran. Kami memahami bahwa mess karyawan bukan hanya sekadar tempat tinggal sementara, tetapi juga merupakan ruang yang mendukung kualitas hidup dan kinerja para karyawan.</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex" style="z-index:10;">
-                                        <a class="m-auto" href="/project_page">
-                                            <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; z-index: 1;" alt="Custom Arrow Icon" />
-                                        </a>
-                                    </div>
-                                </div>
+                                <p style="text-align: left; margin-top: 30px; font-family: 'Open Sans', sans-serif; position: absolute; width: 115%; right: 10px; top: 45px;">
+                                    <span style="color: black; font-size: 3rem; font-weight: 700;">CHECK OUT OUR</span>
+                                    <span style="color: #ed781b; font-size: 3rem; font-weight: 700;">LATEST PROJECT</span>
+                                    <a href="/project_page">
+                                        <img src="/landing_EPA/static/src/img/icon/big.png" style="width: 6rem; position: absolute; right: 50px; z-index: 1; top: 240px;" alt="Custom Arrow Icon" />
+                                    </a>
+                                </p>
+                            </div>
+
+                            <!-- Bagian Bawah -->
+                            <div class="card" style="background-color: #fff; border: none; top: 200px; height: 285px; width: 500px; z-index: 1; right: 250px; border-radius: 0; padding: 20px;">
+                                <h2 class="card-title">MESS TRINITY AUTO</h2>
+                                <p class="card-text" style="text-align: justify;">Proyek pembangunan mess karyawan yang kami tangani dirancang dengan memperhatikan berbagai aspek penting, mulai dari kenyamanan, fungsionalitas, hingga efisiensi anggaran. Kami memahami bahwa mess karyawan bukan hanya sekadar tempat tinggal sementara, tetapi juga merupakan ruang yang mendukung kualitas hidup dan kinerja para karyawan.</p>
                             </div>
                         </div>
                     </div>
